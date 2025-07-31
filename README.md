@@ -1,8 +1,5 @@
 # Wind Energy Converter Project
-![Optimus Syria Logo](assets/logo.png)
-<p align="center">
-  <img src="assets/logo.jpg" width="300" alt="Optimus Syria Logo">
-</p>
+
 A Sustainable Engineering Mission for Syria's Renewable Future
 
 Optimus Syria is an international, interdisciplinary project uniting students and academic institutions from Hochschule Flensburg, Hochschule Kiel, and Damascus University. The project is focused on designing, simulating, and preparing a scalable Wind Energy Converter (WEC) specifically adapted to the technical, environmental, and economic conditions of Syria.
