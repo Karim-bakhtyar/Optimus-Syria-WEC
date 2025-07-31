@@ -1,17 +1,33 @@
 # Wind Energy Converter Project
 
-This repository contains the weekly reports and technical documentation for the Optimus Syria project, a collaboration between Hochschule Flensburg, Hochschule Kiel, and Damascus University.
+A Sustainable Engineering Mission for Syria's Renewable Future
 
-## Overview
+Optimus Syria is an international, interdisciplinary project uniting students and academic institutions from Hochschule Flensburg, Hochschule Kiel, and Damascus University. The project is focused on designing, simulating, and preparing a scalable Wind Energy Converter (WEC) specifically adapted to the technical, environmental, and economic conditions of Syria.
 
-The goal is to design and simulate a scalable Wind Energy Converter (WEC) suitable for deployment in Syria, developed by 15 interdisciplinary student teams.
+This initiative was launched not just as an academic challenge, but as a real-world mission: to contribute meaningfully to the development of sustainable energy infrastructure in a region facing both opportunities and limitations in its energy landscape.
 
-## Coordination
+Over 15 specialized student teams are working in parallel, covering areas such as:
+- Aerodynamics and blade design
+- Structural analysis
+- Mechanical Drivetrain
+- Electrical drivetrain systems
+- Control systems and simulation
+- Grid integration
+- Wind farm layout, storage, and foundation
 
-Project Manager: Bakhtyar Karimzade  
-Deputy Project Manager: Josef Remberger  
-System Integrator: Federico De Mita
+Each team brings a unique contribution to the overall system development. Weekly reports, timeline tracking, and system integration are all coordinated under a unified vision to ensure technical coherence and collaborative synergy.
 
+This website serves as a central hub for:
+- Monitoring weekly team progress
+- Sharing development milestones
+- Demonstrating the impact of international academic collaboration in solving real engineering challenges
+
+The project is coordinated by:
+Bakhtyar Karimzade (Project Manager)
+Josef Remberger (Deputy Project Manager)
+Federico De Mita (System Integrator).
+
+We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
 
 ## Sub-Team Progress – Week 1
@@ -36,4 +52,4 @@ System Integrator: Federico De Mita
 
 
 
-Last updated by Bakhtyar Karimzade.
+Webpage has been built and updated by Bakhtyar Karimzade.
