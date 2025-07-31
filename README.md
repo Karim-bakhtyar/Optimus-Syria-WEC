@@ -1,8 +1,8 @@
-# Optimus Syria – Wind Energy Converter Project
+# Wind Energy Converter Project
 
 This repository contains the weekly reports and technical documentation for the Optimus Syria project, a collaboration between Hochschule Flensburg, Hochschule Kiel, and Damascus University.
 
-# Overview
+## Overview
 
 The goal is to design and simulate a scalable Wind Energy Converter (WEC) suitable for deployment in Syria, developed by 15 interdisciplinary student teams.
 
