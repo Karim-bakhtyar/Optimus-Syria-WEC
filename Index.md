@@ -1,50 +1,18 @@
-# Optimus Syria – Weekly Progress Dashboard
+# Optimus Syria – Wind Energy Converter Development Project
 
-This is the public dashboard for the Optimus Syria – Wind Energy Converter Project,  
-a joint initiative between Hochschule Flensburg, Hochschule Kiel, and Damascus University.
+Empowering a Sustainable Future for Syria through Innovation, Collaboration, and Engineering Excellence
 
----
+Welcome to the official project dashboard of Optimus Syria – an interdisciplinary, student-led initiative uniting minds and efforts from Hochschule Flensburg, Hochschule Kiel, and Damascus University.
 
-## Reporting Period: Week 1 (21–26 July 2025)
+This project aims to design, simulate, and prepare a scalable and locally adaptable Wind Energy Converter (WEC) specifically for deployment in Syria, taking into account technical feasibility, regional conditions, and market access.
 
-| No. | Team Name                    | Team Leader                        | Status / Summary                                                   |
-|-----|------------------------------|-------------------------------------|---------------------------------------------------------------------|
-| 01  | Load and Dynamics            | Mohamed Reda Alywa                 | Installed OpenFAST, studied control strategies and LIDAR           |
-| 02  | Feedback Controller          | Mirza Dincer                       | Completed Simulink Onramp, began academic research                 |
-| 03  | Lidar Assisted Control       | Hesham Mahmoud                     | Awaiting kickoff meeting with Prof. Schlipf                        |
-| 04  | Rotor Blade Aerodynamic      | Jay Atulbhai Pandya                | Started learning Q-Blade, studying research papers                 |
-| 05  | Rotor Blade Structures       | Bhima Babu Masare                  | Assigned roles, requested site data, team meeting held             |
-| 06  | Electrical Drivetrain        | Aiswarya Vijayan                   | Researched regional electrical markets and generator types         |
-| 07  | Grid Code Development        | Marcus Attalla                     | Completed documentation, initiated simulation setup                |
-| 08  | Rotor Hub and Pitch System   | Dhruvin Bhupatbhai Kakdiya         | Setup software, requested contact with last year's team            |
-| 09  | Rotor Bearing System         | Divyesh Satishkumar Mistry         | Concept freeze in progress, selected bearing types                 |
-| 10  | Gearbox, Brake, Coupling     | Nehang Jitendra Joshi              | Research on drivetrain, brake systems, and market suppliers        |
-| 11  | Machine Bed & Yaw System     | Sathishkumar Venkatachalam         | Studied casting methods, contacted industry professionals          |
-| 12  | Tower                        | Ibrahim Mostafa                    | Market research and location-related questions submitted           |
-| 13  | Foundation                   | Jehad Albaali                      | No report submitted                                                |
-| 14  | Storage System               | Farshid Montakhab                  | No report submitted                                                |
-| 15  | Wind Farm Development        | Luis Urhahn                        | No report submitted                                                |
+Over the course of this journey, 15 specialized sub-teams are contributing to the full system development — from aerodynamic blade design and load simulations to drivetrain modeling, control systems, grid integration, and wind farm planning.
 
----
+Through this platform, we provide:
+- Transparent weekly progress reports from all sub-teams
+- A unified timeline of development milestones
+- An example of what interdisciplinary, international academic collaboration can achieve
 
-## Project Timeline
+The mission of Optimus Syria is more than academic — it is a step toward empowering local energy independence, fostering sustainable development, and inspiring the next generation of engineers and innovators.
 
-```mermaid
-graph TD
-  A[Kickoff – July] --> B[Component Research and Concept Phase]
-  B --> C[Design Development – August]
-  C --> D[Simulation and Testing – September]
-  D --> E[Presentation and Final Report – October]
-```
-
----
-
-## Weekly Report Guidelines
-
-- Reports must be submitted every Saturday.
-- Each team must upload a markdown or PDF file in their assigned GitHub folder:
-  Example: `Team-01_Load-and-Dynamics/Week-1.md`
-
----
-
-Last updated by: Bakhtyar Karimzade, Project Manager
+This dashboard is maintained by the Project Coordination Team under the leadership of Bakhtyar Karimzade (Project Manager), with support from Josef Remberger (Deputy Project Manager) and Federico De Mita (System Integrator).
