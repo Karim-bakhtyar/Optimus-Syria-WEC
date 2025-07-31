@@ -2,14 +2,14 @@
 Development of WEC for Syrian market - HS Flensburg
 
 
-# Optimus Syria – Weekly Progress Dashboard
+Optimus Syria – Weekly Progress Dashboard
 
 This is the public dashboard for the Optimus Syria – Wind Energy Converter Project,  
 a joint initiative between Hochschule Flensburg, Hochschule Kiel, and Damascus University.
 
 ---
 
-## Reporting Period: Week 1 (21–26 July 2025)
+Reporting Period: Week 1 (21–26 July 2025)
 
 | No. | Team Name                    | Team Leader                        | Status / Summary                                                   |
 |-----|------------------------------|-------------------------------------|---------------------------------------------------------------------|
