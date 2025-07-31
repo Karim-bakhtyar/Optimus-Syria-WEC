@@ -23,9 +23,9 @@ This website serves as a central hub for:
 - Demonstrating the impact of international academic collaboration in solving real engineering challenges
 
 The project is coordinated by:
-Bakhtyar Karimzade (Project Manager)
-Josef Remberger (Deputy Project Manager)
-Federico De Mita (System Integrator).
+- Bakhtyar Karimzade (Project Manager)
+- Josef Remberger (Deputy Project Manager)
+- Federico De Mita (System Integrator).
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
