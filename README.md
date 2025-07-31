@@ -1,7 +1,3 @@
-# Optimus-Syria-WEC
-Development of WEC for Syrian market - HS Flensburg
-
-
 # Optimus Syria – Weekly Progress Dashboard
 
 This is the public dashboard for the Optimus Syria – Wind Energy Converter Project,  
