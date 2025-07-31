@@ -12,7 +12,3 @@ Project Manager: Bakhtyar Karimzade
 Deputy Project Manager: Josef Remberger  
 System Integrator: Federico De Mita
 
-## Project Dashboard
-
-For weekly updates and team progress, visit:  
-https://karim-bakhtyar.github.io/Optimus-Syria-WEC/
