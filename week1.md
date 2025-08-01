@@ -2,9 +2,6 @@
 layout: default
 title: Weekly Report – Week 1
 ---
-## Weekly Reports
-
-[View Weekly Report – Week 1](week1.md)
 
 # Weekly Report – Week 1
 
