@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://jekyll.github.io/themes/cayman/css/style.css" />
+    <style>
+      .topnav {
+        background-color: #0366d6;
+        overflow: hidden;
+        text-align: center;
+        padding: 8px 0;
+      }
+      .topnav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        font-weight: bold;
+      }
+      .topnav a:hover {
+        background-color: #024a9a;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="project-name">{{ page.title }}</h1>
+    </header>
+
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="week1.html">Reports</a>
+      <a href="team.html">Team</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+    </main>
+  </body>
+</html>
