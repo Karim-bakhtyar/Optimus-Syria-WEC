@@ -3,6 +3,9 @@ layout: default
 title: Weekly Report – Week 1
 ---
 
+<a href="week1">Reports</a>
+
+
 # Weekly Report – Week 1
 
 | Team Name                    | Team Leader                        | Submission Status   |
