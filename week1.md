@@ -1,0 +1,41 @@
+
+## Weekly Reports
+
+[View Weekly Report – Week 1](Weekly Report.md)
+
+
+---
+layout: default
+title: Optimus Syria
+---
+
+# Welcome to Optimus Syria
+
+
+## Sub-Team Progress – Week 1
+
+| No. | Team Name                    | Team Leader                | Status / Summary                                        |
+|-----|------------------------------|-----------------------------|----------------------------------------------------------|
+| 01  | Load and Dynamics            | Mohamed Reda Alywa         | Installed OpenFAST, studied LIDAR and control methods   |
+| 02  | Feedback Controller          | Mirza Dincer               | Completed Simulink Onramp, literature review started    |
+| 03  | Lidar Assisted Control       | Hesham Mahmoud             | Awaiting kickoff meeting with Prof. Schlipf             |
+| 04  | Rotor Blade Aerodynamic      | Jay Atulbhai Pandya        | Started Q-Blade, reviewing papers                       |
+| 05  | Rotor Blade Structures       | Bhima Babu Masare          | Role assignments, site data request                     |
+| 06  | Electrical Drivetrain        | Aiswarya Vijayan           | Research on regional market and generator types         |
+| 07  | Grid Code Development        | Marcus Attalla             | Started simulation design, completed documentation      |
+| 08  | Rotor Hub and Pitch System   | Dhruvin Bhupatbhai Kakdiya | Software setup, requested past team contacts            |
+| 09  | Rotor Bearing System         | Divyesh S. Mistry          | Concept freeze started, bearing selection under review  |
+| 10  | Gearbox, Brake, Coupling     | Nehang Jitendra Joshi      | Supplier research and drivetrain analysis               |
+| 11  | Machine Bed & Yaw System     | Sathishkumar V.            | Studying casting methods and yaw integration            |
+| 12  | Tower                        | Ibrahim Mostafa            | Market analysis, requested logistics data               |
+| 13  | Foundation                   | Jehad Albaali              | No report submitted                                     |
+| 14  | Storage System               | Farshid Montakhab          | No report submitted                                     |
+| 15  | Wind Farm Development        | Luis Urhahn                | No report submitted                                     |
+
+
+
+Last updated by Bakhtyar Karimzade.
+
+
+
+[⬅ Back to main page](index.md)
