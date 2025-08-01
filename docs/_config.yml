@@ -1,3 +1,5 @@
 title: Optimus Syria
-description: WEC Project Dashboard
 theme: jekyll-theme-cayman
+show_downloads: false
+sass:
+  style: compressed
