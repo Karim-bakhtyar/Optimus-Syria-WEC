@@ -3,6 +3,7 @@ layout: default
 title: Optimus Syria
 ---
 
+<link rel="stylesheet" href="assets/style.css">
 
 # Weekly Report – Week 1
 
