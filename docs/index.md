@@ -3,7 +3,7 @@ layout: default
 title: Optimus Syria
 ---
 
-<!-- Top Navigation -->
+<!-- Top Navigation (Safe Version) -->
 <div style="text-align:center; background:#0366d6; padding:10px;">
   <a href="index.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Home</a>
   <a href="week1.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Reports</a>
@@ -12,7 +12,6 @@ title: Optimus Syria
   <a href="contact.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Contact</a>
 </div>
 
-<br>
 
 
 # Optimus Syria – Wind Energy Converter Project
