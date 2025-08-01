@@ -3,9 +3,6 @@ layout: default
 title: Optimus Syria
 ---
 
-<link rel="stylesheet" href="assets/style.css">
-
-
 # Optimus Syria – Wind Energy Converter Project
 
 Welcome to the official Webpage for the Optimus Syria project.  
