@@ -41,3 +41,7 @@ title: Optimus Syria
 
 
 [Back to Main Page](index.md)
+
+<style>
+footer { display: none; }
+</style>
