@@ -104,6 +104,7 @@ The final WEC should:
 </ul>
 
 
+[Back to Main Page](index.md)
 
 <style>
 footer { display: none; }
