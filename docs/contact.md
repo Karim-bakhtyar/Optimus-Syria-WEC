@@ -13,7 +13,7 @@ title: Contact Optimus Syria
 
 <br>
 
-
+<link rel="stylesheet" href="assets/style.css">
 
 <h2>Contact</h2>
 
