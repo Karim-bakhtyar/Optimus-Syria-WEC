@@ -17,8 +17,9 @@ title: Weekly Reports of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
+<h2>Team Progress and Plans<h2>
 
-<h2>Week 1 – Team Progress and Plans</h2>
+<h2>Week - 1 (21 - 26 July 2025)</h2>
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #f2f2f2;">
@@ -123,6 +124,94 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
+<h2>Week - 2 (27 July – 03 August 2025)</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Team Name</th>
+      <th>This Week’s Work</th>
+      <th>Next Week’s Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loads and Dynamics</td>
+      <td>Studied DNVGL-ST-0437 and GL-Guidelines; identified issues with outdated ASHRAE Meteo data.</td>
+      <td>Finalize GL-Guideline study; analyze datasheets and load results from 600+ turbines.</td>
+    </tr>
+    <tr>
+      <td>Feedback Controller</td>
+      <td>Reviewed literature; received control tasks from Prof. Schlipf including pitch/torque, tower damper, LAC coupling, and Lidar-Boost.</td>
+      <td>Install and explore ROSCO; study example controllers and integration.</td>
+    </tr>
+    <tr>
+      <td>Lidar Assisted Control</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Aerodynamics</td>
+      <td>Started learning QBlade; searched for research papers; held team meeting.</td>
+      <td>Study research papers; ask seniors; review last year’s report and plan next steps.</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Structures</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Electrical Drivetrain</td>
+      <td>Collected data on generators and market in Syria and neighbors; created summary PPT.</td>
+      <td>Study wind turbine converters and classification; begin MATLAB study.</td>
+    </tr>
+    <tr>
+      <td>Grid Code Development</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Rotor Hub and Pitch System</td>
+      <td>SolidWorks account setup; started researching hub components and reviewing last year’s report.</td>
+      <td>Group meeting; deeper research on hub components; request for extra member and professor meeting.</td>
+    </tr>
+    <tr>
+      <td>Rotor Bearing System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Gearbox, Brake, Coupling</td>
+      <td>Conducted in-depth research on drivetrain types, standards, brake/coupling designs, and Syrian market; partially completed all subtopics.</td>
+      <td>Finalize previous tasks; install software; gather more technical data and calculations from tutorials and suppliers.</td>
+    </tr>
+    <tr>
+      <td>Machine Bed & Yaw System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Tower</td>
+      <td>Performed market analysis and reviewed last year's documentation.</td>
+      <td>Continue analysis and request location-specific logistics information.</td>
+    </tr>
+    <tr>
+      <td>Foundation</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Storage System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Wind Farm Development</td>
+      <td>First meeting with Prof. Blohm; discussed site criteria and relevant literature.</td>
+      <td>Analyze site options and define basic WEC concept (size, capacity, usage type).</td>
+    </tr>
+  </tbody>
+</table>
 
 
 [Back to Main Page](index.md)
