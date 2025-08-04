@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Optimus Syria
+title: Weekly Reports of Optimus Syria
 ---
 
 <!-- Top Navigation -->
