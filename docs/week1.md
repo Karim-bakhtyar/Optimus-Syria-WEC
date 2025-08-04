@@ -17,7 +17,6 @@ title: Weekly Reports of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-## Week 1 Reports – Team Progress
 
 <h2>Week 1 – Team Progress and Plans</h2>
 
