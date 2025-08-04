@@ -2,10 +2,7 @@
 layout: default
 title: Optimus Syria
 ---
----
-layout: default
-title: Optimus Syria
----
+
 
 <!-- Top Navigation -->
 <div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
