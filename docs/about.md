@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Optimus Syria
+title: About - Optimus Syria
 ---
 <link rel="stylesheet" href="assets/style.css">
 <!-- Top Navigation -->
