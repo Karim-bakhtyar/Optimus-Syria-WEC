@@ -74,13 +74,13 @@ The final WEC should:
     <ul>
       <li>Support weak/unstable grids</li>
       <li>Enable energy storage integration</li>
-      <li>Meet grid code (voltage, frequency, black-start, etc.)</li>
+      <li>Meet grid code (voltage, frequency, black start, etc.)</li>
     </ul>
   </li>
   <li>System Integration & Interface Awareness
     <ul>
       <li>Maintain communication across teams</li>
-      <li>Use shared data formats and version control (GitHub)</li>
+      <li>Use shared data formats and version control</li>
     </ul>
   </li>
   <li>Documentation & Transparency
