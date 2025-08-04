@@ -20,92 +20,72 @@ title:Teams of Optimus Syria
 
 <p>The Optimus Syria project is divided into 15 specialized technical teams. Each team is responsible for a major subsystem of the wind energy converter and contributes to the design, simulation, integration, and final delivery of a grid-compatible onshore wind turbine tailored for Syria’s unique conditions.</p>
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead style="background-color: #f2f2f2;">
-    <tr>
-      <th>Team Name</th>
-      <th>Team Leader</th>
-      <th>Project Responsibility</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. Loads and Dynamics</td>
-      <td>Mohamed Reda Fawzy Ahmed Alywa</td>
-      <td>Creates the complete OpenFAST simulation model, defines site-specific conditions, and calculates certified extreme and fatigue loads to support structural, control, and certification tasks.</td>
-    </tr>
-    <tr>
-      <td>2. Feedback Controller</td>
-      <td>Mirza Dincer</td>
-      <td>Develops the main dynamic feedback control system using ROSCO. Ensures stable power regulation and load mitigation across turbine operating conditions.</td>
-    </tr>
-    <tr>
-      <td>3. Lidar Assisted Control</td>
-      <td>Hesham Mahmoud</td>
-      <td>Implements LIDAR-based feedforward pitch control to anticipate wind changes, reduce loads, and increase turbine responsiveness through predictive strategies.</td>
-    </tr>
-    <tr>
-      <td>4. Rotor Blade Aerodynamics</td>
-      <td>Jay Atulbhai Pandya</td>
-      <td>Designs the aerodynamic shape and profile of the rotor blades using QBlade to maximize energy capture and reduce noise and unsteady loads.</td>
-    </tr>
-    <tr>
-      <td>5. Rotor Blade Structures</td>
-      <td>Bhima Babu Masare</td>
-      <td>Designs the internal structure of the rotor blades using NuMAD and structural theory to ensure load-carrying capability, lightweight design, and material efficiency.</td>
-    </tr>
-    <tr>
-      <td>6. Electrical Drivetrain</td>
-      <td>Aiswarya Vijayan</td>
-      <td>Designs and simulates the generator, converter, and transformer systems, integrating the turbine's electrical components with grid and control requirements.</td>
-    </tr>
-    <tr>
-      <td>7. Grid Code Development</td>
-      <td>Marcus Attalla</td>
-      <td>Develops grid compliance logic based on Syrian and international standards. Ensures that the turbine meets voltage, frequency, and fault ride-through behavior criteria.</td>
-    </tr>
-    <tr>
-      <td>8. Rotor Hub and Pitch System</td>
-      <td>Dhruvin Bhupatbhai Kakdiya</td>
-      <td>Designs the rotor hub and pitch system including mechanical interfaces, actuators, and bearings that allow aerodynamic control of blade angles.</td>
-    </tr>
-    <tr>
-      <td>9. Rotor Bearing System</td>
-      <td>Divyesh Sathishkumar Mistry</td>
-      <td>Designs the main rotor shaft and bearing system to transfer loads from the rotor to the drivetrain. Ensures fatigue life and safe mechanical interfaces.</td>
-    </tr>
-    <tr>
-      <td>10. Gearbox, Brake, Coupling</td>
-      <td>Nehang Jitendra Joshi</td>
-      <td>Develops the torque transmission system including gearbox design, high-speed couplings, and brake mechanisms, considering durability and noise constraints.</td>
-    </tr>
-    <tr>
-      <td>11. Machine Bed & Yaw System</td>
-      <td>Sathishkumar Venkatachalam</td>
-      <td>Designs the nacelle's machine bed and yaw system for load transfer and turbine orientation. Ensures structural integrity and compatibility with tower and drivetrain.</td>
-    </tr>
-    <tr>
-      <td>12. Tower</td>
-      <td>Ibrahim Mostafa</td>
-      <td>Designs the steel or hybrid tower structure to support turbine components under wind and operational loads, ensuring transportability and site compliance.</td>
-    </tr>
-    <tr>
-      <td>13. Foundation</td>
-      <td>Jehad Albaali</td>
-      <td>Designs the wind turbine foundation based on soil data and environmental factors in Syria. Ensures structural safety, cost efficiency, and ease of installation.</td>
-    </tr>
-    <tr>
-      <td>14. Storage System</td>
-      <td>Farshid Montakhab</td>
-      <td>Designs and integrates a battery or alternative energy storage solution for grid support, frequency stability, and capacity factor optimization.</td>
-    </tr>
-    <tr>
-      <td>15. Wind Farm Development</td>
-      <td>Luis Urhahn</td>
-      <td>Identifies the prototype site, analyzes local infrastructure and legal conditions, and plans for transportation, installation, and commissioning of the WEC.</td>
-    </tr>
-  </tbody>
-</table>
+<h2>Project Teams – Optimus Syria (WS 2025/26)</h2>
+
+<p>
+The Optimus Syria project consists of 15 specialized engineering teams. Each team is responsible for developing and integrating a specific subsystem of the wind energy converter, ensuring a robust and optimized WEC suitable for Syrian environmental and technical conditions.
+</p>
+
+<h3>1. Loads and Dynamics</h3>
+<p><strong>Team Leader:</strong> Mohamed Reda Fawzy Ahmed Alywa<br>
+<strong>Responsibility:</strong> Creates the OpenFAST simulation model, performs load case definition and calculation, and provides fatigue and extreme load data to all design teams.</p>
+
+<h3>2. Feedback Controller</h3>
+<p><strong>Team Leader:</strong> Mirza Dincer<br>
+<strong>Responsibility:</strong> Designs and tunes the dynamic feedback control system using ROSCO to regulate turbine behavior and mitigate structural loads.</p>
+
+<h3>3. Lidar Assisted Control</h3>
+<p><strong>Team Leader:</strong> Hesham Mahmoud<br>
+<strong>Responsibility:</strong> Implements LIDAR-based feedforward control strategies to anticipate wind changes and enhance pitch control responsiveness.</p>
+
+<h3>4. Rotor Blade Aerodynamics</h3>
+<p><strong>Team Leader:</strong> Jay Atulbhai Pandya<br>
+<strong>Responsibility:</strong> Designs the aerodynamic blade shape using QBlade, aiming for high efficiency, low noise, and balanced loading across the rotor span.</p>
+
+<h3>5. Rotor Blade Structures</h3>
+<p><strong>Team Leader:</strong> Bhima Babu Masare<br>
+<strong>Responsibility:</strong> Designs the internal composite structure of the rotor blades using NuMAD, focusing on load-bearing performance and manufacturability.</p>
+
+<h3>6. Electrical Drivetrain</h3>
+<p><strong>Team Leader:</strong> Aiswarya Vijayan<br>
+<strong>Responsibility:</strong> Develops the generator, converter, and transformer system, ensuring electrical compatibility, efficiency, and simulation under grid conditions.</p>
+
+<h3>7. Grid Code Development</h3>
+<p><strong>Team Leader:</strong> Marcus Attalla<br>
+<strong>Responsibility:</strong> Ensures the wind turbine complies with Syrian and international grid codes, including voltage, frequency, and fault handling behaviors.</p>
+
+<h3>8. Rotor Hub and Pitch System</h3>
+<p><strong>Team Leader:</strong> Dhruvin Bhupatbhai Kakdiya<br>
+<strong>Responsibility:</strong> Designs the rotor hub and pitch mechanism, including actuation, bearing selection, and integration with the drivetrain and blades.</p>
+
+<h3>9. Rotor Bearing System</h3>
+<p><strong>Team Leader:</strong> Divyesh Sathishkumar Mistry<br>
+<strong>Responsibility:</strong> Designs the main rotor bearing configuration, performs mechanical and fatigue analysis, and ensures secure load transfer to the drivetrain.</p>
+
+<h3>10. Gearbox, Brake, Coupling</h3>
+<p><strong>Team Leader:</strong> Nehang Jitendra Joshi<br>
+<strong>Responsibility:</strong> Develops the mechanical drivetrain including gearbox layout, mechanical brake system, and coupling to ensure efficient power transmission.</p>
+
+<h3>11. Machine Bed & Yaw System</h3>
+<p><strong>Team Leader:</strong> Sathishkumar Venkatachalam<br>
+<strong>Responsibility:</strong> Designs the machine bed to house the nacelle components and the yaw system that aligns the turbine with wind direction.</p>
+
+<h3>12. Tower</h3>
+<p><strong>Team Leader:</strong> Ibrahim Mostafa<br>
+<strong>Responsibility:</strong> Designs the tower structure to support the nacelle and rotor under all operational loads while considering transportation and installation constraints in Syria.</p>
+
+<h3>13. Foundation</h3>
+<p><strong>Team Leader:</strong> Jehad Albaali<br>
+<strong>Responsibility:</strong> Designs the wind turbine foundation based on local soil and climate data, ensuring structural safety and feasibility of construction.</p>
+
+<h3>14. Storage System</h3>
+<p><strong>Team Leader:</strong> Farshid Montakhab<br>
+<strong>Responsibility:</strong> Designs and integrates an energy storage system (e.g., battery) to improve grid compatibility and enable energy smoothing and support.</p>
+
+<h3>15. Wind Farm Development</h3>
+<p><strong>Team Leader:</strong> Luis Urhahn<br>
+<strong>Responsibility:</strong> Identifies the prototype site in Syria, evaluates site-specific constraints, and develops a full wind farm layout and infrastructure plan for installation.</p>
+
 
 
 <link rel="stylesheet" href="assets/style.css">
