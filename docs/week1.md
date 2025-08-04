@@ -215,6 +215,8 @@ title: Weekly Reports of Optimus Syria
 
 
 
+<link rel="stylesheet" href="assets/style.css">
+
 [Back to Main Page](index.md)
 
 
