@@ -214,7 +214,9 @@ title: Weekly Reports of Optimus Syria
 </table>
 
 
+
 [Back to Main Page](index.md)
+
 
 <style>
 footer { display: none; }
