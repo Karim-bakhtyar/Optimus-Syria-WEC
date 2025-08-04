@@ -50,7 +50,6 @@ The project is coordinated by:
 - Federico De Mita (System Integrator).
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
-## Weekly Reports
 
 
 <style>
