@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact – Optimus Syria
+title: Contact Optimus Syria
 ---
 
 <div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
