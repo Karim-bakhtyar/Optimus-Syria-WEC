@@ -17,27 +17,113 @@ title: Weekly Reports of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-# Weekly Report – Week 1
-
 ## Week 1 Reports – Team Progress
 
-| Team Name                    | Team Leader                        | Summary of Work Done |
-|-----------------------------|-------------------------------------|------------------------|
-| Load and Dynamics           | Mohamed Reda Fawzy Ahmed Alywa     | Analyzed aerodynamic forces and basic load assumptions |
-| Feedback Controller         | Amjad Alnaser                      | Started development of feedback control strategy |
-| Lidar Assisted Control      | Ahmad Ziad Suleiman                | Introduced Lidar concept and signal processing goals |
-| Rotor Blade Aerodynamic     | Mhd Noor Faris Aldarwish           | Compared airfoils and performed XFOIL simulations |
-| Rotor Blade Structures      | Haval Abdullah                     | Identified structural components and materials |
-| Electrical Drivetrain       | Ahmad Aljafal                      | Defined drivetrain requirements and configuration |
-| Grid Code Development       | Omar Al Khaled                     | Reviewed grid standards and initial code requirements |
-| Rotor Hub and Pitch System  | Ehab Wahid                         | Defined pitch mechanism concept and connection points |
-| Rotor Bearing System        | Anas Khaled Alahmad                | Assessed bearing types and initial load calculations |
-| Gearbox, Brake, Coupling    | Hamzeh Alhalabi                    | Outlined torque transmission and component selection |
-| Machine Bed & Yaw System    | Sam Al-Ali                         | Created first CAD model for bed and yaw concept |
-| Tower                       | Mustapha Aghla                     | Evaluated tower load impacts and geometric parameters |
-| Foundation                  | Jehad Albaali                      | Report not submitted |
-| Storage System              | Farshid Montakhab                  | Report not submitted |
-| Wind Farm Development       | Luis Urhahn                        | Report not submitted |
+<h2>Week 1 – Team Progress and Plans</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Team Name</th>
+      <th>Team Leader</th>
+      <th>This Week’s Work</th>
+      <th>Next Week’s Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loads and Dynamics</td>
+      <td>Mohamed Reda Fawzy Ahmed Alywa</td>
+      <td>Installed OpenFAST, studied feed-forward control and LIDAR application.</td>
+      <td>Review DNV-ST-0437 & IEC 61400-1; wait for site data; begin environmental condition assessment.</td>
+    </tr>
+    <tr>
+      <td>Feedback Controller</td>
+      <td>Amjad Alnaser</td>
+      <td>Installed MATLAB, Python, Fortran; completed Simulink Onramp.</td>
+      <td>Study last year's documents and literature including Wind Energy Handbook and ROSCO controller paper.</td>
+    </tr>
+    <tr>
+      <td>Lidar Assisted Control</td>
+      <td>Ahmad Ziad Suleiman</td>
+      <td>No progress reported; meeting with Prof. Schlipf not yet held.</td>
+      <td>Meet with Prof. Schlipf and begin planning.</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Aerodynamics</td>
+      <td>Mhd Noor Faris Aldarwish</td>
+      <td>Started reading research papers and learning Q-Blade software.</td>
+      <td>Continue reading papers and practicing with Q-Blade.</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Structures</td>
+      <td>Haval Abdullah</td>
+      <td>Held meeting, assigned roles, discussed required software.</td>
+      <td>Solve team members' doubts, meet again, understand WEC site.</td>
+    </tr>
+    <tr>
+      <td>Electrical Drivetrain</td>
+      <td>Ahmad Aljafal</td>
+      <td>Initiated market research on Syria and neighboring countries’ electrical infrastructure.</td>
+      <td>Continue collecting generator specifications, start technical comparisons, plan group meeting.</td>
+    </tr>
+    <tr>
+      <td>Grid Code Development</td>
+      <td>Omar Al Khaled</td>
+      <td>Drafted documentation on voltage, frequency, FRT, harmonics; initiated simulation block layout.</td>
+      <td>Complete wiring in Simulink, start testing, draft Chapter 5 on grid integration.</td>
+    </tr>
+    <tr>
+      <td>Rotor Hub and Pitch System</td>
+      <td>Ehab Wahid</td>
+      <td>Installed software, reviewed last year’s project report.</td>
+      <td>Group meeting, begin deep technical research on hub and pitch parts.</td>
+    </tr>
+    <tr>
+      <td>Rotor Bearing System</td>
+      <td>Anas Khaled Alahmad</td>
+      <td>Shortlisted suitable bearings; prepared PPT; searched for reference turbine.</td>
+      <td>Finalize reference turbine, research bearing costs, discuss lubrication needs.</td>
+    </tr>
+    <tr>
+      <td>Gearbox, Brake, Coupling</td>
+      <td>Hamzeh Alhalabi</td>
+      <td>Researched drive train, gearbox layouts, standards, suppliers; 40–80% of tasks partially complete.</td>
+      <td>Install simulation software, continue research, gather calculations, practice with company documentation.</td>
+    </tr>
+    <tr>
+      <td>Machine Bed & Yaw System</td>
+      <td>Sam Al-Ali</td>
+      <td>Reviewed literature on casting processes, gathered studies, discussed with industry professionals.</td>
+      <td>Start CAD/CAE studies, explore European GD&T standards, team meetings every Tuesday.</td>
+    </tr>
+    <tr>
+      <td>Tower</td>
+      <td>Mustapha Aghla</td>
+      <td>Performed market analysis and attempted to access previous documentation.</td>
+      <td>Continue market study, analyze last year’s documents.</td>
+    </tr>
+    <tr>
+      <td>Foundation</td>
+      <td>Jehad Albaali</td>
+      <td>No report submitted.</td>
+      <td>Unknown.</td>
+    </tr>
+    <tr>
+      <td>Storage System</td>
+      <td>Farshid Montakhab</td>
+      <td>No report submitted.</td>
+      <td>Unknown.</td>
+    </tr>
+    <tr>
+      <td>Wind Farm Development</td>
+      <td>Luis Urhahn</td>
+      <td>No report submitted.</td>
+      <td>Unknown.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 [Back to Main Page](index.md)
