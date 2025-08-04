@@ -52,7 +52,6 @@ The project is coordinated by:
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 ## Weekly Reports
 
-[View Weekly Report – Week 1](week1)
 
 <style>
 footer { display: none; }
