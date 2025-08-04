@@ -2,7 +2,7 @@
 layout: default
 title: Optimus Syria
 ---
-
+<link rel="stylesheet" href="assets/style.css">
 <!-- Top Navigation -->
 <div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
   <a href="index.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Home</a>
