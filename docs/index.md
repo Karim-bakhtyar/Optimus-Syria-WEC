@@ -53,3 +53,7 @@ We believe that engineering should not only solve problems, but also build bridg
 ## Weekly Reports
 
 [View Weekly Report – Week 1](week1)
+
+<style>
+footer { display: none; }
+</style>
