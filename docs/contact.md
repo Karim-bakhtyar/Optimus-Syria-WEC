@@ -28,3 +28,7 @@ You may also contact our coordinating institutions:
 - Hochschule Kiel
 - Hochschule Flensburg  
 - Damascus University
+
+<style>
+footer { display: none; }
+</style>
