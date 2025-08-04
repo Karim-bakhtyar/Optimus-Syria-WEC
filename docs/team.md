@@ -15,8 +15,65 @@ title:Teams of Optimus Syria
 </div>
 
 <br>
+<h2>Supervising Professors – Optimus Syria (WS 2025/26)</h2>
 
-<h2>Project Teams – Optimus Syria (WS 2025/26)</h2>
+<p>
+The Optimus Syria project is guided by a team of distinguished professors and researchers from Hochschule Kiel & Flensburg, and the University of Damascus. Their technical expertise and mentoring play a critical role in supporting student teams through design, modeling, simulation, and system integration of the wind energy converter. Each professor provides domain-specific supervision to ensure scientific rigor, engineering quality, and real-world applicability of the results.
+</p>
+
+<h3>Prof. Dr.-Ing. David Schlipf</h3>
+<p>
+Supervisor for:<br>
+– Feedback Controller<br>
+– Lidar Assisted Control<br>
+Prof. Schlipf is a leading expert in wind turbine control systems, including both feedback and feedforward control strategies. He mentors students in ROSCO integration, controller design, and Lidar-assisted predictive systems.
+</p>
+
+<h3>Prof. Dr.-Ing. A.P. Schaffarczyk</h3>
+<p>
+Supervisor for:<br>
+– Rotor Blade Aerodynamics<br>
+Prof. Schaffarczyk specializes in aerodynamic optimization, blade design, and performance analysis using QBlade. He supports the team in developing efficient rotor blade profiles tailored to Syrian wind conditions.
+</p>
+
+<h3>Prof. Dr. Manfred Manjock</h3>
+<p>
+Supervisor for:<br>
+– Load and Dynamics<br>
+Prof. Manjock guides the team in dynamic simulation, load case definition, and OpenFAST modeling to ensure reliable load certification and structural integration across all turbine components.
+</p>
+
+<h3>Prof. Dr. Saiju</h3>
+<p>
+Supervisor for:<br>
+– Electrical Drivetrain<br>
+– Grid Code Development<br>
+Prof. Saiju provides expertise in electrical system modeling, generator and converter design, and grid compliance. His guidance ensures the electrical architecture meets performance and regulatory requirements.
+</p>
+
+<h3>Dr. Laurence Alhrshy</h3>
+<p>
+Supervisor for:<br>
+– Rotor Blade Structures<br>
+Dr. Alhrshy supports the structural design of composite rotor blades using NuMAD and finite element principles, ensuring strength, safety, and manufacturing feasibility.
+</p>
+
+<h3>Prof. Peter Quell</h3>
+<p>
+Supervisor for:<br>
+– Rotor Hub and Pitch System<br>
+– Rotor Bearing System<br>
+– Gearbox, Brake, Coupling<br>
+– Machine Bed & Yaw System<br>
+– Tower<br>
+– Foundation<br>
+– Storage System<br>
+– Wind Farm Development<br>
+Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
+</p>
+
+
+<h2>Project Teams</h2>
 
 <p>
 The Optimus Syria project is organized into 15 engineering teams. Each team is responsible for a key subsystem of the wind energy converter, working from concept to final design and integration.
