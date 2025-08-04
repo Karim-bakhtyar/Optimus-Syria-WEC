@@ -15,6 +15,17 @@ title: Contact Optimus Syria
 
 
 <link rel="stylesheet" href="assets/style.css">
+<h2>Contact</h2>
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="assets/images/contact-photo.jpg" alt="Bakhtyar Karimzade" style="width:180px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+  <p style="margin-top: 10px;">Bakhtyar Karimzade<br>Head of Project – Optimus Syria</p>
+</div>
+
+<p style="text-align: center;">
+  Email: <a href="mailto:bakhtyar-sabir.karim@stud.hs-flensburg.de">bakhtyar-sabir.karim@stud.hs-flensburg.de</a><br>
+  GitHub: <a href="https://github.com/BakhtyarKarim">github.com/BakhtyarKarim</a>
+</p>
 
 ## Contact
 
