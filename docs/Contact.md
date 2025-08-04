@@ -1,11 +1,9 @@
-
 ---
 layout: default
-title: Optimus Syria
+title: Contact – Optimus Syria
 ---
 
-<!-- Top Navigation -->
-<div style="text-align:center; background:#0366d6; padding:10px;">
+<div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
   <a href="index.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Home</a>
   <a href="week1.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Reports</a>
   <a href="team.html" style="color:white; margin:0 15px; font-weight:bold; text-decoration:none;">Team</a>
@@ -14,3 +12,16 @@ title: Optimus Syria
 </div>
 
 <br>
+
+## Contact
+
+**Bakhtyar Karimzade**  
+Project Manager – Optimus Syria  
+Email: karim-bakhtyar@stud.hs-flensburg.de  
+
+For any technical inquiries or collaboration ideas, feel free to reach out.  
+You may also contact our coordinating institutions:
+
+- Hochschule Flensburg  
+- Hochschule Kiel  
+- Damascus University
