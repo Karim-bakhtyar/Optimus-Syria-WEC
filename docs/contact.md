@@ -19,7 +19,8 @@ title: Contact Optimus Syria
 
 <div style="text-align: center; margin-bottom: 20px;">
   <img src="assets/contact-photo.jpg" alt="Bakhtyar Karimzade" style="width:180px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-  <p style="margin-top: 10px;"><p><b>Bakhtyar Karimzada</b><br><br>Head of Project – Optimus Syria</p> Email: Bakhtyar.karimzada@gmail.com  
+  <p style="margin-top: 10px;"><p><b>Bakhtyar Karimzada</b><br><br>Head of Project – Optimus Syria</p> 
+  Email: Bakhtyar.karimzada@gmail.com  
 </div>
 
 
