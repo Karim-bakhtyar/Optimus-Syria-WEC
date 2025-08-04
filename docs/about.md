@@ -15,3 +15,7 @@ title: Optimus Syria
 <br>
 
 <link rel="stylesheet" href="assets/style.css">
+
+<style>
+footer { display: none; }
+</style>
