@@ -38,67 +38,67 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Feedback Controller</td>
-      <td>Amjad Alnaser</td>
+      <td>Mirza Dincer</td>
       <td>Installed MATLAB, Python, Fortran; completed Simulink Onramp.</td>
       <td>Study last year's documents and literature including Wind Energy Handbook and ROSCO controller paper.</td>
     </tr>
     <tr>
       <td>Lidar Assisted Control</td>
-      <td>Ahmad Ziad Suleiman</td>
+      <td>Hesham Hesham Mahmoud</td>
       <td>No progress reported; meeting with Prof. Schlipf not yet held.</td>
       <td>Meet with Prof. Schlipf and begin planning.</td>
     </tr>
     <tr>
       <td>Rotor Blade Aerodynamics</td>
-      <td>Mhd Noor Faris Aldarwish</td>
+      <td>Jay Atulbhai Pandya</td>
       <td>Started reading research papers and learning Q-Blade software.</td>
       <td>Continue reading papers and practicing with Q-Blade.</td>
     </tr>
     <tr>
       <td>Rotor Blade Structures</td>
-      <td>Haval Abdullah</td>
+      <td>Bhima Babu Masare</td>
       <td>Held meeting, assigned roles, discussed required software.</td>
       <td>Solve team members' doubts, meet again, understand WEC site.</td>
     </tr>
     <tr>
       <td>Electrical Drivetrain</td>
-      <td>Ahmad Aljafal</td>
+      <td>Aiswarya Vijayan</td>
       <td>Initiated market research on Syria and neighboring countries’ electrical infrastructure.</td>
       <td>Continue collecting generator specifications, start technical comparisons, plan group meeting.</td>
     </tr>
     <tr>
       <td>Grid Code Development</td>
-      <td>Omar Al Khaled</td>
+      <td>Marcus Attalla</td>
       <td>Drafted documentation on voltage, frequency, FRT, harmonics; initiated simulation block layout.</td>
       <td>Complete wiring in Simulink, start testing, draft Chapter 5 on grid integration.</td>
     </tr>
     <tr>
       <td>Rotor Hub and Pitch System</td>
-      <td>Ehab Wahid</td>
+      <td>Dhruvin Bhupatbhai Kakdiya</td>
       <td>Installed software, reviewed last year’s project report.</td>
       <td>Group meeting, begin deep technical research on hub and pitch parts.</td>
     </tr>
     <tr>
       <td>Rotor Bearing System</td>
-      <td>Anas Khaled Alahmad</td>
+      <td>Divyesh Sathishkumar Mistry</td>
       <td>Shortlisted suitable bearings; prepared PPT; searched for reference turbine.</td>
       <td>Finalize reference turbine, research bearing costs, discuss lubrication needs.</td>
     </tr>
     <tr>
       <td>Gearbox, Brake, Coupling</td>
-      <td>Hamzeh Alhalabi</td>
+      <td>Nehang Jitendra Joshi</td>
       <td>Researched drive train, gearbox layouts, standards, suppliers; 40–80% of tasks partially complete.</td>
       <td>Install simulation software, continue research, gather calculations, practice with company documentation.</td>
     </tr>
     <tr>
       <td>Machine Bed & Yaw System</td>
-      <td>Sam Al-Ali</td>
+      <td>Sathishkumar Venkatachalam</td>
       <td>Reviewed literature on casting processes, gathered studies, discussed with industry professionals.</td>
       <td>Start CAD/CAE studies, explore European GD&T standards, team meetings every Tuesday.</td>
     </tr>
     <tr>
       <td>Tower</td>
-      <td>Mustapha Aghla</td>
+      <td>Ibrahim Mostafa</td>
       <td>Performed market analysis and attempted to access previous documentation.</td>
       <td>Continue market study, analyze last year’s documents.</td>
     </tr>
