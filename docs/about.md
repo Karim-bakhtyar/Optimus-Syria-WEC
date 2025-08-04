@@ -16,10 +16,10 @@ title: About Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-<h2>About the Project – Optimus Syria (WS 2025/26)</h2>
+<h2>About the Project(WS 2025/26)</h2>
 
 <p>
-<strong>Optimus Syria</strong> is a collaborative, international academic engineering project conducted during the Winter Semester 2025/2026 by students of Hochschule Flensburg, in cooperation with Damascus University and Fachhochschule Kiel. The project aims to design a modern, cost-effective, and technically robust <strong>Onshore Wind Energy Converter (WEC)</strong> tailored specifically for the environmental, electrical, and infrastructural conditions of Syria.
+<strong>Optimus Syria</strong> is a collaborative, international academic engineering project conducted during the Winter Semester 2025/2026 by students of Hochschule Flensburg, in cooperation with Damascus University and Fachhochschule Kiel. The project aims to design a modern, cost-effective, and technically robust Onshore Wind Energy Converter (WEC) tailored specifically for the environmental, electrical, and infrastructural conditions of Syria.
 </p>
 
 <p>
@@ -30,10 +30,10 @@ The entire development process is divided among 16 sub-teams, each responsible f
 
 <h3>Project Scope – Optimus Syria</h3>
 
-<p><strong>Project Goal:</strong><br>
+strong>Project Goal:
 The aim of this project is to design and develop a complete Onshore Wind Energy Converter (WEC) optimized for the climatic, technical, and market conditions of Syria, in cooperation with Damascus University and Fachhochschule Kiel.</p>
 
-<p><strong>The final WEC should:</strong></p>
+The final WEC should:
 <ul>
   <li>Be cost efficient and suitable for low to medium wind speeds</li>
   <li>Operate reliably in hot climates and weak grid conditions</li>
@@ -44,46 +44,46 @@ The aim of this project is to design and develop a complete Onshore Wind Energy 
 
 <h4>General Team Focus Areas</h4>
 <ol>
-  <li><strong>Cost Efficiency</strong>
+  <li>Cost Efficiency
     <ul>
       <li>Minimize Levelized Cost of Energy (LCOE)</li>
       <li>Keep CAPEX and OPEX as low as possible</li>
       <li>Consider local material and supplier availability</li>
     </ul>
   </li>
-  <li><strong>Scalability & Size Optimization</strong>
+  <li>Scalability & Size Optimization
     <ul>
       <li>Realistic sizing for Syrian grid and transport infrastructure</li>
       <li>Avoid over-dimensioning</li>
       <li>Ensure components are road-transportable in Syria</li>
     </ul>
   </li>
-  <li><strong>Simplicity & Maintainability</strong>
+  <li>Simplicity & Maintainability
     <ul>
       <li>Favor robust, low-maintenance designs</li>
       <li>Use standard components where possible</li>
     </ul>
   </li>
-  <li><strong>Environmental & Climate Adaptation</strong>
+  <li>Environmental & Climate Adaptation
     <ul>
       <li>Design for heat, dust, and dry conditions</li>
       <li>Select climate-appropriate materials</li>
     </ul>
   </li>
-  <li><strong>Grid & Energy Storage Compatibility</strong>
+  <li>Grid & Energy Storage Compatibility
     <ul>
       <li>Support weak/unstable grids</li>
       <li>Enable energy storage integration</li>
       <li>Meet grid code (voltage, frequency, black-start, etc.)</li>
     </ul>
   </li>
-  <li><strong>System Integration & Interface Awareness</strong>
+  <li>System Integration & Interface Awareness
     <ul>
       <li>Maintain communication across teams</li>
       <li>Use shared data formats and version control (GitHub)</li>
     </ul>
   </li>
-  <li><strong>Documentation & Transparency</strong>
+  <li>Documentation & Transparency
     <ul>
       <li>Record assumptions, design choices, methods</li>
       <li>Log challenges, trade-offs, and lessons learned</li>
