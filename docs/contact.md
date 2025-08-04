@@ -20,11 +20,11 @@ title: Contact – Optimus Syria
 
 **Bakhtyar Karimzade**  
 Project Manager – Optimus Syria  
-Email: karim-bakhtyar@stud.hs-flensburg.de  
+Email: Bakhtyar.karimzada@gmail.com  
 
 For any technical inquiries or collaboration ideas, feel free to reach out.  
 You may also contact our coordinating institutions:
 
+- Hochschule Kiel
 - Hochschule Flensburg  
-- Hochschule Kiel  
 - Damascus University
