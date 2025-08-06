@@ -31,7 +31,7 @@ The entire development process is divided among 16 sub-teams, each responsible f
 <h3>Project Scope – Optimus Syria</h3>
 
 Project Goal:
-The aim of this project is to design and develop a complete Onshore Wind Energy Converter (WEC) optimized for the climatic, technical, and market conditions of Syria, in cooperation with Damascus University and Fachhochschule Kiel.</p>
+The aim of this project is to design and develop a complete Onshore Wind Energy Converter (WEC) optimized for the climatic, technical, and market conditions of Syria, in cooperation with Damascus University and Fachhochschule Kiel.
 
 The final WEC should:
 <ul>
