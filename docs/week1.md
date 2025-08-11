@@ -214,6 +214,88 @@ title: Weekly Reports of Optimus Syria
 </table>
 
 
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Team Name</th>
+      <th>This Week’s Work</th>
+      <th>Next Week’s Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Electrical Drivetrain</td>
+      <td>Studied different types of converters used in wind turbines, focusing on those in Syria. Analyzed functions and classifications of converters. Started learning MATLAB.</td>
+      <td>Collect data to decide generator type. Find approximate generator rating. Continue MATLAB study.</td>
+    </tr>
+    <tr>
+      <td>Feedback Controller</td>
+      <td>Studied ROSCO examples.</td>
+      <td>Continue studying ROSCO.</td>
+    </tr>
+    <tr>
+      <td>Gearbox, Brake, Coupling</td>
+      <td>Studied last year’s documentation, researched mechanical drivetrain systems, gearbox layouts, standards, guidelines, suppliers. Benchmarked gearbox, brakes, and couplings.</td>
+      <td>Detailed review of last year’s documentation, install software (SolidWorks, Ansys, Dlubal), start calculations, research suppliers and concepts.</td>
+    </tr>
+    <tr>
+      <td>Loads and Dynamics</td>
+      <td>Completed study of GL-Guidelines (2010) and DNVGL-ST-0437.</td>
+      <td>Use provided Excel data for 5 MW, 122 m turbines to find similar designs and extract estimated statistical loads.</td>
+    </tr>
+    <tr>
+      <td>Machine Bed & Yaw System</td>
+      <td>Collected literature on machine bed and yaw system. Studied different casting processes. Reviewed SAKTHI report. Consulted industry professionals.</td>
+      <td>Benchmarking, idea generation for VAVE design, study CAD, CAE, and GD&T.</td>
+    </tr>
+    <tr>
+      <td>Wind Farm Development</td>
+      <td>Analyzed possible sites, listed 5–8 each for comparison. Focused on wind, terrain, grid, infrastructure. Managed internal conflicts.</td>
+      <td>Compare and select final sites. Gather detailed data on chosen site.</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Aerodynamics</td>
+      <td>Learned basics of QBlade. Found research papers. Reviewed last year’s report.</td>
+      <td>Search for more research papers and learn from them.</td>
+    </tr>
+    <tr>
+      <td>Rotor Hub & Pitch System</td>
+      <td>SolidWorks account setup. Researched last year’s report and different hub parts.</td>
+      <td>Continue hub part research, learn design skills.</td>
+    </tr>
+    <tr>
+      <td>Tower</td>
+      <td>Market analysis. Reviewed last year’s documentation.</td>
+      <td>Continue market analysis and last year’s review.</td>
+    </tr>
+    <tr>
+      <td>Lidar Assisted Control</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Structures</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Foundation</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Storage System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Grid Code Development</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
+
 
 <link rel="stylesheet" href="assets/style.css">
 
