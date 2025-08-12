@@ -276,8 +276,8 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Rotor Blade Structures</td>
-      <td>Report not submitted.</td>
-      <td>Unknown</td>
+      <td>Held a team meeting, assisted each other in installing necessary software, assigned roles, reviewed research papers recommended by Prof. Alhrshy.</td>
+      <td>Solve software doubts, hold special meeting (online/offline), understand WEC site, group discussion to solve member doubts.</td>
     </tr>
     <tr>
       <td>Foundation</td>
