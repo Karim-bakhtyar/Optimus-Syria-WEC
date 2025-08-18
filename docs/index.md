@@ -81,6 +81,10 @@ The project is coordinated by:
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
+<div id="today-date" style="text-align: center; font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
+  📅 Loading today's date...
+</div>
+
 <div class="mermaid">
 gantt
     title </h3>Optimus Syria Project Timeline (WS 2025/26)</h3>
@@ -104,6 +108,16 @@ gantt
     Final Presentation           :e2, 2026-01-27, 5d
 </div>
 
+
+<script>
+  // Format today’s date as "18 August 2025"
+  const today = new Date();
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-GB', options);
+
+  // Update the display
+  document.getElementById('today-date').innerText = `📅 Today is: ${formattedDate}`;
+</script>
 
 
 
