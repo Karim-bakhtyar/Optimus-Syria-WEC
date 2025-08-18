@@ -104,7 +104,8 @@ The final WEC should:
 </ul>
 
 
-[Back to Main Page](index.md)
+<p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
+
 
 <style>
 footer { display: none; }
