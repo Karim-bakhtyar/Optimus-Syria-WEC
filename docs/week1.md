@@ -469,7 +469,7 @@ gantt
 <section id="progress-section" style="max-width:1200px;margin:24px auto;">
   <h2 style="text-align:center;margin-bottom:8px;">Team Progress vs Schedule Target</h2>
   <p id="targetLabel" style="text-align:center;margin:0 0 12px 0;color:#555;"></p>
-  <canvas id="teamProgressChart" height="180"></canvas>
+  <canvas id="teamProgressChart" height="240"></canvas>
 </section>
 
 <!-- 2) Chart.js CDN -->
