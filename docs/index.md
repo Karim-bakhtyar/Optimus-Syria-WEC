@@ -14,23 +14,31 @@ title: Optimus Syria
 
 
   <style>
-    .mermaid {
-      margin: 40px auto;
-      max-width: 1000px;
-      background-color: #f8f9fa;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-      overflow-x: auto;
-    }
+  /* Mermaid container */
+  .mermaid {
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    overflow-x: auto;
+  }
 
-    .mermaid svg .titleText {
-      fill: #28a745 !important;
-      font-size: 18px;
-      font-weight: bold;
-    }
-  </style>
-</head>
+  /* Title color */
+  .mermaid svg .titleText {
+    fill: #28a745 !important;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* Change todayMarker (red line) to green */
+  .mermaid .today {
+    stroke: #3CB371 !important;    /* Line color */
+    stroke-width: 2px;
+  }
+</style>
+
 
 
 
@@ -81,9 +89,10 @@ The project is coordinated by:
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
-<div id="today-date" style="text-align: center; font-weight: bold; font-size: 18px; color: green; margin-bottom: 10px;">
-  📅 Loading today's date...
-</div>
+<h3 id="today-date" style="text-align: center; color: #3CB371; margin-bottom: 10px;">
+   Loading today's date...
+</h3>
+
 
 <div class="mermaid">
 gantt
@@ -116,7 +125,7 @@ gantt
   const formattedDate = today.toLocaleDateString('en-GB', options);
 
   // Update the display
-  document.getElementById('today-date').innerText = `📅 Today is: ${formattedDate}`;
+  document.getElementById('today-date').innerText = ` Today is: ${formattedDate}`;
 </script>
 
 
