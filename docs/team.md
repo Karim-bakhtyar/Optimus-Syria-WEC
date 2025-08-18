@@ -143,7 +143,8 @@ Responsibility: Identifies the prototype site in Syria, evaluates site-specific 
 
 <link rel="stylesheet" href="assets/style.css">
 
-[Back to Main Page](index.md)
+<p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
+
 
 <style>
 footer { display: none; }
