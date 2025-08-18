@@ -3,10 +3,35 @@ layout: default
 title: Optimus Syria
 ---
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Optimus Syria WEC</title>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
+
+  <style>
+    .mermaid {
+      margin: 40px auto;
+      max-width: 1000px;
+      background-color: #f8f9fa;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      overflow-x: auto;
+    }
+
+    .mermaid svg .titleText {
+      fill: #28a745 !important;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
 
 
 <!-- Top Navigation -->
@@ -79,15 +104,6 @@ gantt
     Final Presentation           :e2, 2026-01-27, 5d
 </div>
 
-.mermaid {
-  margin: 40px auto;
-  max-width: 1000px;
-  background-color: #f8f9fa;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  overflow-x: auto; 
-}
 
 
 
