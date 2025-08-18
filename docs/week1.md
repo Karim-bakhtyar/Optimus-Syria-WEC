@@ -221,8 +221,8 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
-<h2>Week - 3 (04 - 09 August 2025)</h2>  
 
+<h2>Week - 3 (04 - 09 August 2025)</h2> 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #f2f2f2;">
     <tr>
