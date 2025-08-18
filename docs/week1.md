@@ -131,7 +131,9 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
-<h2>Week - 2 (27 July – 03 August 2025)</h2>
+<hr style="border:0; border-top:2px solid #e5e7eb; margin:24px 0;">
+
+<h2>Week - 1 (21 - 26 July 2025)</h2>
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #f2f2f2;">
