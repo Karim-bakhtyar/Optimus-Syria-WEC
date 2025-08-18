@@ -298,43 +298,115 @@ title: Weekly Reports of Optimus Syria
 </table>
 
 
-.mermaid {
-  margin: 30px auto;
-  max-width: 1100px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 20px;
-}
-
-
 <div class="mermaid">
-flowchart LR
-    subgraph To_Do [To Do]
-      LAC[Lidar Assisted Control]
-      Foundation[Foundation]
-      Storage[Storage System]
-      GCD[Grid Code Development]
+flowchart TD
+
+    %% === Loads and Dynamics ===
+    subgraph Loads_and_Dynamics
+      L1[Week 1: Installed OpenFAST, studied LIDAR & DNV standards] --> 
+      L2[Week 2: Studied DNVGL & GL Guidelines; identified data issues] --> 
+      L3[Week 3: Completed guideline study; preparing load extraction]
     end
 
-    subgraph In_Progress [In Progress]
-      Loads[Loads & Dynamics: OpenFAST, Guidelines Study]
-      Feedback[Feedback Controller: ROSCO Tuning]
-      Aero[Rotor Blade Aerodynamics: QBlade Learning]
-      Struct[Rotor Blade Structures: Roles & Papers]
-      EDT[Electrical Drivetrain: Converter Study, MATLAB]
-      Hub[Hub & Pitch System: SolidWorks, Component Research]
-      Bearing[Rotor Bearing System: Bearings Shortlist]
-      Gearbox[Gearbox, Brake, Coupling: Research & Benchmarking]
-      BedYaw[Machine Bed & Yaw System: Casting, CAD/CAE]
-      Tower[Tower: Market Analysis]
-      WindFarm[Wind Farm Development: Site Analysis]
+    %% === Feedback Controller ===
+    subgraph Feedback_Controller
+      F1[Week 1: Installed MATLAB, Python, Fortran; Simulink Onramp] --> 
+      F2[Week 2: Reviewed literature; got tasks from Prof. Schlipf] --> 
+      F3[Week 3: Studied ROSCO examples]
     end
 
-    subgraph Done [Done]
-      None[No milestones completed yet]
+    %% === Lidar Assisted Control ===
+    subgraph Lidar_Assisted_Control
+      LA1[Week 1: No progress; meeting pending] --> 
+      LA2[Week 2: No report] --> 
+      LA3[Week 3: No report]
+    end
+
+    %% === Rotor Blade Aerodynamics ===
+    subgraph Rotor_Blade_Aerodynamics
+      A1[Week 1: Reading papers; learning QBlade] --> 
+      A2[Week 2: Learning QBlade; held team meeting] --> 
+      A3[Week 3: Learned basics of QBlade; reviewed last year’s report]
+    end
+
+    %% === Rotor Blade Structures ===
+    subgraph Rotor_Blade_Structures
+      S1[Week 1: Meeting; roles assigned; discussed software] --> 
+      S2[Week 2: No report] --> 
+      S3[Week 3: Meeting; software setup; research papers reviewed]
+    end
+
+    %% === Electrical Drivetrain ===
+    subgraph Electrical_Drivetrain
+      E1[Week 1: Market research Syria & neighbors] --> 
+      E2[Week 2: Generator specs collected; PPT; studied converters] --> 
+      E3[Week 3: Converter classifications studied; MATLAB learning]
+    end
+
+    %% === Grid Code Development ===
+    subgraph Grid_Code_Development
+      G1[Week 1: Drafted grid compliance doc; simulation block layout] --> 
+      G2[Week 2: No report] --> 
+      G3[Week 3: No report]
+    end
+
+    %% === Rotor Hub & Pitch System ===
+    subgraph Rotor_Hub_Pitch_System
+      H1[Week 1: Installed software; reviewed last year’s report] --> 
+      H2[Week 2: SolidWorks setup; deeper hub research] --> 
+      H3[Week 3: Continued hub research; design skills learning]
+    end
+
+    %% === Rotor Bearing System ===
+    subgraph Rotor_Bearing_System
+      B1[Week 1: Shortlisted bearings; searched reference turbine] --> 
+      B2[Week 2: No report] --> 
+      B3[Week 3: No report]
+    end
+
+    %% === Gearbox, Brake, Coupling ===
+    subgraph Gearbox_Brake_Coupling
+      Gbx1[Week 1: Researched drivetrain layouts; suppliers; standards] --> 
+      Gbx2[Week 2: In-depth drivetrain research; brake/coupling designs] --> 
+      Gbx3[Week 3: Reviewed docs; benchmarked gearbox, brakes, couplings]
+    end
+
+    %% === Machine Bed & Yaw System ===
+    subgraph Machine_Bed_Yaw_System
+      M1[Week 1: Literature on casting; industry discussions] --> 
+      M2[Week 2: No report] --> 
+      M3[Week 3: Collected yaw/bed literature; benchmarking & CAD studies]
+    end
+
+    %% === Tower ===
+    subgraph Tower
+      T1[Week 1: Market analysis; tried accessing docs] --> 
+      T2[Week 2: Market analysis; reviewed last year’s docs] --> 
+      T3[Week 3: Continued market analysis; reviewed docs]
+    end
+
+    %% === Foundation ===
+    subgraph Foundation
+      Fd1[Week 1: No report] --> 
+      Fd2[Week 2: No report] --> 
+      Fd3[Week 3: No report]
+    end
+
+    %% === Storage System ===
+    subgraph Storage_System
+      St1[Week 1: No report] --> 
+      St2[Week 2: No report] --> 
+      St3[Week 3: No report]
+    end
+
+    %% === Wind Farm Development ===
+    subgraph Wind_Farm_Development
+      W1[Week 1: No report] --> 
+      W2[Week 2: First meeting; discussed site criteria] --> 
+      W3[Week 3: Analyzed 5–8 sites; comparisons; managed conflicts]
     end
 </div>
+
 
 
 
