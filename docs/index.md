@@ -78,6 +78,7 @@ gantt
     Final Report Submission      :e1, 2026-01-20, 7d
     Final Presentation           :e2, 2026-01-27, 5d
 </div>
+
 .mermaid {
   margin: 40px auto;
   max-width: 1000px;
@@ -85,8 +86,9 @@ gantt
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  overflow-x: auto;   /*
+  overflow-x: auto; 
 }
+
 
 
 <style>
