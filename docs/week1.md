@@ -300,7 +300,12 @@ title: Weekly Reports of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-<p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
+<p style="text-align:center;">
+  <a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">
+    Back to Home
+  </a>
+</p>
+
 
 
 
