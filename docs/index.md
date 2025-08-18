@@ -118,7 +118,7 @@ gantt
   const today = new Date();
   const options = { day: 'numeric', month: 'long', year: 'numeric' };
   const formattedDate = today.toLocaleDateString('en-GB', options);
-  document.getElementById('today-date').innerText = `📅 Today is: ${formattedDate}`;
+  document.getElementById('today-date').innerText = ` Today is: ${formattedDate}`;
 </script>
 
 
