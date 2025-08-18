@@ -440,7 +440,7 @@ gantt
 
     section Foundation
     Week 1 - No report                                        :crit,   2025-07-21, 6d
-    Week 2 - No report                                        :crit,   2025-07-27, 7d
+    Week 2 - Coordinated with WFD & Tower team                :done,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
 
     section Storage System
