@@ -461,6 +461,70 @@ gantt
 
 
 
+<pre class="mermaid">
+flowchart LR
+  %% Direction: Left (Deadline) --> Right (teams)
+  %% We'll draw arrows from each team back to the left (toward deadline)
+
+  %% Deadline column (leftmost)
+  subgraph DEADLINE [Deadline]
+    D[23 Sep 2025]
+  end
+
+  %% Teams close to the deadline (ahead)
+  subgraph CLOSE [Close]
+    LD[Loads & Dynamics]
+    FC[Feedback Controller]
+    ED[Electrical Drivetrain]
+    TWR[Tower]
+    WFD[Wind Farm Development]
+  end
+
+  %% Teams on track (middle distance)
+  subgraph ONTRACK [On Track]
+    AERO[Rotor Blade Aerodynamics]
+    RBS[Rotor Blade Structures]
+    HUB[Hub & Pitch System]
+    GBC[Gearbox, Brake, Coupling]
+    MBY[Machine Bed & Yaw System]
+  end
+
+  %% Teams behind (furthest from deadline)
+  subgraph BEHIND [Behind]
+    LAC[Lidar Assisted Control]
+    GCD[Grid Code Development]
+    RB[Rotor Bearing System]
+    FND[Foundation]
+    STG[Storage System]
+  end
+
+  %% Arrows: each team points left toward the deadline node
+  LD --> D
+  FC --> D
+  ED --> D
+  TWR --> D
+  WFD --> D
+
+  AERO --> D
+  RBS --> D
+  HUB --> D
+  GBC --> D
+  MBY --> D
+
+  LAC --> D
+  GCD --> D
+  RB --> D
+  FND --> D
+  STG --> D
+
+  %% Professional color coding for groups
+  classDef ahead fill:#e6f9ec,stroke:#2e7d32,stroke-width:2px;      %% light green
+  classDef mid fill:#fff8e1,stroke:#b08900,stroke-width:2px;         %% light amber
+  classDef behind fill:#ffebee,stroke:#c62828,stroke-width:2px;      %% light red
+  class LD,FC,ED,TWR,WFD ahead;
+  class AERO,RBS,HUB,GBC,MBY mid;
+  class LAC,GCD,RB,FND,STG behind;
+</pre>
 
 
 
