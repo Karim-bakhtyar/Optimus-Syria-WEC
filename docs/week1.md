@@ -306,20 +306,19 @@ title: Weekly Reports of Optimus Syria
 
 <pre class="mermaid">
 gantt
-    title Optimus Syria – Team Progress Overview (Weeks 1–3)
+    title Test Gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d %b
 
-    section Loads &amp; Dynamics
-    Week 1: Installed OpenFAST, studied LIDAR              :done, ld1, 2025-07-21, 6d
-    Week 2: Studied DNVGL &amp; GL Guidelines, data issue      :done, ld2, 2025-07-27, 7d
-    Week 3: Completed guideline study, preparing loads     :active, ld3, 2025-08-04, 6d
+    section Loads and Dynamics
+    Installed OpenFAST :done, 2025-07-21, 5d
+    Studied Guidelines :active, 2025-07-27, 5d
 
     section Feedback Controller
-    Week 1: Installed MATLAB/Python/Fortran                :done, fc1, 2025-07-21, 6d
-    Week 2: Literature review, tasks from Schlipf          :done, fc2, 2025-07-27, 7d
-    Week 3: Studied ROSCO examples                         :active, fc3, 2025-08-04, 6d
+    Installed MATLAB   :done, 2025-07-21, 5d
+    Studied ROSCO      :2025-07-27, 5d
 </pre>
+
 
 
 
