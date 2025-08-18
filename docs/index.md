@@ -3,6 +3,11 @@ layout: default
 title: Optimus Syria
 ---
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
 
 <!-- Top Navigation -->
 <div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
@@ -51,7 +56,38 @@ The project is coordinated by:
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
+<div class="mermaid">
+gantt
+    title Optimus Syria Project Timeline (WS 2025/26)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d %b
+    section Planning Phase
+    Initial Preparations         :a1, 2025-09-01, 14d
+    Concept Freeze               :a2, 2025-09-15, 5d
+    Project Start (Kick-off)     :milestone, a3, 2025-09-23, 0d
 
+    section Load & Interface
+    Load Principle Measurements  :b1, 2025-10-01, 14d
+    Interface Freeze             :milestone, c1, 2025-11-04, 0d
+    Input Freeze for Simulation  :milestone, c2, 2025-11-25, 0d
+
+    section Design & Validation
+    Design Freeze                :milestone, d1, 2025-12-16, 0d
+
+    section Reporting & Delivery
+    Final Report Submission      :e1, 2026-01-20, 7d
+    Final Presentation           :e2, 2026-01-27, 5d
+</div>
+
+.mermaid {
+  margin: 40px auto;
+  max-width: 1000px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+ 
 <style>
 footer { display: none; }
 </style>
