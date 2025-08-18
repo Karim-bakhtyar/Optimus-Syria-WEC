@@ -580,6 +580,12 @@ gantt
 </script>
 
 
+<style>
+  /* Shrink chart height (desktop + mobile) */
+  #teamProgressChart { height: 220px !important; }      /* try 180–260px */
+  @media (max-width: 640px) { #teamProgressChart { height: 170px !important; } }
+</style>
+
 
 
 <link rel="stylesheet" href="assets/style.css">
