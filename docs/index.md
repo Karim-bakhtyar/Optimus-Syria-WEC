@@ -32,11 +32,6 @@ title: Optimus Syria
     font-weight: bold;
   }
 
-  /* Change todayMarker (red line) to green */
-  .mermaid .today {
-    stroke: #3CB371 !important;    /* Line color */
-    stroke-width: 2px;
-  }
 </style>
 
 
@@ -89,9 +84,10 @@ The project is coordinated by:
 
 We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.
 
-<h3 id="today-date" style="text-align: center; color: #3CB371; margin-bottom: 10px;">
-   Loading today's date...
+<h3 id="today-date" style="text-align: center; color: #c62828; margin-bottom: 15px;">
+   Loading today’s date...
 </h3>
+
 
 
 <div class="mermaid">
@@ -119,14 +115,12 @@ gantt
 
 
 <script>
-  // Format today’s date as "18 August 2025"
   const today = new Date();
   const options = { day: 'numeric', month: 'long', year: 'numeric' };
   const formattedDate = today.toLocaleDateString('en-GB', options);
-
-  // Update the display
-  document.getElementById('today-date').innerText = ` Today is: ${formattedDate}`;
+  document.getElementById('today-date').innerText = `📅 Today is: ${formattedDate}`;
 </script>
+
 
 
 
