@@ -528,6 +528,122 @@ flowchart LR
 
 
 
+<!-- ===== Team Progress vs Schedule Target (Chart.js) ===== -->
+
+<!-- 1) Canvas -->
+<section id="progress-section" style="max-width:1200px;margin:24px auto;">
+  <h2 style="text-align:center;margin-bottom:8px;">Team Progress vs Schedule Target</h2>
+  <p id="targetLabel" style="text-align:center;margin:0 0 12px 0;color:#555;"></p>
+  <canvas id="teamProgressChart" height="120"></canvas>
+</section>
+
+<!-- 2) Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+<!-- 3) Chart code -->
+<script>
+  // ==== SETTINGS YOU CAN EDIT ====
+  // Project start used for target calculation (Week 1 start)
+  const PROJECT_START = new Date('2025-07-21T00:00:00');   // change if needed
+  const DEADLINE      = new Date('2025-09-23T00:00:00');   // fixed
+
+  // Progress per team (0–100). Update these weekly.
+  const labels = [
+    'Loads & Dynamics','Feedback Controller','Lidar Assisted Control','Rotor Blade Aerodynamics',
+    'Rotor Blade Structures','Electrical Drivetrain','Grid Code Development','Hub & Pitch',
+    'Rotor Bearing','Gearbox/Brake/Coupling','Machine Bed & Yaw','Tower','Foundation',
+    'Storage System','Wind Farm Development'
+  ];
+
+  // Provisional values based on your Week 1–3 tables (edit anytime)
+  const progress = [70,65,10,50,45,60,35,45,25,55,50,55,0,0,55];
+
+  // ==== DO NOT EDIT BELOW (unless you want to tweak visuals) ====
+  // Expected schedule target today (0–100)
+  const today = new Date();
+  const clamp = (v,min,max)=>Math.max(min,Math.min(max,v));
+  const targetPct = clamp(
+    Math.round(100 * (today - PROJECT_START) / (DEADLINE - PROJECT_START)),
+    0, 100
+  );
+
+  // Bar colors relative to target
+  const barColors = progress.map(p => {
+    if (p >= targetPct + 10) return '#2e7d32';  // ahead -> green
+    if (p <= targetPct - 10) return '#c62828';  // behind -> red
+    return '#b08900';                            // near target -> amber
+  });
+
+  // Horizontal target line (same value across all labels)
+  const targetLine = Array(labels.length).fill(targetPct);
+
+  // Update label text
+  const daysLeft = Math.max(0, Math.ceil((DEADLINE - today)/ (1000*60*60*24)));
+  document.getElementById('targetLabel').textContent =
+    `Deadline: 23 Sep 2025 · Schedule target today: ${targetPct}% · Days left: ${daysLeft}`;
+
+  // Build chart
+  const ctx = document.getElementById('teamProgressChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          type: 'bar',
+          label: 'Team progress (%)',
+          data: progress,
+          backgroundColor: barColors,
+          borderColor: '#1f2937',
+          borderWidth: 1
+        },
+        {
+          type: 'line',
+          label: `Schedule target (${targetPct}%)`,
+          data: targetLine,
+          borderColor: '#2e7d32',   // green line (like your screenshot)
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      aspectRatio: 2.4,  // wide, like your screenshot
+      plugins: {
+        legend: { position: 'bottom' },
+        title: {
+          display: true,
+          text: 'Progress toward 23 Sep 2025',
+          padding: { top: 6, bottom: 10 }
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.dataset.type === 'line'
+              ? ` ${ctx.dataset.label}`
+              : ` ${ctx.dataset.label.replace(' (%)','')}: ${ctx.parsed.y}%`
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { autoSkip: false, maxRotation: 60, minRotation: 0 }
+        },
+        y: {
+          min: 0, max: 100,
+          ticks: {
+            stepSize: 10,
+            callback: v => v + '%'
+          },
+          grid: { drawBorder: true }
+        }
+      }
+    }
+  });
+</script>
+
 
 
 
