@@ -3,6 +3,8 @@ layout: default
 title: Optimus Syria
 ---
 
+<link rel="stylesheet" href="assets/style.css">
+
 <head>
   <meta charset="UTF-8">
   <title>Optimus Syria WEC</title>
