@@ -148,3 +148,11 @@ gantt
   </script>
 
 </body>
+
+<link rel="stylesheet" href="assets/style.css">
+
+[Back to Main Page](index.md)
+
+<style>
+footer { display: none; }
+</style>
