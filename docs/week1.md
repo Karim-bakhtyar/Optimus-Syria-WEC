@@ -298,6 +298,45 @@ title: Weekly Reports of Optimus Syria
 </table>
 
 
+<div class="mermaid">
+flowchart LR
+    subgraph "To Do"
+      LAC[Lidar Assisted Control]
+      Foundation[Foundation]
+      Storage[Storage System]
+      GCD[Grid Code Development]
+    end
+
+    subgraph "In Progress"
+      Loads[Loads & Dynamics: OpenFAST, Guidelines Study]
+      Feedback[Feedback Controller: ROSCO Tuning]
+      Aero[Rotor Blade Aerodynamics: QBlade Learning]
+      Struct[Rotor Blade Structures: Roles & Papers]
+      EDT[Electrical Drivetrain: Converter Study, MATLAB]
+      Hub[Hub & Pitch System: SolidWorks, Component Research]
+      Bearing[Rotor Bearing System: Bearings Shortlist]
+      Gearbox[Gearbox, Brake, Coupling: Research & Benchmarking]
+      BedYaw[Machine Bed & Yaw System: Casting, CAD/CAE]
+      Tower[Tower: Market Analysis]
+      WindFarm[Wind Farm Development: Site Analysis]
+    end
+
+    subgraph "Done"
+      None[No milestones completed yet]
+    end
+
+.mermaid {
+  margin: 40px auto;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+
+
+
 <link rel="stylesheet" href="assets/style.css">
 
 <p style="text-align:center;">
