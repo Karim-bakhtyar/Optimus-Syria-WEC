@@ -69,7 +69,7 @@ title: Optimus Syria
   </p>
 
   <p>
-    <strong>A Sustainable Engineering Mission for Syria's Renewable Future</strong><br>
+    A Sustainable Engineering Mission for Syria's Renewable Future:<br>
     Optimus Syria is an international, interdisciplinary project uniting students and academic institutions from Hochschule Flensburg, Hochschule Kiel, and Damascus University. The project is focused on designing, simulating, and preparing a scalable Wind Energy Converter (WEC) specifically adapted to the technical, environmental, and economic conditions of Syria.
   </p>
 
@@ -102,7 +102,7 @@ title: Optimus Syria
   </ul>
 
   <p>
-    <strong>The project is coordinated by:</strong><br>
+    The project is coordinated by:<br>
     - Bakhtyar Karimzade (Project Manager)<br>
     - Josef Remberger (Deputy Project Manager)<br>
     - Federico De Mita (System Integrator)
