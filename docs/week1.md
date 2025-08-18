@@ -304,20 +304,162 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
+<!-- ===== Full multi-team Gantt with fixed deadline marker ===== -->
+
+<!-- 1) Mermaid loader + deadline logic -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    await mermaid.run({ querySelector: '.mermaid' });
+
+    // Status text: before/after deadline
+    const statusEl = document.getElementById('deadline-status');
+    const today = new Date();
+    const deadline = new Date('2025-09-23T00:00:00');
+    const onTime = today <= deadline;
+    if (statusEl) {
+      statusEl.textContent = onTime
+        ? 'Status: On schedule (deadline 23 Sep 2025)'
+        : 'Status: Behind schedule (deadline 23 Sep 2025 has passed)';
+      statusEl.style.color = onTime ? '#2e7d32' : '#c62828';
+    }
+
+    // Draw a full-height vertical line at the milestone date (23 Sep 2025)
+    const svg = document.querySelector('.mermaid svg');
+    if (!svg) return;
+    const milestone = svg.querySelector('.milestone'); // diamond added in Gantt "Milestones" section
+    if (!milestone) return;
+
+    const bbox = milestone.getBBox();
+    const x = bbox.x + bbox.width / 2;
+    const h = (svg.viewBox && svg.viewBox.baseVal && svg.viewBox.baseVal.height)
+              ? svg.viewBox.baseVal.height
+              : svg.getBBox().height;
+
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', x);
+    line.setAttribute('x2', x);
+    line.setAttribute('y1', 0);
+    line.setAttribute('y2', h);
+    line.setAttribute('stroke', onTime ? '#2e7d32' : '#c62828'); // green if before/equal, red if after
+    line.setAttribute('stroke-width', '2');
+    line.setAttribute('stroke-dasharray', '4,4'); // dashed; remove for solid
+    line.setAttribute('opacity', '0.95');
+    svg.appendChild(line);
+  });
+</script>
+
+<!-- 2) Optional styling -->
+<style>
+  .mermaid {
+    margin: 32px auto;
+    max-width: 1200px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  #deadline-status {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0 4px;
+  }
+</style>
+
+<!-- 3) Status line (filled by script) -->
+<p id="deadline-status">Checking schedule…</p>
+
+<!-- 4) Full multi-team Gantt (Weeks 1–3). Avoid "&" in section names. -->
 <pre class="mermaid">
 gantt
-    title Test Gantt
+    title Optimus Syria — Team Progress Overview (Weeks 1–3)
     dateFormat  YYYY-MM-DD
     axisFormat  %d %b
 
+    %% Week windows: W1 = 21–26 Jul, W2 = 27 Jul–02 Aug, W3 = 04–09 Aug 2025
+
     section Loads and Dynamics
-    Installed OpenFAST :done, 2025-07-21, 5d
-    Studied Guidelines :active, 2025-07-27, 5d
+    Week 1: Installed OpenFAST; LIDAR study                     :done,   2025-07-21, 6d
+    Week 2: Studied DNVGL and GL guidelines; data issues noted  :done,   2025-07-27, 7d
+    Week 3: Completed guideline study; preparing load estimates  :active, 2025-08-04, 6d
 
     section Feedback Controller
-    Installed MATLAB   :done, 2025-07-21, 5d
-    Studied ROSCO      :2025-07-27, 5d
+    Week 1: Installed MATLAB Python Fortran; Simulink Onramp    :done,   2025-07-21, 6d
+    Week 2: Literature review; tasks from Prof Schlipf          :done,   2025-07-27, 7d
+    Week 3: Studied ROSCO examples                              :active, 2025-08-04, 6d
+
+    section Lidar Assisted Control
+    Week 1: No progress; meeting pending                        :crit,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: No report                                           :crit,   2025-08-04, 6d
+
+    section Rotor Blade Aerodynamics
+    Week 1: Reading papers; QBlade learning                     :done,   2025-07-21, 6d
+    Week 2: Team meeting; papers review                         :done,   2025-07-27, 7d
+    Week 3: QBlade basics; reviewed last year report            :active, 2025-08-04, 6d
+
+    section Rotor Blade Structures
+    Week 1: Team meeting; roles; software discussions           :done,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: Roles confirmed; software doubts solved             :active, 2025-08-04, 6d
+
+    section Electrical Drivetrain
+    Week 1: Market research in Syria and neighbors              :done,   2025-07-21, 6d
+    Week 2: Generator specs; PPT; converter study               :done,   2025-07-27, 7d
+    Week 3: Converter classes; MATLAB study                     :active, 2025-08-04, 6d
+
+    section Grid Code Development
+    Week 1: Drafted grid compliance docs and simulation layout  :done,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: No report                                           :crit,   2025-08-04, 6d
+
+    section Rotor Hub and Pitch System
+    Week 1: Software installed; reviewed last year report       :done,   2025-07-21, 6d
+    Week 2: SolidWorks setup; component research                :done,   2025-07-27, 7d
+    Week 3: Continued hub research; design skills               :active, 2025-08-04, 6d
+
+    section Rotor Bearing System
+    Week 1: Bearings shortlisted; reference turbine search      :done,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: No report                                           :crit,   2025-08-04, 6d
+
+    section Gearbox Brake and Coupling
+    Week 1: Drivetrain research; layouts; suppliers             :done,   2025-07-21, 6d
+    Week 2: Deeper research on drivetrain brakes couplings      :done,   2025-07-27, 7d
+    Week 3: Benchmarking; supplier research                     :active, 2025-08-04, 6d
+
+    section Machine Bed and Yaw System
+    Week 1: Casting process literature; industry talks          :done,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: Benchmarking; CAD CAE and GD T studies              :active, 2025-08-04, 6d
+
+    section Tower
+    Week 1: Market analysis; accessed last year docs            :done,   2025-07-21, 6d
+    Week 2: Market study; logistics info                        :done,   2025-07-27, 7d
+    Week 3: Continued market study                              :active, 2025-08-04, 6d
+
+    section Foundation
+    Week 1: No report                                           :crit,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: No report                                           :crit,   2025-08-04, 6d
+
+    section Storage System
+    Week 1: No report                                           :crit,   2025-07-21, 6d
+    Week 2: No report                                           :crit,   2025-07-27, 7d
+    Week 3: No report                                           :crit,   2025-08-04, 6d
+
+    section Wind Farm Development
+    Week 1: No report                                           :crit,   2025-07-21, 6d
+    Week 2: Meeting with Prof Blohm                             :done,   2025-07-27, 7d
+    Week 3: Site analysis and shortlist                         :active, 2025-08-04, 6d
+
+    section Milestones
+    Project limit 23 Sep 2025                                   :milestone, crit, 2025-09-23, 0d
 </pre>
+<!-- ===== End block ===== -->
+
 
 
 
