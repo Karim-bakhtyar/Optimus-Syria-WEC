@@ -151,9 +151,6 @@ gantt
 
 <link rel="stylesheet" href="assets/style.css">
 
-<p><a href="index.md" style="color: #28a745; text-decoration: none; font-weight: bold;">Back to Main Page</a></p>
-
-
 <style>
 footer { display: none; }
 </style>
