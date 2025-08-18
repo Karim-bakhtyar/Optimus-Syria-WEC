@@ -388,11 +388,7 @@ gantt
 
 <link rel="stylesheet" href="assets/style.css">
 
-<p style="text-align:center;">
-  <a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">
-    Back to Home
-  </a>
-</p>
+<p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
 
 
 
