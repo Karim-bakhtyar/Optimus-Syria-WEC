@@ -299,113 +299,87 @@ title: Weekly Reports of Optimus Syria
 
 
 <div class="mermaid">
-flowchart TD
+gantt
+    title Optimus Syria – Team Progress Overview (Weeks 1–3)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d %b
 
-    %% === Loads and Dynamics ===
-    subgraph Loads_and_Dynamics
-      L1[Week 1: Installed OpenFAST, studied LIDAR & DNV standards] --> 
-      L2[Week 2: Studied DNVGL & GL Guidelines; identified data issues] --> 
-      L3[Week 3: Completed guideline study; preparing load extraction]
-    end
+    section Loads & Dynamics
+    Week 1: Installed OpenFAST, studied LIDAR              :done, ld1, 2025-07-21, 6d
+    Week 2: Studied DNVGL & GL Guidelines, data issue      :done, ld2, 2025-07-27, 7d
+    Week 3: Completed guideline study, preparing loads     :active, ld3, 2025-08-04, 6d
 
-    %% === Feedback Controller ===
-    subgraph Feedback_Controller
-      F1[Week 1: Installed MATLAB, Python, Fortran; Simulink Onramp] --> 
-      F2[Week 2: Reviewed literature; got tasks from Prof. Schlipf] --> 
-      F3[Week 3: Studied ROSCO examples]
-    end
+    section Feedback Controller
+    Week 1: Installed MATLAB/Python/Fortran                :done, fc1, 2025-07-21, 6d
+    Week 2: Literature review, tasks from Schlipf          :done, fc2, 2025-07-27, 7d
+    Week 3: Studied ROSCO examples                         :active, fc3, 2025-08-04, 6d
 
-    %% === Lidar Assisted Control ===
-    subgraph Lidar_Assisted_Control
-      LA1[Week 1: No progress; meeting pending] --> 
-      LA2[Week 2: No report] --> 
-      LA3[Week 3: No report]
-    end
+    section Lidar Assisted Control
+    Week 1: No progress, meeting pending                   :crit, la1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, la2, 2025-07-27, 7d
+    Week 3: No report                                      :crit, la3, 2025-08-04, 6d
 
-    %% === Rotor Blade Aerodynamics ===
-    subgraph Rotor_Blade_Aerodynamics
-      A1[Week 1: Reading papers; learning QBlade] --> 
-      A2[Week 2: Learning QBlade; held team meeting] --> 
-      A3[Week 3: Learned basics of QBlade; reviewed last year’s report]
-    end
+    section Rotor Blade Aerodynamics
+    Week 1: Papers + QBlade learning                       :done, a1, 2025-07-21, 6d
+    Week 2: Team meeting + papers                          :done, a2, 2025-07-27, 7d
+    Week 3: QBlade basics + last year’s report             :active, a3, 2025-08-04, 6d
 
-    %% === Rotor Blade Structures ===
-    subgraph Rotor_Blade_Structures
-      S1[Week 1: Meeting; roles assigned; discussed software] --> 
-      S2[Week 2: No report] --> 
-      S3[Week 3: Meeting; software setup; research papers reviewed]
-    end
+    section Rotor Blade Structures
+    Week 1: Team meeting + software setup                  :done, s1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, s2, 2025-07-27, 7d
+    Week 3: Roles assigned, software doubts solved         :active, s3, 2025-08-04, 6d
 
-    %% === Electrical Drivetrain ===
-    subgraph Electrical_Drivetrain
-      E1[Week 1: Market research Syria & neighbors] --> 
-      E2[Week 2: Generator specs collected; PPT; studied converters] --> 
-      E3[Week 3: Converter classifications studied; MATLAB learning]
-    end
+    section Electrical Drivetrain
+    Week 1: Market research Syria & neighbors              :done, ed1, 2025-07-21, 6d
+    Week 2: Generator specs + PPT, converters              :done, ed2, 2025-07-27, 7d
+    Week 3: Converter types + MATLAB study                 :active, ed3, 2025-08-04, 6d
 
-    %% === Grid Code Development ===
-    subgraph Grid_Code_Development
-      G1[Week 1: Drafted grid compliance doc; simulation block layout] --> 
-      G2[Week 2: No report] --> 
-      G3[Week 3: No report]
-    end
+    section Grid Code Development
+    Week 1: Draft docs (voltage, FRT, harmonics)           :done, gc1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, gc2, 2025-07-27, 7d
+    Week 3: No report                                      :crit, gc3, 2025-08-04, 6d
 
-    %% === Rotor Hub & Pitch System ===
-    subgraph Rotor_Hub_Pitch_System
-      H1[Week 1: Installed software; reviewed last year’s report] --> 
-      H2[Week 2: SolidWorks setup; deeper hub research] --> 
-      H3[Week 3: Continued hub research; design skills learning]
-    end
+    section Rotor Hub & Pitch
+    Week 1: Software installed, report reviewed            :done, hp1, 2025-07-21, 6d
+    Week 2: SolidWorks setup, hub research                 :done, hp2, 2025-07-27, 7d
+    Week 3: Hub research, design skills                    :active, hp3, 2025-08-04, 6d
 
-    %% === Rotor Bearing System ===
-    subgraph Rotor_Bearing_System
-      B1[Week 1: Shortlisted bearings; searched reference turbine] --> 
-      B2[Week 2: No report] --> 
-      B3[Week 3: No report]
-    end
+    section Rotor Bearing System
+    Week 1: Bearings shortlisted, PPT prepared             :done, rb1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, rb2, 2025-07-27, 7d
+    Week 3: No report                                      :crit, rb3, 2025-08-04, 6d
 
-    %% === Gearbox, Brake, Coupling ===
-    subgraph Gearbox_Brake_Coupling
-      Gbx1[Week 1: Researched drivetrain layouts; suppliers; standards] --> 
-      Gbx2[Week 2: In-depth drivetrain research; brake/coupling designs] --> 
-      Gbx3[Week 3: Reviewed docs; benchmarked gearbox, brakes, couplings]
-    end
+    section Gearbox, Brake, Coupling
+    Week 1: Drivetrain research, layouts, suppliers        :done, gb1, 2025-07-21, 6d
+    Week 2: Deep research drivetrain/brakes/couplings      :done, gb2, 2025-07-27, 7d
+    Week 3: Benchmarking, supplier research                :active, gb3, 2025-08-04, 6d
 
-    %% === Machine Bed & Yaw System ===
-    subgraph Machine_Bed_Yaw_System
-      M1[Week 1: Literature on casting; industry discussions] --> 
-      M2[Week 2: No report] --> 
-      M3[Week 3: Collected yaw/bed literature; benchmarking & CAD studies]
-    end
+    section Machine Bed & Yaw
+    Week 1: Casting processes, industry input              :done, mb1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, mb2, 2025-07-27, 7d
+    Week 3: Benchmarking, CAD/CAE/GD&T studies             :active, mb3, 2025-08-04, 6d
 
-    %% === Tower ===
-    subgraph Tower
-      T1[Week 1: Market analysis; tried accessing docs] --> 
-      T2[Week 2: Market analysis; reviewed last year’s docs] --> 
-      T3[Week 3: Continued market analysis; reviewed docs]
-    end
+    section Tower
+    Week 1: Market analysis, checked last year docs        :done, t1, 2025-07-21, 6d
+    Week 2: Market study + logistics                       :done, t2, 2025-07-27, 7d
+    Week 3: Continued market study                         :active, t3, 2025-08-04, 6d
 
-    %% === Foundation ===
-    subgraph Foundation
-      Fd1[Week 1: No report] --> 
-      Fd2[Week 2: No report] --> 
-      Fd3[Week 3: No report]
-    end
+    section Foundation
+    Week 1: No report                                      :crit, f1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, f2, 2025-07-27, 7d
+    Week 3: No report                                      :crit, f3, 2025-08-04, 6d
 
-    %% === Storage System ===
-    subgraph Storage_System
-      St1[Week 1: No report] --> 
-      St2[Week 2: No report] --> 
-      St3[Week 3: No report]
-    end
+    section Storage System
+    Week 1: No report                                      :crit, st1, 2025-07-21, 6d
+    Week 2: No report                                      :crit, st2, 2025-07-27, 7d
+    Week 3: No report                                      :crit, st3, 2025-08-04, 6d
 
-    %% === Wind Farm Development ===
-    subgraph Wind_Farm_Development
-      W1[Week 1: No report] --> 
-      W2[Week 2: First meeting; discussed site criteria] --> 
-      W3[Week 3: Analyzed 5–8 sites; comparisons; managed conflicts]
-    end
+    section Wind Farm Development
+    Week 1: No report                                      :crit, wf1, 2025-07-21, 6d
+    Week 2: Meeting with Prof. Blohm                       :done, wf2, 2025-07-27, 7d
+    Week 3: Site analysis, options listed                  :active, wf3, 2025-08-04, 6d
 </div>
+
 
 
 
