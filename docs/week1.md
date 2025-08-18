@@ -498,7 +498,7 @@ gantt
   ];
 
   // Provisional values based on your Week 1–3 tables (edit anytime)
-  const progress = [70,65,10,50,45,60,35,45,25,55,50,55,0,0,55];
+  const progress = [70,65,10,50,45,60,35,45,25,55,50,55,15,0,55];
 
   // ==== DO NOT EDIT BELOW (unless you want to tweak visuals) ====
   // Expected schedule target today (0–100)
