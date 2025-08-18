@@ -133,7 +133,8 @@ title: Weekly Reports of Optimus Syria
 
 <hr style="border:0; border-top:2px solid #e5e7eb; margin:24px 0;">
 
-<h2>Week - 2 (21 - 26 July 2025)</h2>
+
+<h2>Week - 2 (27 July – 03 August 2025)</h2>
 
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <thead style="background-color: #f2f2f2;">
@@ -151,7 +152,7 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Feedback Controller</td>
-      <td>Reviewed literature; received control tasks from Prof. Schlipf including pitch/torque, tower damper, LAC coupling, and Lidar-Boost.</td>
+      <td>Reviewed literature; received control tasks from Prof. Schlipf (pitch/torque, tower damper, LAC coupling, Lidar-Boost).</td>
       <td>Install and explore ROSCO; study example controllers and integration.</td>
     </tr>
     <tr>
@@ -162,7 +163,7 @@ title: Weekly Reports of Optimus Syria
     <tr>
       <td>Rotor Blade Aerodynamics</td>
       <td>Started learning QBlade; searched for research papers; held team meeting.</td>
-      <td>Study research papers; ask seniors; review last year’s report and plan next steps.</td>
+      <td>Study papers; ask seniors; review last year’s report and plan next steps.</td>
     </tr>
     <tr>
       <td>Rotor Blade Structures</td>
@@ -171,8 +172,8 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Electrical Drivetrain</td>
-      <td>Collected data on generators and market in Syria and neighbors; created summary PPT.</td>
-      <td>Study wind turbine converters and classification; begin MATLAB study.</td>
+      <td>Collected generator data and market info (Syria & neighbors); created summary PPT.</td>
+      <td>Study wind-turbine converters and classification; begin MATLAB study.</td>
     </tr>
     <tr>
       <td>Grid Code Development</td>
@@ -180,9 +181,9 @@ title: Weekly Reports of Optimus Syria
       <td>Unknown</td>
     </tr>
     <tr>
-      <td>Rotor Hub and Pitch System</td>
-      <td>SolidWorks account setup; started researching hub components and reviewing last year’s report.</td>
-      <td>Group meeting; deeper research on hub components; request for extra member and professor meeting.</td>
+      <td>Rotor Hub &amp; Pitch System</td>
+      <td>SolidWorks account setup; started researching hub components; reviewed last year’s report.</td>
+      <td>Group meeting; deeper hub research; request extra member and meeting with professor.</td>
     </tr>
     <tr>
       <td>Rotor Bearing System</td>
@@ -191,25 +192,24 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Gearbox, Brake, Coupling</td>
-      <td>Conducted in-depth research on drivetrain types, standards, brake/coupling designs, and Syrian market; partially completed all subtopics.</td>
-      <td>Finalize previous tasks; install software; gather more technical data and calculations from tutorials and suppliers.</td>
+      <td>In-depth research on drivetrain types, standards, brake/coupling designs, and Syrian market; partial completion across subtopics.</td>
+      <td>Finalize previous tasks; install software; gather more data/calculations from tutorials and suppliers.</td>
     </tr>
     <tr>
-      <td>Machine Bed & Yaw System</td>
+      <td>Machine Bed &amp; Yaw System</td>
       <td>Report not submitted.</td>
       <td>Unknown</td>
     </tr>
     <tr>
       <td>Tower</td>
-      <td>Performed market analysis and reviewed last year's documentation.</td>
+      <td>Performed market analysis and reviewed last year’s documentation.</td>
       <td>Continue analysis and request location-specific logistics information.</td>
     </tr>
     <tr>
-      <tr>
-  <td>Foundation</td>
-  <td>Met with Prof. Torsten Faber; coordinated with Wind Farm Development for site information; coordinated with Tower team regarding preliminary tower loads.</td>
-  <td>Follow up on site and tower-load inputs; outline foundation load cases; list required geotechnical data.</td>
-</tr>
+      <td>Foundation</td>
+      <td>Met with Prof. Torsten Faber; coordinated with Wind Farm Development for site information; coordinated with Tower team regarding preliminary tower loads.</td>
+      <td>Follow up on site and tower-load inputs; outline foundation load cases; list required geotechnical data.</td>
+    </tr>
     <tr>
       <td>Storage System</td>
       <td>Report not submitted.</td>
@@ -220,7 +220,7 @@ title: Weekly Reports of Optimus Syria
       <td>First meeting with Prof. Blohm; discussed site criteria and relevant literature.</td>
       <td>Analyze site options and define basic WEC concept (size, capacity, usage type).</td>
     </tr>
-    </tbody>
+  </tbody>
 </table>
 
 <hr style="border:0; border-top:2px solid #e5e7eb; margin:24px 0;">
@@ -238,8 +238,8 @@ title: Weekly Reports of Optimus Syria
   <tbody>
     <tr>
       <td>Electrical Drivetrain</td>
-      <td>Studied different types of converters used in wind turbines, focusing on those in Syria. Analyzed functions and classifications of converters. Started learning MATLAB.</td>
-      <td>Collect data to decide generator type. Find approximate generator rating. Continue MATLAB study.</td>
+      <td>Studied converter types used in wind turbines (focus on Syria); analyzed functions/classifications; started MATLAB.</td>
+      <td>Collect data to decide generator type; estimate generator rating; continue MATLAB study.</td>
     </tr>
     <tr>
       <td>Feedback Controller</td>
@@ -248,47 +248,48 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Gearbox, Brake, Coupling</td>
-      <td>Studied last year’s documentation, researched mechanical drivetrain systems, gearbox layouts, standards, guidelines, suppliers. Benchmarked gearbox, brakes, and couplings.</td>
-      <td>Detailed review of last year’s documentation, install software (SolidWorks, Ansys, Dlubal), start calculations, research suppliers and concepts.</td>
+      <td>Reviewed last year’s docs; researched mechanical drivetrain systems, gearbox layouts, standards, suppliers; benchmarked gearbox, brakes, couplings.</td>
+      <td>Detailed review of last year’s docs; install SolidWorks/Ansys/Dlubal; start calculations; research suppliers and concepts.</td>
     </tr>
     <tr>
       <td>Loads and Dynamics</td>
       <td>Completed study of GL-Guidelines (2010) and DNVGL-ST-0437.</td>
-      <td>Use provided Excel data for 5 MW, 122 m turbines to find similar designs and extract estimated statistical loads.</td>
+      <td>Use Excel data for 5&nbsp;MW, 122&nbsp;m turbines to find similar designs and extract estimated statistical loads.</td>
     </tr>
     <tr>
-      <td>Machine Bed & Yaw System</td>
-      <td>Collected literature on machine bed and yaw system. Studied different casting processes. Reviewed SAKTHI report. Consulted industry professionals.</td>
-      <td>Benchmarking, idea generation for VAVE design, study CAD, CAE, and GD&T.</td>
+      <td>Machine Bed &amp; Yaw System</td>
+      <td>Collected literature on machine bed & yaw; studied casting processes; reviewed SAKTHI report; consulted industry professionals.</td>
+      <td>Benchmarking; idea generation for VAVE design; study CAD, CAE, and GD&amp;T.</td>
     </tr>
     <tr>
       <td>Wind Farm Development</td>
-      <td>Analyzed possible sites, listed 5–8 each for comparison. Focused on wind, terrain, grid, infrastructure. Managed internal conflicts.</td>
-      <td>Compare and select final sites. Gather detailed data on chosen site.</td>
+      <td>Analyzed possible sites (5–8) for comparison: wind, terrain, grid, infrastructure; managed internal conflicts.</td>
+      <td>Compare and select final sites; gather detailed data on chosen site.</td>
     </tr>
     <tr>
       <td>Rotor Blade Aerodynamics</td>
-      <td>Learned basics of QBlade. Found research papers. Reviewed last year’s report.</td>
-      <td>Search for more research papers and learn from them.</td>
+      <td>Learned basics of QBlade; found research papers; reviewed last year’s report.</td>
+      <td>Search for additional papers and learn from them.</td>
     </tr>
     <tr>
-      <td>Rotor Hub & Pitch System</td>
-      <td>SolidWorks account setup. Researched last year’s report and different hub parts.</td>
-      <td>Continue hub part research, learn design skills.</td>
+      <td>Rotor Hub &amp; Pitch System</td>
+      <td>SolidWorks account setup; researched last year’s report and different hub parts.</td>
+      <td>Continue hub-part research; learn design skills.</td>
     </tr>
     <tr>
       <td>Tower</td>
-      <td>Market analysis. Reviewed last year’s documentation.</td>
-      <td>Continue market analysis and last year’s review.</td>
+      <td>Market analysis; reviewed last year’s documentation.</td>
+      <td>Continue market analysis and review.</td>
     </tr>
     <tr>
       <td>Lidar Assisted Control</td>
       <td>Report not submitted.</td>
       <td>Unknown</td>
-    </tr>    <tr>
+    </tr>
+    <tr>
       <td>Rotor Blade Structures</td>
-      <td>Held a team meeting, assisted each other in installing necessary software, assigned roles, reviewed research papers recommended by Prof. Alhrshy.</td>
-      <td>Solve software doubts, hold special meeting (online/offline), understand WEC site, group discussion to solve member doubts.</td>
+      <td>Team meeting; helped with software installs; roles assigned; reviewed papers suggested by Prof. Alhrshy.</td>
+      <td>Solve software doubts; hold special meeting (online/offline); understand WEC site; group discussion to solve doubts.</td>
     </tr>
     <tr>
       <td>Foundation</td>
@@ -305,8 +306,15 @@ title: Weekly Reports of Optimus Syria
       <td>Report not submitted.</td>
       <td>Unknown</td>
     </tr>
+    <tr>
+      <td>Rotor Bearing System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
   </tbody>
 </table>
+
+
 
 
 
