@@ -204,10 +204,10 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <tr>
-      <td>Foundation</td>
-      <td>Report not submitted.</td>
-      <td>Unknown</td>
-    </tr>
+  <td>Foundation</td>
+  <td>Met with Prof. Torsten Faber; coordinated with Wind Farm Development for site information; coordinated with Tower team regarding preliminary tower loads.</td>
+  <td>Follow up on site and tower-load inputs; outline foundation load cases; list required geotechnical data.</td>
+</tr>
     <tr>
       <td>Storage System</td>
       <td>Report not submitted.</td>
