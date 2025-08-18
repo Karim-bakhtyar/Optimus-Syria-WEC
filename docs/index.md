@@ -7,13 +7,13 @@ title: Optimus Syria
   <meta charset="UTF-8">
   <title>Optimus Syria WEC</title>
 
-  <!-- Mermaid script -->
+
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
   </script>
 
-  <!-- Custom styling -->
+  
   <style>
     .mermaid {
       margin: 40px auto;
@@ -48,7 +48,7 @@ title: Optimus Syria
 
 <body>
 
-  <!-- Navigation Bar -->
+
   <div style="text-align:center; background:linear-gradient(90deg, #00a859, #00c98d); padding:10px;">
     <a href="index.html">Home</a>
     <a href="week1.html">Reports</a>
@@ -59,7 +59,7 @@ title: Optimus Syria
 
   <br>
 
-  <!-- Main Project Description -->
+  
   <h1 style="text-align:center;">Optimus Syria – Wind Energy Converter Project</h1>
 
   <p>
@@ -108,12 +108,12 @@ title: Optimus Syria
 
   <p><em>We believe that engineering should not only solve problems, but also build bridges across cultures, disciplines, and borders.</em></p>
 
-  <!-- Today’s Date -->
+  
   <h3 id="today-date" style="text-align: center; color: #c62828; margin-bottom: 15px;">
-    📅 Loading today’s date...
+   Loading today’s date...
   </h3>
 
-  <!-- Gantt Chart -->
+  
   <div class="mermaid">
 gantt
     title Optimus Syria Project Timeline (WS 2025/26)
@@ -137,12 +137,12 @@ gantt
     Final Presentation           :e2, 2026-01-27, 5d
   </div>
 
-  <!-- JS: Print Today's Date -->
+  
   <script>
     const today = new Date();
     const options = { day: 'numeric', month: 'long', year: 'numeric' };
     const formattedDate = today.toLocaleDateString('en-GB', options);
-    document.getElementById('today-date').innerText = `📅 Today is: ${formattedDate}`;
+    document.getElementById('today-date').innerText = ` Today is: ${formattedDate}`;
   </script>
 
 </body>
