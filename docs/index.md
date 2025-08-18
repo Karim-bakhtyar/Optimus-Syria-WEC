@@ -58,7 +58,7 @@ We believe that engineering should not only solve problems, but also build bridg
 
 <div class="mermaid">
 gantt
-    title Optimus Syria Project Timeline (WS 2025/26)
+    title </h3>Optimus Syria Project Timeline (WS 2025/26)</h3>
     dateFormat  YYYY-MM-DD
     axisFormat  %d %b
     section Planning Phase
