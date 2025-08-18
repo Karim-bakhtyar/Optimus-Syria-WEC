@@ -298,16 +298,26 @@ title: Weekly Reports of Optimus Syria
 </table>
 
 
+.mermaid {
+  margin: 30px auto;
+  max-width: 1100px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+
 <div class="mermaid">
 flowchart LR
-    subgraph "To Do"
+    subgraph To_Do [To Do]
       LAC[Lidar Assisted Control]
       Foundation[Foundation]
       Storage[Storage System]
       GCD[Grid Code Development]
     end
 
-    subgraph "In Progress"
+    subgraph In_Progress [In Progress]
       Loads[Loads & Dynamics: OpenFAST, Guidelines Study]
       Feedback[Feedback Controller: ROSCO Tuning]
       Aero[Rotor Blade Aerodynamics: QBlade Learning]
@@ -321,18 +331,11 @@ flowchart LR
       WindFarm[Wind Farm Development: Site Analysis]
     end
 
-    subgraph "Done"
+    subgraph Done [Done]
       None[No milestones completed yet]
     end
+</div>
 
-.mermaid {
-  margin: 40px auto;
-  max-width: 1200px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 20px;
-}
 
 
 
