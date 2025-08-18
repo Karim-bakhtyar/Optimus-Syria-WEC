@@ -280,8 +280,7 @@ title: Weekly Reports of Optimus Syria
       <td>Lidar Assisted Control</td>
       <td>Report not submitted.</td>
       <td>Unknown</td>
-    </tr>
-    <tr>
+    </tr>    <tr>
       <td>Rotor Blade Structures</td>
       <td>Held a team meeting, assisted each other in installing necessary software, assigned roles, reviewed research papers recommended by Prof. Alhrshy.</td>
       <td>Solve software doubts, hold special meeting (online/offline), understand WEC site, group discussion to solve member doubts.</td>
@@ -304,94 +303,7 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
-<!-- ===== Full multi-team Gantt with fixed deadline marker ===== -->
 
-<!-- 1) Mermaid loader + deadline logic -->
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
-
-  document.addEventListener('DOMContentLoaded', async () => {
-    await mermaid.run({ querySelector: '.mermaid' });
-
-    // Status text: before/after deadline
-    const statusEl = document.getElementById('deadline-status');
-    const today = new Date();
-    const deadline = new Date('2025-09-23T00:00:00');
-    const onTime = today <= deadline;
-    if (statusEl) {
-      statusEl.textContent = onTime
-        ? 'Status: On schedule (deadline 23 Sep 2025)'
-        : 'Status: Behind schedule (deadline 23 Sep 2025 has passed)';
-      statusEl.style.color = onTime ? '#2e7d32' : '#c62828';
-    }
-
-    // Draw a full-height vertical line at the milestone date (23 Sep 2025)
-    const svg = document.querySelector('.mermaid svg');
-    if (!svg) return;
-    const milestone = svg.querySelector('.milestone'); // diamond added in Gantt "Milestones" section
-    if (!milestone) return;
-
-    const bbox = milestone.getBBox();
-    const x = bbox.x + bbox.width / 2;
-    const h = (svg.viewBox && svg.viewBox.baseVal && svg.viewBox.baseVal.height)
-              ? svg.viewBox.baseVal.height
-              : svg.getBBox().height;
-
-    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    line.setAttribute('x1', x);
-    line.setAttribute('x2', x);
-    line.setAttribute('y1', 0);
-    line.setAttribute('y2', h);
-    line.setAttribute('stroke', onTime ? '#2e7d32' : '#c62828'); // green if before/equal, red if after
-    line.setAttribute('stroke-width', '2');
-    line.setAttribute('stroke-dasharray', '4,4'); // dashed; remove for solid
-    line.setAttribute('opacity', '0.95');
-    svg.appendChild(line);
-  });
-</script>
-
-<!-- 2) Optional styling -->
-<style>
-  .mermaid {
-    margin: 32px auto;
-    max-width: 1200px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-  }
-  #deadline-status {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0 4px;
-  }
-</style>
-
-<!-- 3) Status line (filled by script) -->
-<p id="deadline-status">Checking schedule…</p>
-
-<!-- 4) Full multi-team Gantt (Weeks 1–3). Avoid "&" in section names. -->
-<pre class="mermaid">
-gantt
-    title Optimus Syria — Team Progress Overview (Weeks 1–3)
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d %b
-
-    %% Week windows: W1 = 21–26 Jul, W2 = 27 Jul–02 Aug, W3 = 04–09 Aug 2025
-
-    section Loads and Dynamics
-    Week 1: Installed OpenFAST; LIDAR study                     :done,   2025-07-21, 6d
-    Week 2: Studied DNVGL and GL guidelines; data issues noted  :done,   2025-07-27, 7d
-    Week 3: Completed guideline study; preparing load estimates  :active, 2025-08-04, 6d
-
-    section Feedback Controller
-    Week 1: Installed MATLAB Python Fortran; Simulink Onramp    :done,   2025-07-21, 6d
-    Week 2: Literature review; tasks from Prof Schlipf          :done,   2025-07-27, 7d
-    Week 3: Studied ROSCO examples                              :active, 2025-08-04, 6d
-
-    section Lidar Assisted Control
-<!-- ===== Full multi-team Gantt with fixed deadline marker (works) ===== -->
 
 <!-- Mermaid loader + deadline logic -->
 <script type="module">
@@ -543,7 +455,7 @@ gantt
     section Milestones
     Project limit 23 Sep 2025                                 :milestone, crit, 2025-09-23, 0d
 </pre>
-<!-- ===== End block ===== -->
+<!-- ===== End block =====  -->
 
 
 
