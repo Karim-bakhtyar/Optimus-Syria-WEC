@@ -300,7 +300,8 @@ title: Weekly Reports of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-[Back to Main Page](index.md)
+<p><a href="index.md" style="color: black; text-decoration: none;">Back to Home</a></p>
+
 
 
 <style>
