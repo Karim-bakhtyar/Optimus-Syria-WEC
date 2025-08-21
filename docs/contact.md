@@ -31,8 +31,8 @@ title: Contact Optimus Syria
 For any technical inquiries or collaboration ideas, feel free to reach out.  
 You may also contact our coordinating institutions:
 
-- Hochschule Kiel
-- Hochschule Flensburg  
+- Hochschule Flensburg
+- Hochschule Kiel  
 - Damascus University
   
 <p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
