@@ -406,7 +406,6 @@ title: Weekly Reports of Optimus Syria
 
 
 
-
 <!-- Mermaid loader + deadline logic -->
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
@@ -472,110 +471,112 @@ title: Weekly Reports of Optimus Syria
 <!-- Status line (filled by script) -->
 <p id="deadline-status">Checking schedule…</p>
 
-<!-- Full multi-team Gantt (Weeks 1–3). No colons in task names. -->
+<!-- Full multi-team Gantt (Weeks 1–4). No colons in task names. -->
 <pre class="mermaid">
 gantt
-    title Optimus Syria - Team Progress Overview (Weeks 1-3)
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d %b
+  title Optimus Syria - Team Progress Overview (Weeks 1-4)
+  dateFormat  YYYY-MM-DD
+  axisFormat  %d %b
+  excludes    weekends
+  todayMarker stroke-width:2px
 
-    section Loads and Dynamics
+  section Loads and Dynamics
     Week 1 - Installed OpenFAST; LIDAR study                  :done,   2025-07-21, 6d
     Week 2 - Studied DNVGL and GL guidelines; data issues     :done,   2025-07-27, 7d
-    Week 3 - Completed guideline study; preparing load calc   :done,   2025-08-04, 6d
-    Week 4 - Studied Prof Manjock’s dataset (600 turbines);   :active, 2025-08-11, 7d
-             extracted 5 MW load estimates; team meeting
+    Week 3 - Completed guideline study; preparing load calc    :done,   2025-08-04, 6d
+    Week 4 - Studied Prof Manjock dataset; extracted 5MW loads :active, 2025-08-11, 7d
 
-section Feedback Controller
+  section Feedback Controller
     Week 1 - Installed MATLAB Python Fortran; Simulink Onramp :done,   2025-07-21, 6d
     Week 2 - Literature review; tasks from Prof Schlipf       :done,   2025-07-27, 7d
     Week 3 - Studied ROSCO examples                           :done,   2025-08-04, 6d
-    Week 4 - Continued ROSCO study                            :active, 2025-08-11, 7d
+    Week 4 - Continued ROSCO study                             :active, 2025-08-11, 7d
 
-section Lidar Assisted Control
+  section Lidar Assisted Control
     Week 1 - No progress; meeting pending                     :crit,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
 
-section Rotor Blade Aerodynamics
+  section Rotor Blade Aerodynamics
     Week 1 - Reading papers; QBlade learning                  :done,   2025-07-21, 6d
     Week 2 - Team meeting; papers review                      :done,   2025-07-27, 7d
     Week 3 - QBlade basics; reviewed last year report         :done,   2025-08-04, 6d
-    Week 4 - Learned QBlade further; found and studied papers :active, 2025-08-11, 7d
+    Week 4 - Learned QBlade further; studied papers            :active, 2025-08-11, 7d
 
-section Rotor Blade Structures
+  section Rotor Blade Structures
     Week 1 - Team meeting; roles; software discussions        :done,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
     Week 3 - Roles confirmed; software doubts solved          :active, 2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
-  
-section Electrical Drivetrain
+
+  section Electrical Drivetrain
     Week 1 - Market research Syria and neighbors              :done,   2025-07-21, 6d
     Week 2 - Generator specs PPT and converter study          :done,   2025-07-27, 7d
     Week 3 - Converter classes; MATLAB study                  :done,   2025-08-04, 6d
     Week 4 - Generator type research; MATLAB study ongoing    :active, 2025-08-11, 7d
 
-section Grid Code Development
+  section Grid Code Development
     Week 1 - Drafted compliance docs and sim layout           :done,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
 
-section Rotor Hub and Pitch System
+  section Rotor Hub and Pitch System
     Week 1 - Software installed; reviewed last year report    :done,   2025-07-21, 6d
     Week 2 - SolidWorks setup; component research             :done,   2025-07-27, 7d
     Week 3 - Continued hub research; design skills            :done,   2025-08-04, 6d
     Week 4 - SolidWorks practice; researched components       :active, 2025-08-11, 7d
 
-section Rotor Bearing System
+  section Rotor Bearing System
     Week 1 - Bearings shortlisted; reference turbine search   :done,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
-    Week 4 - Initial prep done; shortlisted bearings & concepts:active, 2025-08-11, 7d
+    Week 4 - Initial prep done; shortlisted bearings and concepts :active, 2025-08-11, 7d
 
-section Gearbox Brake and Coupling
+  section Gearbox Brake and Coupling
     Week 1 - Drivetrain research; layouts; suppliers          :done,   2025-07-21, 6d
     Week 2 - Deeper research drivetrain brakes couplings      :done,   2025-07-27, 7d
     Week 3 - Benchmarking; supplier research                  :done,   2025-08-04, 6d
-    Week 4 - Studied last year docs; researched drivetrain,   :active, 2025-08-11, 7d
-             standards, brakes, couplings, suppliers
+    Week 4 - Studied last year docs; researched drivetrain standards brakes couplings suppliers :active, 2025-08-11, 7d
 
-section Machine Bed and Yaw System
+  section Machine Bed and Yaw System
     Week 1 - Casting literature; industry inputs              :done,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
-    Week 3 - Benchmarking; CAD CAE and GD T studies           :done,   2025-08-04, 6d
+    Week 3 - Benchmarking; CAD CAE and GD&T studies           :done,   2025-08-04, 6d
     Week 4 - Collected review papers; studied casting methods :active, 2025-08-11, 7d
 
-section Tower
+  section Tower
     Week 1 - Market analysis; checked last year docs          :done,   2025-07-21, 6d
     Week 2 - Market study; logistics info                     :done,   2025-07-27, 7d
     Week 3 - Continued market study                           :active, 2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
 
-section Foundation
+  section Foundation
     Week 1 - No report                                        :crit,   2025-07-21, 6d
     Week 2 - Coordinated with WFD & Tower team                :done,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
 
-section Storage System
+  section Storage System
     Week 1 - No report                                        :crit,   2025-07-21, 6d
     Week 2 - No report                                        :crit,   2025-07-27, 7d
     Week 3 - No report                                        :crit,   2025-08-04, 6d
     Week 4 - No report                                        :crit,   2025-08-11, 7d
 
-section Wind Farm Development
+  section Wind Farm Development
     Week 1 - No report                                        :crit,   2025-07-21, 6d
     Week 2 - Meeting with Prof Blohm                          :done,   2025-07-27, 7d
     Week 3 - Site analysis and shortlist                      :done,   2025-08-04, 6d
-    Week 4 - Team meeting; shortlisted Latakia & Tareen       :active, 2025-08-11, 7d
+    Week 4 - Team meeting; shortlisted Latakia and Tareen     :active, 2025-08-11, 7d
 
-
-    section Milestones
+  section Milestones
     Project limit 23 Sep 2025                                 :milestone, crit, 2025-09-23, 0d
 </pre>
-<!-- ===== End block =====  -->
+
+
+
+
 
 
 
