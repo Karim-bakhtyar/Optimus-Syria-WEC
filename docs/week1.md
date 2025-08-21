@@ -371,8 +371,39 @@ title: Weekly Reports of Optimus Syria
       <td>Completed initial preparation; shortlisted bearing types (spherical & roller) and drivetrain concepts (modular & semi-integrated).</td>
       <td>Meet last year’s team leader, study past documentation, and prepare a PPT.</td>
     </tr>
+    <tr>
+      <td>Lidar Assisted Control</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Structures</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Grid Code Development</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Foundation</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Storage System</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>Wind Farm Development</td>
+      <td>Report not submitted.</td>
+      <td>Unknown</td>
+    </tr>
   </tbody>
 </table>
+
 
 
 
