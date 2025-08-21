@@ -314,7 +314,65 @@ title: Weekly Reports of Optimus Syria
   </tbody>
 </table>
 
+<h2>Week - 4 (04 10 - 17 August 2025)</h2>
 
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Team Name</th>
+      <th>This Week’s Work</th>
+      <th>Next Week’s Plan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Electrical Drivetrain</td>
+      <td>Collected data and researched generator types. Began studying MATLAB software.</td>
+      <td>Continue collecting data to finalize generator type, study converters, and keep learning MATLAB.</td>
+    </tr>
+    <tr>
+      <td>Feedback Controller</td>
+      <td>Studied examples of ROSCO.</td>
+      <td>Study how to use setpoint smoother with pitch and torque controller.</td>
+    </tr>
+    <tr>
+      <td>Gearbox, Brake, Coupling</td>
+      <td>Studied last year’s documentation; researched drivetrain systems, gearbox layouts, standards, brake systems, couplings, and possible suppliers for Syria.</td>
+      <td>Research documentation in more detail, install SolidWorks/Ansys/Dlubal, gather data from companies, and practice calculations.</td>
+    </tr>
+    <tr>
+      <td>Machine Bed & Yaw System</td>
+      <td>Collected review papers and studied different casting processes for machine bed. Discussed with seniors and professionals.</td>
+      <td>Benchmarking and idea generation for VAVE design, study CAD/CAE, and European GD&T.</td>
+    </tr>
+    <tr>
+      <td>Project Development</td>
+      <td>Internal meeting on site analysis. Selected two possible sites (Latakia, Tareen). Explained current team situation to management.</td>
+      <td>Each member analyzes the two sites in detail (wind, grid, transport, legal, distance, etc.). Final meeting to decide on one location.</td>
+    </tr>
+    <tr>
+      <td>Loads and Dynamics</td>
+      <td>Studied dataset (~600 turbines), identified those near 5 MW & 122 m rotor, and extracted statistical loads. Internal team meeting held.</td>
+      <td>Meet Prof. Manjock to review extracted loads and validate assumptions.</td>
+    </tr>
+    <tr>
+      <td>Rotor Hub & Pitch System</td>
+      <td>Practiced SolidWorks, researched previous year reports, and studied different hub/pitch components.</td>
+      <td>Learn designing methods, compare designs, and study system integration.</td>
+    </tr>
+    <tr>
+      <td>Rotor Blade Aerodynamics</td>
+      <td>Learned more about QBlade, found and studied research papers.</td>
+      <td>Search for more research papers, continue learning, and arrange a group meeting for discussion.</td>
+    </tr>
+    <tr>
+      <td>Rotor Bearing System</td>
+      <td>Completed initial preparation; shortlisted bearing types (spherical & roller) and drivetrain concepts (modular & semi-integrated).</td>
+      <td>Meet last year’s team leader, study past documentation, and prepare a PPT.</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
