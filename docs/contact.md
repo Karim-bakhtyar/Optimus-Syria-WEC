@@ -26,7 +26,17 @@ title: Contact Optimus Syria
   Email: <a href="bakhtyar-sabir.karim@stud.hs-flensburg.de">bakhtyar-sabir.karim@stud.hs-flensburg.de</a><br>
 </p>
 
+<!-- Contact: Federico -->
+<p style="text-align: center; margin-bottom: 10px;">
+  Federico De Mita<br>
+  Email: <a href="mailto:fede9936@stud.hs-flensburg.de">fede9936@stud.hs-flensburg.de</a>
+</p>
 
+<!-- Contact: Josef -->
+<p style="text-align: center; margin-bottom: 10px;">
+  Josef Remberger<br>
+  Email: <a href="mailto:josef.remberger@stud.hs-flensburg.de">josef.remberger@stud.hs-flensburg.de</a>
+</p>
 
 For any technical inquiries or collaboration ideas, feel free to reach out.  
 You may also contact our coordinating institutions:
