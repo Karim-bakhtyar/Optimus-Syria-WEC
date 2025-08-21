@@ -23,7 +23,7 @@ title: Contact Optimus Syria
 </div>
 
 <p style="text-align: center;">
-  Email: <a href="mailto:bakhtyar.karimzada@gmail.com">bakhtyar.karimzada@gmail.com</a><br>
+  Email: <a href="bakhtyar-sabir.karim@stud.hs-flensburg.de">bakhtyar-sabir.karim@stud.hs-flensburg.de</a><br>
 </p>
 
 
