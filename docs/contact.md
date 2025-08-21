@@ -26,7 +26,7 @@ title: Contact Optimus Syria
   Email: <a href="bakhtyar-sabir.karim@stud.hs-flensburg.de">bakhtyar-sabir.karim@stud.hs-flensburg.de</a><br>
 </p>
 
-<hr style="margin:30px 0;">
+
 
 <!-- Contact: Federico -->
 <p style="text-align: center; margin-bottom: 10px;">
