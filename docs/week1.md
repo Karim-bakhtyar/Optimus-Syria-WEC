@@ -578,12 +578,6 @@ gantt
 
 
 
-
-
-
-
-
-
 <!-- ===== Team Progress vs Schedule Target (Chart.js) ===== -->
 
 <!-- 1) Canvas -->
@@ -596,14 +590,14 @@ gantt
 <!-- 2) Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 
-<!-- 3) Chart code -->
+<!-- 3) Chart code (updated for Week 4) -->
 <script>
   // ==== SETTINGS YOU CAN EDIT ====
   // Project start used for target calculation (Week 1 start)
   const PROJECT_START = new Date('2025-07-21T00:00:00');   // change if needed
   const DEADLINE      = new Date('2025-09-23T00:00:00');   // fixed
 
-  // Progress per team (0–100). Update these weekly.
+  // Labels (teams)
   const labels = [
     'Loads & Dynamics','Feedback Controller','Lidar Assisted Control','Rotor Blade Aerodynamics',
     'Rotor Blade Structures','Electrical Drivetrain','Grid Code Development','Hub & Pitch',
@@ -611,8 +605,23 @@ gantt
     'Storage System','Wind Farm Development'
   ];
 
-  // Provisional values based on your Week 1–3 tables (edit anytime)
-  const progress = [70,65,10,50,45,60,35,45,25,55,50,55,15,0,55];
+  // Week-4 progress estimates (%) based on latest reports:
+  // - Loads/Dynamics: extracted 5MW loads (↑)
+  // - Feedback: continued ROSCO (slight ↑)
+  // - LAC: no report
+  // - RBA: QBlade learning + papers (↑)
+  // - RBS: no new report (hold)
+  // - Elec Drivetrain: generator research + MATLAB (↑)
+  // - Grid Code: no report (↓/hold)
+  // - Hub & Pitch: SW practice + components (↑)
+  // - Rotor Bearing: initial prep done; bearings + concepts shortlisted (↑↑)
+  // - G/B/C: broader research incl. suppliers (↑)
+  // - Machine Bed & Yaw: casting reviews (↑)
+  // - Tower: no report (hold)
+  // - Foundation: no report (hold)
+  // - Storage: no report (hold)
+  // - WFD: shortlisted Latakia & Tareen (↑)
+  const progress = [75, 68, 10, 55, 45, 62, 30, 50, 40, 60, 55, 55, 15, 0, 60];
 
   // ==== DO NOT EDIT BELOW (unless you want to tweak visuals) ====
   // Expected schedule target today (0–100)
@@ -635,8 +644,11 @@ gantt
 
   // Update label text
   const daysLeft = Math.max(0, Math.ceil((DEADLINE - today)/ (1000*60*60*24)));
-  document.getElementById('targetLabel').textContent =
-    `Deadline: 23 Sep 2025 · Schedule target today: ${targetPct}% · Days left: ${daysLeft}`;
+  const targetEl = document.getElementById('targetLabel');
+  if (targetEl) {
+    targetEl.textContent =
+      `Deadline: 23 Sep 2025 · Schedule target today: ${targetPct}% · Days left: ${daysLeft}`;
+  }
 
   // Build chart
   const ctx = document.getElementById('teamProgressChart').getContext('2d');
@@ -657,7 +669,7 @@ gantt
           type: 'line',
           label: `Schedule target (${targetPct}%)`,
           data: targetLine,
-          borderColor: '#2e7d32',   // green line (like your screenshot)
+          borderColor: '#2e7d32',
           borderWidth: 2,
           pointRadius: 0,
           tension: 0
@@ -667,7 +679,7 @@ gantt
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      aspectRatio: 2.4,  // wide, like your screenshot
+      aspectRatio: 2.4,
       plugins: {
         legend: { position: 'bottom' },
         title: {
@@ -684,15 +696,10 @@ gantt
         }
       },
       scales: {
-        x: {
-          ticks: { autoSkip: false, maxRotation: 60, minRotation: 0 }
-        },
+        x: { ticks: { autoSkip: false, maxRotation: 60, minRotation: 0 } },
         y: {
           min: 0, max: 100,
-          ticks: {
-            stepSize: 10,
-            callback: v => v + '%'
-          },
+          ticks: { stepSize: 10, callback: v => v + '%' },
           grid: { drawBorder: true }
         }
       }
@@ -700,18 +707,21 @@ gantt
   });
 </script>
 
-
 <style>
   /* Shrink chart height (desktop + mobile) */
-  #teamProgressChart { height: 500px !important; }      /* try 180–260px */
+  #teamProgressChart { height: 500px !important; }
   @media (max-width: 640px) { #teamProgressChart { height: 170px !important; } }
 </style>
-
-
 
 <link rel="stylesheet" href="assets/style.css">
 
 <p><a href="index.html" style="color: #3CB371; text-decoration: none; font-weight: bold;">Back to Home</a></p>
+
+
+
+
+
+
 
 
 
