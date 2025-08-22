@@ -621,7 +621,7 @@ gantt
   // - Foundation: no report (hold)
   // - Storage: no report (hold)
   // - WFD: shortlisted Latakia & Tareen (↑)
-  const progress = [75, 68, 10, 55, 45, 62, 30, 50, 40, 60, 55, 55, 15, 0, 60];
+  const progress = [75, 68, 10, 55, 50, 62, 30, 50, 40, 60, 55, 55, 15, 0, 60];
 
   // ==== DO NOT EDIT BELOW (unless you want to tweak visuals) ====
   // Expected schedule target today (0–100)
