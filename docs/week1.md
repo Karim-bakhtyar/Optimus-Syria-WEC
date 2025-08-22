@@ -378,7 +378,8 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Rotor Blade Structures</td>
-      <td>Deeep research in scientific papers</td>
+      <td>Complete overview of softwares to be learned,
+      Going through the Research Papers which Prof. Alhrshy</td>
       <td>Understand the site of the WEC,
 Solve doubts of each other with Group Discussion
 </td>
