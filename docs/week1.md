@@ -398,8 +398,8 @@ title: Weekly Reports of Optimus Syria
     </tr>
     <tr>
       <td>Wind Farm Development</td>
-      <td>Report not submitted.</td>
-      <td>Unknown</td>
+      <td>shortlisted Latakia and Tareen</td>
+      <td>Final  decision between Latakia and Tareen</td>
     </tr>
   </tbody>
 </table>
