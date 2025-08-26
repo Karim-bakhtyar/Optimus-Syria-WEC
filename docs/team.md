@@ -21,6 +21,14 @@ title:Teams of Optimus Syria
 The Optimus Syria project is guided by a team of distinguished professors and researchers from Hochschule Kiel & Flensburg, and the University of Damascus. Their technical expertise and mentoring play a critical role in supporting student teams through design, modeling, simulation, and system integration of the wind energy converter. Each professor provides domain-specific supervision to ensure scientific rigor, engineering quality, and real-world applicability of the results.
 </p>
 
+<h3>Prof. Dr.-Ing. Torsten Faber</h3>
+<p>
+Supervisor for:<br>
+– Tower<br>
+– Foundation<br>
+Prof. Faber, Director of the Wind Energy Technology Institute (WETI) at Hochschule Flensburg, supervised the Tower &amp; Foundation team. He guided them through structural concept development, design, and dimensioning, ensuring stability, reliability, and alignment with project requirements. His leadership in wind energy engineering has been instrumental in the team’s success.
+</p>
+
 <h3>Prof. Dr.-Ing. David Schlipf</h3>
 <p>
 Supervisor for:<br>
@@ -54,6 +62,7 @@ Prof. Saiju provides expertise in electrical system modeling, generator and conv
 <h3>Dr. Laurence Alhrshy</h3>
 <p>
 Supervisor for:<br>
+– Storage System 
 – Rotor Blade Structures<br>
 Dr. Alhrshy supports the structural design of composite rotor blades using NuMAD and finite element principles, ensuring strength, safety, and manufacturing feasibility.
 </p>
@@ -65,13 +74,15 @@ Supervisor for:<br>
 – Rotor Bearing System<br>
 – Gearbox, Brake, Coupling<br>
 – Machine Bed & Yaw System<br>
-– Tower<br>
-– Foundation<br>
-– Storage System<br>
-– Wind Farm Development<br>
 Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
 </p>
 
+<h3>Dr. Marina Blohm</h3>
+<p>
+Supervisor for:<br>
+– Wind Project Development<br>
+Dr. Blohm, Research Associate at Europa-Universität Flensburg, supervised the Wind Farm Development team. With her background in wind project development and renewable energy research, she provided valuable guidance on planning and sustainability aspects of the project.
+</p>
 
 <h2>Project Teams</h2>
 
