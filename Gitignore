@@ -13,6 +13,10 @@ derivatives/
 *_grt_rtw/
 *.mex*
 
+# FAST simulations and ROSCO output
+*.outb
+*.dbg
+
 # System files
 .DS_Store
 Thumbs.db
