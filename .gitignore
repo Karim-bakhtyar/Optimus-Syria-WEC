@@ -1,0 +1,22 @@
+# MATLAB temporary files
+*.asv
+*.m~ 
+*.mat
+*.fig
+*.mdl.autosave
+*.slx.autosave
+
+# Simulink generated folders
+slprj/
+sccprj/
+derivatives/
+*_grt_rtw/
+*.mex*
+
+# FAST simulations and ROSCO output
+*.outb
+*.dbg
+
+# System files
+.DS_Store
+Thumbs.db
