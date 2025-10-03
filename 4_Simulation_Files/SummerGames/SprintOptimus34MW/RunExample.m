@@ -19,7 +19,7 @@ FASTexeFile     = '';
 SimulationName  = 'IEA-3.4-130-RWT';
 
 %% Run FB
-dos(['openfast_x64_Double.exe ',SimulationName,'.fst']);                    % run OpenFAST
+dos(['openfast_x64.exe ',SimulationName,'.fst']);                          % run OpenFAST
 
 % % % Run FBFF  
 % % dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
