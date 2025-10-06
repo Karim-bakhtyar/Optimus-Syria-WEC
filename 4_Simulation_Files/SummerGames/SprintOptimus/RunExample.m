@@ -16,17 +16,17 @@ addpath(genpath('..\WetiMatlabFunctions'))
 
 % Copy the adequate OpenFAST version to the example folder
 FASTexeFile     = '';
-SimulationName  = 'IEA-15-240-RWT-Monopile';
+SimulationName  = 'IEA-3.4-130-RWT';
 
 %% Run FB
-dos(['openfast_x64.exe ',SimulationName,'_FB.fst']);                    % run OpenFAST
+dos(['openfast_x64_Double.exe ',SimulationName,'.fst']);                    % run OpenFAST
 
 % % % Run FBFF  
 % % dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
 
 %% Comparison
 % read in data
-FB              = ReadFASTbinaryIntoStruct([SimulationName,'_FB.outb']);
+FB              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
 % FBFF            = ReadFASTbinaryIntoStruct([SimulationName,'_FBFF.outb']);
 
 % Plot 
