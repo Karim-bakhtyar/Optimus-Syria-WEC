@@ -15,14 +15,18 @@ clearvars;close all;clc;
 addpath(genpath('..\WetiMatlabFunctions'))
 
 % Copy the adequate OpenFAST version to the example folder
-FASTexeFile     = '';
+FASTexeFile     = 'openfast_x64.exe';
 SimulationName  = 'IEA-3.4-130-RWT';
+copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 
 %% Run FB
 dos(['openfast_x64.exe ',SimulationName,'.fst']);                          % run OpenFAST
 
 % % % Run FBFF  
 % % dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
+
+%% Clean up
+delete(FASTexeFile)
 
 %% Comparison
 % read in data
