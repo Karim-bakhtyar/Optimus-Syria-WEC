@@ -13,14 +13,14 @@ True      WrADTWR         - Output tower time-series data? (Generates RootName.t
 False     WrFMTFF         - Output full-field time-series data in formatted (readable) form?  (Generates RootName.u, RootName.v, RootName.w)
 False     WrACT           - Output coherent turbulence time steps in AeroDyn form? (Generates RootName.cts)
 True      Clockwise       - Clockwise rotation looking downwind? (used only for full-field binary files - not necessary for AeroDyn)
-0         ScaleIEC        - Scale IEC turbulence models to exact target standard deviation? [0=no additional scaling; 1=use hub scale uniformly; 2=use individual scales]
+2         ScaleIEC        - Scale IEC turbulence models to exact target standard deviation? [0=no additional scaling; 1=use hub scale uniformly; 2=use individual scales]
 
 --------Turbine/Model Specifications-----------------------
-12        NumGrid_Z       - Vertical grid-point matrix dimension
-12        NumGrid_Y       - Horizontal grid-point matrix dimension
-0.05      TimeStep        - Time step [seconds]
-150.0     AnalysisTime    - Length of analysis time series [seconds] (program will add time if necessary: AnalysisTime = MAX(AnalysisTime, UsableTime+GridWidth/MeanHHWS) )
-120.0    UsableTime      - Usable length of output time series [seconds] (program will add GridWidth/MeanHHWS seconds unless UsableTime is "ALL")
+31        NumGrid_Z       - Vertical grid-point matrix dimension
+31        NumGrid_Y       - Horizontal grid-point matrix dimension
+0.10      TimeStep        - Time step [seconds]
+600       AnalysisTime    - Length of analysis time series [seconds] (program will add time if necessary: AnalysisTime = MAX(AnalysisTime, UsableTime+GridWidth/MeanHHWS) )
+"ALL"     UsableTime      - Usable length of output time series [seconds] (program will add GridWidth/MeanHHWS seconds unless UsableTime is "ALL")
 110       HubHt           - Hub height [m] (should be > 0.5*GridHeight)
 150       GridHeight      - Grid height [m]
 150       GridWidth       - Grid width [m] (should be >= 2*(RotorRadius+ShaftLength))

@@ -20,18 +20,18 @@ SimulationName  = 'IEA-3.4-130-RWT';
 copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 
 %% Run FB
-dos(['openfast_x64.exe ',SimulationName,'.fst']);                          % run OpenFAST
+dos(['openfast_x64.exe ',SimulationName,'_FB.fst']);                    % run OpenFAST
 
 % % % Run FBFF  
-% % dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
+dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
 
 %% Clean up
 delete(FASTexeFile)
 
 %% Comparison
 % read in data
-FB              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
-% FBFF            = ReadFASTbinaryIntoStruct([SimulationName,'_FBFF.outb']);
+FB              = ReadFASTbinaryIntoStruct([SimulationName,'_FB.outb']);
+FBFF            = ReadFASTbinaryIntoStruct([SimulationName,'_FBFF.outb']);
 
 % Plot 
 figure('Name','Simulation results')
@@ -39,28 +39,28 @@ figure('Name','Simulation results')
 subplot(4,1,1);
 hold on; grid on; box on
 plot(FB.Time,       FB.Wind1VelX);
-% plot(FBFF.Time,     FBFF.VLOS01LI);
-% legend('Hub height wind speed','Vlos')
+plot(FBFF.Time,     FBFF.VLOS01LI);
+legend('Hub height wind speed','Vlos')
 ylabel('[m/s]');
-% legend('Wind1VelX','VLOS01LI')
+legend('Wind1VelX','VLOS01LI')
 
 subplot(4,1,2);
 hold on; grid on; box on
 plot(FB.Time,       FB.BldPitch1);
-% plot(FBFF.Time,     FBFF.BldPitch1);
+plot(FBFF.Time,     FBFF.BldPitch1);
 ylabel({'BldPitch1'; '[deg]'});
-% legend('feedback only','feedback-feedforward')
+legend('feedback only','feedback-feedforward')
 
 subplot(4,1,3);
 hold on; grid on; box on
 plot(FB.Time,       FB.RotSpeed);
-% plot(FBFF.Time,     FBFF.RotSpeed);
+plot(FBFF.Time,     FBFF.RotSpeed);
 ylabel({'RotSpeed';'[rpm]'});
 
 subplot(4,1,4);
 hold on; grid on; box on
 plot(FB.Time,       FB.TwrBsMyt/1e3);
-% plot(FBFF.Time,     FBFF.TwrBsMyt/1e3);
+plot(FBFF.Time,     FBFF.TwrBsMyt/1e3);
 ylabel({'TwrBsMyt';'[MNm]'});
 
 xlabel('time [s]')
@@ -68,11 +68,11 @@ linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
 xlim([0 30])
 
 % display results
-RotSpeed_0  = 7.56;     % [rpm]
-TwrBsMyt_0  = 158.3e3;  % [kNm]
-t_Start     = 0;        % [s]
-
+% RotSpeed_0  = 7.56;     % [rpm]
+% TwrBsMyt_0  = 158.3e3;  % [kNm]
+% t_Start     = 0;        % [s]
+% 
 % Cost = (max(abs(FBFF.RotSpeed(FBFF.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
-     % + (max(abs(FBFF.TwrBsMyt(FBFF.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
-
+%      + (max(abs(FBFF.TwrBsMyt(FBFF.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
+% 
 % fprintf('Cost for Summer Games 2025 ("30 s sprint"):  %f \n',Cost);
