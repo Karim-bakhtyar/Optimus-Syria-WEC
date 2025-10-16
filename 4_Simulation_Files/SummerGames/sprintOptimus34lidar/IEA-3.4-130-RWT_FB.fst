@@ -18,7 +18,7 @@ False                  Echo        - Echo input data to <RootName>.ech (flag)
 0                      CompSub     - Compute sub-structural dynamics (switch) {0=None; 1=SubDyn; 2=External Platform MCKF}
 0                      CompMooring - Compute mooring system (switch) {0=None; 1=MAP++; 2=FEAMooring; 3=MoorDyn; 4=OrcaFlex}
 0                      CompIce     - Compute ice loads (switch) {0=None; 1=IceFloe; 2=IceDyn}
-1                      CompLidar   - Compute Lidar Module (switch) {0 = Off, 1 = On}
+0                      CompLidar   - Compute Lidar Module (switch) {0 = Off, 1 = On}
 ---------------------- INPUT FILES ---------------------------------------------
 "IEA-3.4-130-RWT_ElastoDyn.dat" EDFile      - Name of file containing ElastoDyn input parameters (quoted string)
 "IEA-3.4-130-RWT_BeamDyn.dat"   BDBldFile(1) - Name of file containing BeamDyn input parameters for blade 1 (quoted string)

@@ -13,7 +13,7 @@
 %% Setup
 clearvars;close all;clc;
 addpath(genpath('..\WetiMatlabFunctions'))
-addpath('C:\Users\lenovo\Downloads\Optimus-Syria-WEC-main (1)\Optimus-Syria-WEC-main\4_Simulation_Files\SummerGames\SprintOptimus')
+% addpath('C:\Users\lenovo\Downloads\Optimus-Syria-WEC-main (1)\Optimus-Syria-WEC-main\4_Simulation_Files\SummerGames\SprintOptimus')
 % Copy the adequate OpenFAST version to the example folder
 FASTexeFile     = 'openfast_x64.exe';
 SimulationName  = 'IEA-3.4-130-RWT';
@@ -22,7 +22,7 @@ copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 %% Run FB
 dos(['openfast_x64.exe ',SimulationName,'_FB.fst']);                    % run OpenFAST
 
-% % % Run FBFF  
+% Run FBFF  
 dos(['openfast_x64.exe ',SimulationName,'_FBFF.fst']);                  % run OpenFAST
 
 %% Clean up
