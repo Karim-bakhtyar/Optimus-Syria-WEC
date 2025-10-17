@@ -1,8 +1,13 @@
 %% Feedback controller team
 %  script for getting steady state values of pitch and rotor speed
+
+%% Changes you should do before running!
 %  in .fst file => sim. time should be 600s, 
 %  in elastodyn => only enable genDO,TwFADOF1; no initial conditions set 
 %  in inflowFile.dat => WindType=1, PLexp=0
+%
+%  don't forget check simulation name in line 17, 37 and 39.
+%  it is running for feedback
 
 %% Preprocess
 clearvars;close all;clc;
