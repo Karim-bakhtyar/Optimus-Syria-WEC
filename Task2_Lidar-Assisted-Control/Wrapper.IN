@@ -1,0 +1,9 @@
+! Input for the master DLL. It contains the name and input files for sub-DLLs.
+
+3                          ! NumberofSubDLLs
+"FFP_v1.dll"               ! SubDLLName
+"FFP.IN"                   ! SubDLLInputName
+"LDP_v1.dll"               ! SubDLLName
+"LDP.IN"                   ! SubDLLInputName
+"ROSCO.dll"                ! SubDLLName
+"ROSCO_FBFF.IN"            ! SubDLLInputName
