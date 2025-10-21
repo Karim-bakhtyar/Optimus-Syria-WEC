@@ -68,11 +68,18 @@ linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
 xlim([0 30])
 
 % display results
-RotSpeed_0  = 11.634;     % [rpm]
-TwrBsMyt_0  = 158.3e3;  % [kNm] %% needs to be adjusted
+RotSpeed_0  = 11.37;     % [rpm]
+TwrBsMyt_0  = 56.2e3;  % [kNm] 
 t_Start     = 0;        % [s]
 
-Cost = (max(abs(FBFF.RotSpeed(FBFF.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
+% cost for feedback feedforward
+Cost_FBFF = (max(abs(FBFF.RotSpeed(FBFF.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
      + (max(abs(FBFF.TwrBsMyt(FBFF.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
 
-fprintf('Cost for Summer Games 2025 ("30 s sprint"):  %f \n',Cost);
+fprintf('Cost for feedback feedforward ("30 s sprint"):  %f \n',Cost_FBFF);
+
+% cost for feedback only
+Cost_FB = (max(abs(FB.RotSpeed(FB.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
+     + (max(abs(FB.TwrBsMyt(FB.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
+
+fprintf('Cost for feedback only ("30 s sprint"):  %f \n',Cost_FB);

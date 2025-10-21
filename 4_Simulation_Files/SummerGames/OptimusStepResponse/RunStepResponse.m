@@ -60,11 +60,11 @@ linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
 xlim([0 30])
 
 % display results
-% RotSpeed_0  = 11.634;     % [rpm]
-% TwrBsMyt_0  = 158.3e3;  % [kNm] %% needs to be adjusted
-% t_Start     = 0;        % [s]
-% 
-% Cost = (max(abs(FBFF.RotSpeed(FBFF.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
-%      + (max(abs(FBFF.TwrBsMyt(FBFF.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
+RotSpeed_0  = 11.37;     % [rpm]
+TwrBsMyt_0  = 56.2e3;  % [kNm] 
+t_Start     = 0;        % [s]
 
-% fprintf('Cost for step response ("30 s sprint"):  %f \n',Cost);
+Cost = (max(abs(FB.RotSpeed(FB.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
+     + (max(abs(FB.TwrBsMyt(FB.Time>=t_Start)-TwrBsMyt_0))) / TwrBsMyt_0;
+
+fprintf('Cost for step response ("30 s sprint"):  %f \n',Cost);
