@@ -11,9 +11,9 @@ copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 %% Adjust initial condition
 
 % load steady states
-% load('SteadyStates_3p4MW.mat');
+load('..\SprintOptimus_3p4MW\SteadyStates_3p4MW.mat')
 
-% manipulateTXT for elasto dyn
+% manipulateTXT in elasto dyn. for updating steady states
     % for loop for blade pitch
     % ManipulateTXTFile('IEA-3.4-130-RWT_ElastoDyn.dat',-,-);
 
@@ -52,12 +52,18 @@ ylabel({'RotSpeed';'[rpm]'});
 
 subplot(4,1,4);
 hold on; grid on; box on
-plot(FB.Time,       FB.TwrBsMyt/1e3);
-ylabel({'TwrBsMyt';'[MNm]'});
+plot(FB.Time,       FB.RtTSR);
+ylabel({'TSR';'[-]'});
+
+% subplot(4,1,5);
+% hold on; grid on; box on
+% plot(FB.Time,       FB.TwrBsMyt/1e3);
+% ylabel({'TwrBsMyt';'[MNm]'});
+
 
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
-xlim([0 30])
+xlim([0 120])
 
 % display results
 RotSpeed_0  = 11.37;     % [rpm]
