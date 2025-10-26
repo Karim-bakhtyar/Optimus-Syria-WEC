@@ -34,7 +34,7 @@ We believe that engineering should not only solve problems, but also build bridg
 
 | No. | Team Name                    | Team Leader                | Status / Summary                                        |
 |-----|------------------------------|-----------------------------|----------------------------------------------------------|
-| 01  | Load and Dynamics            | Mohamed Reda Alywa         | Installed OpenFAST, studied LIDAR and control methods   |
+| 01  | Load and Dynamics            | Md Aman                    | Installed OpenFAST, studied LIDAR and control methods   |
 | 02  | Feedback Controller          | Mirza Dincer               | Completed Simulink Onramp, literature review started    |
 | 03  | Lidar Assisted Control       | Hesham Mahmoud             | Awaiting kickoff meeting with Prof. Schlipf             |
 | 04  | Rotor Blade Aerodynamic      | Jay Atulbhai Pandya        | Started Q-Blade, reviewing papers                       |
