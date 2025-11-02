@@ -11,7 +11,7 @@ SimulationMode              = 'FeedbackOnly';
 % generate simulation folder and copy all files from OpenFAST and TemplateFolder to SimulationFolder
 ExeFile                     = 'openfast_x64.exe';
 SimulationFolder            = ['SimulationResults_',SimulationMode];
-TemplateFolder              = '../SprintOptimus34MW';
+TemplateFolder              = '../SprintOptimus_3p4MW';
 if ~exist(SimulationFolder,'dir')
     mkdir(SimulationFolder)
 end
