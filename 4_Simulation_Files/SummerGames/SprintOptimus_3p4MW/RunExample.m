@@ -68,8 +68,8 @@ linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
 xlim([0 30])
 
 % display results
-RotSpeed_0  = 11.37;     % [rpm]
-TwrBsMyt_0  = 56.2e3;  % [kNm] 
+RotSpeed_0  = 11.634;     % [rpm]
+TwrBsMyt_0  = 5.656e4;  % [kNm] 
 t_Start     = 0;        % [s]
 
 % cost for feedback feedforward
