@@ -9,7 +9,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
        True   FlapDOF2        - Second flapwise blade mode DOF (flag)
        True   EdgeDOF         - First edgewise blade mode DOF (flag)
       False   TeetDOF         - Rotor-teeter DOF (flag) [unused for 3 blades]
-       True   DrTrDOF         - Drivetrain rotational-flexibility DOF (flag)
+      False   DrTrDOF         - Drivetrain rotational-flexibility DOF (flag)
        True   GenDOF          - Generator DOF (flag)
        True   YawDOF          - Yaw DOF (flag)
        True   TwFADOF1        - First fore-aft tower bending-mode DOF (flag)
@@ -30,7 +30,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
         0.0   BlPitch(3)      - Blade 3 initial pitch (deg) [unused for 2 blades]
         0.0   TeetDefl        - Initial or fixed teeter angle (deg) [unused for 3 blades]
         0.0   Azimuth         - Initial azimuth angle for blade 1 (deg)
-     10.146   RotSpeed        - Initial or fixed rotor speed (rpm)
+         25   RotSpeed        - Initial or fixed rotor speed (rpm)
         0.0   NacYaw          - Initial or fixed nacelle-yaw angle (deg)
         0.0   TTDspFA         - Initial fore-aft tower-top displacement (m)
         0.0   TTDspSS         - Initial side-to-side tower-top displacement (m)

@@ -6,18 +6,18 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
 ---------------------- PITCH CONTROL -------------------------------------------
           5   PCMode          - Pitch control mode {0: none, 3: user-defined from routine PitchCntrl, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
         0.0   TPCOn           - Time to enable active pitch control (s) [unused when PCMode=0]
-      200.0   TPitManS(1)     - Time to start override pitch maneuver for blade 1 and end standard pitch control (s)
-      200.0   TPitManS(2)     - Time to start override pitch maneuver for blade 2 and end standard pitch control (s)
-      200.0   TPitManS(3)     - Time to start override pitch maneuver for blade 3 and end standard pitch control (s) [unused for 2 blades]
-        1.0   PitManRat(1)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 1 (deg/s)
-        1.0   PitManRat(2)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 2 (deg/s)
-        1.0   PitManRat(3)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 3 (deg/s) [unused for 2 blades]
-       90.0   BlPitchF(1)     - Blade 1 final pitch for pitch maneuvers (degrees)
-       90.0   BlPitchF(2)     - Blade 2 final pitch for pitch maneuvers (degrees)
-       90.0   BlPitchF(3)     - Blade 3 final pitch for pitch maneuvers (degrees) [unused for 2 blades]
+        200   TPitManS(1)     - Time to start override pitch maneuver for blade 1 and end standard pitch control (s)
+        200   TPitManS(2)     - Time to start override pitch maneuver for blade 2 and end standard pitch control (s)
+        200   TPitManS(3)     - Time to start override pitch maneuver for blade 3 and end standard pitch control (s) [unused for 2 blades]
+        2.0   PitManRat(1)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 1 (deg/s)
+        2.0   PitManRat(2)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 2 (deg/s)
+        2.0   PitManRat(3)    - Pitch rate at which override pitch maneuver heads toward final pitch angle for blade 3 (deg/s) [unused for 2 blades]
+         90   BlPitchF(1)     - Blade 1 final pitch for pitch maneuvers (degrees)
+         90   BlPitchF(2)     - Blade 2 final pitch for pitch maneuvers (degrees)
+         90   BlPitchF(3)     - Blade 3 final pitch for pitch maneuvers (degrees) [unused for 2 blades]
 ---------------------- GENERATOR AND TORQUE CONTROL ----------------------------
           5   VSContrl        - Variable-speed control mode {0: none, 1: simple VS, 3: user-defined from routine UserVSCont, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
-          3   GenModel        - Generator model {1: simple, 2: Thevenin, 3: user-defined from routine UserGen} (switch) [used only when VSContrl=0]
+          1   GenModel        - Generator model {1: simple, 2: Thevenin, 3: user-defined from routine UserGen} (switch) [used only when VSContrl=0]
        94.4   GenEff          - Generator efficiency [ignored by the Thevenin and user-defined generator models] (%)
        True   GenTiStr        - Method to start the generator {T: timed using TimGenOn, F: generator speed using SpdGenOn} (flag)
        True   GenTiStp        - Method to stop the generator {T: timed using TimGenOf, F: when generator power = 0} (flag)
@@ -44,17 +44,17 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
      9999.9   TEC_RLR         - Rotor leakage reactance (ohms) [used only when VSContrl=0 and GenModel=2]
      9999.9   TEC_MR          - Magnetizing reactance (ohms) [used only when VSContrl=0 and GenModel=2]
 ---------------------- HIGH-SPEED SHAFT BRAKE ----------------------------------
-          0   HSSBrMode       - HSS brake model {0: none, 1: simple, 3: user-defined from routine UserHSSBr, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
-     9999.9   THSSBrDp        - Time to initiate deployment of the HSS brake (s)
-        0.6   HSSBrDT         - Time for HSS-brake to reach full deployment once initiated (sec) [used only when HSSBrMode=1]
+          1   HSSBrMode       - HSS brake model {0: none, 1: simple, 3: user-defined from routine UserHSSBr, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
+        210   THSSBrDp        - Time to initiate deployment of the HSS brake (s)
+        0.0   HSSBrDT         - Time for HSS-brake to reach full deployment once initiated (sec) [used only when HSSBrMode=1]
     28116.2   HSSBrTqF        - Fully deployed HSS-brake torque (N-m)
 ---------------------- NACELLE-YAW CONTROL -------------------------------------
-          0   YCMode          - Yaw control mode {0: none, 1: simple, 3: user-defined from routine UserYawCont, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
+          5   YCMode          - Yaw control mode {0: none, 1: simple, 3: user-defined from routine UserYawCont, 4: user-defined from Simulink/Labview, 5: user-defined from Bladed-style DLL} (switch)
      9999.9   TYCOn           - Time to enable active yaw control (s) [unused when YCMode=0]
         0.0   YawNeut         - Neutral yaw position--yaw spring force is zero at this yaw (degrees)
 9.02832E+09   YawSpr          - Nacelle-yaw spring constant (N-m/rad)
   1.916E+07   YawDamp         - Nacelle-yaw damping constant (N-m/(rad/s))
-     9999.9   TYawManS        - Time to start override yaw maneuver and end standard yaw control (s)
+          0   TYawManS        - Time to start override yaw maneuver and end standard yaw control (s)
         2.0   YawManRat       - Yaw maneuver rate (in absolute value) (deg/s)
         0.0   NacYawF         - Final yaw angle for override yaw maneuvers (degrees)
 --------------------------- Aerodynamic Flow Control ---------------------------
@@ -77,7 +77,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
 "ServoData\DISCON_v3-53_x64.dll" DLL_FileName - Name/location of the dynamic library {.dll [Windows] or .so [Linux]} in the Bladed-DLL format (-) [used only with Bladed Interface]
    "unused"   DLL_InFile      - Name of input file sent to the DLL [used only with Bladed Interface] (-)
    "DISCON"   DLL_ProcName    - Name of procedure in DLL to be called (-) [case sensitive; used only with DLL Interface]
-    Default   DLL_DT          - Communication interval for dynamic library [used only with Bladed Interface] (s) (or "default")
+       0.01   DLL_DT          - Communication interval for dynamic library [used only with Bladed Interface] (s) (or "default")
       False   DLL_Ramp        - Whether a linear ramp should be used between DLL_DT time steps [introduces time shift when true] (flag)
      9999.9   BPCutoff        - Cuttoff frequency for low-pass filter on blade pitch from DLL (Hz) [used only with Bladed Interface]
      9999.9   NacYaw_North    - Reference yaw angle of the nacelle when the upwind end points due North (deg) [used only with Bladed Interface]
