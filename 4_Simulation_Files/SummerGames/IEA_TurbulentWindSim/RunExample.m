@@ -33,16 +33,19 @@ delete(FASTexeFile)
 FB              = ReadFASTbinaryIntoStruct([SimulationName,'_FB.outb']);
 FBFF            = ReadFASTbinaryIntoStruct([SimulationName,'_FBFF.outb']);
 
+FBFF_R          = ReadROSCOtextIntoStruct( [SimulationName,'_FBFF.RO.dbg']);
+
+
 %% Plot 
 figure('Name','Simulation results')
 
 subplot(4,1,1);
 hold on; grid on; box on
 plot(FB.Time,       FB.Wind1VelX);
-plot(FBFF.Time,     FBFF.VLOS01LI);
+plot(FBFF.Time,     FBFF_R.REWS_b);
 legend('Hub height wind speed','Vlos')
 ylabel('[m/s]');
-legend('Wind1VelX','VLOS01LI')
+legend('Wind1VelX','REWS_b')
 
 subplot(4,1,2);
 hold on; grid on; box on
