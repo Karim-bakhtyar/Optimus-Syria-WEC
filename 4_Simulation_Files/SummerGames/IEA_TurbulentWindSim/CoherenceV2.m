@@ -30,20 +30,20 @@ t = [0:dt:T-dt];
 % coordinates in Wind-Coordinate System - FOUR BEAMS
 % Cross pattern: right, left, up, down 
 % x is measurement distance
-x_1 = -160;
-x_2 = -160;
-x_3 = -160;
-x_4 = -160;
+x_1 = -70;
+x_2 = -70;
+x_3 = -70;
+x_4 = -70;
 
-y_1 = 45;   % Beam 1: right % 18.756
-y_2 = 45;  % Beam 2: left
-y_3 = -45;    % Beam 3: center (vertical up)
-y_4 = -45;    % Beam 4: center (vertical down)
+y_1 = 20;   % Beam 1: right % 18.756
+y_2 = 20;  % Beam 2: left
+y_3 = -20;    % Beam 3: center (vertical up)
+y_4 = -20;    % Beam 4: center (vertical down)
 
-z_1 = 35;    % Beam 1: horizontal % 15.522
-z_2 = -35;    % Beam 2: horizontal
-z_3 = -35;   % Beam 3: up
-z_4 = 35;  % Beam 4: down
+z_1 = 15;    % Beam 1: horizontal % 15.522
+z_2 = -15;    % Beam 2: horizontal
+z_3 = -15;   % Beam 3: up
+z_4 = 15;  % Beam 4: down
 
 % backscattered laser vector for all four beams
 f_1 = norm([x_1 y_1 z_1]);
@@ -220,7 +220,8 @@ gamma_Sq_RL = abs(S_RL).^2./(S_RR.*S_LL);
 k = 2*pi*f/URef;
 
 % Find bandwidth at 0.5 coherence (MCB = Modified Coherence Bandwidth)
-idx_mcb = find(gamma_Sq_RL < 0.5, 1, 'first');
+target = 0.5;
+[~, idx_mcb] = min( abs(gamma_Sq_RL - target) );
 if isempty(idx_mcb)
     MCB = max(k); % Fallback if coherence is high everywhere
 else
@@ -228,7 +229,7 @@ else
 end
 
 % Smallest Detectable Eddy Size
-SDES = 1/MCB/(2*R);
+SDES = (1/MCB)/(2*R);
 
 %% 10. Plots
 
