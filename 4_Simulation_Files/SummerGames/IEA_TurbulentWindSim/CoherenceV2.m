@@ -30,20 +30,20 @@ t = [0:dt:T-dt];
 % coordinates in Wind-Coordinate System - FOUR BEAMS
 % Cross pattern: right, left, up, down 
 % x is measurement distance
-x_1 = -70;
-x_2 = -70;
-x_3 = -70;
-x_4 = -70;
+x_1 = -90;
+x_2 = -90;
+x_3 = -90;
+x_4 = -90;
 
-y_1 = 20;   % Beam 1: right % 18.756
-y_2 = 20;  % Beam 2: left
-y_3 = -20;    % Beam 3: center (vertical up)
-y_4 = -20;    % Beam 4: center (vertical down)
+y_1 = 25;   % Beam 1: right % 18.756
+y_2 = 25;  % Beam 2: left
+y_3 = -25;    % Beam 3: center (vertical up)
+y_4 = -25;    % Beam 4: center (vertical down)
 
-z_1 = 15;    % Beam 1: horizontal % 15.522
-z_2 = -15;    % Beam 2: horizontal
-z_3 = -15;   % Beam 3: up
-z_4 = 15;  % Beam 4: down
+z_1 = 20;    % Beam 1: horizontal % 15.522
+z_2 = -20;    % Beam 2: horizontal
+z_3 = -20;   % Beam 3: up
+z_4 = 20;  % Beam 4: down
 
 % backscattered laser vector for all four beams
 f_1 = norm([x_1 y_1 z_1]);
@@ -229,9 +229,12 @@ else
 end
 
 % Smallest Detectable Eddy Size
-SDES = (1/MCB)/(2*R);
+SDES = (1/MCB)*2*pi/(2*R);
 
-%% 10. Plots
+%% 10. Transfer function for low pass filter
+Gain_RL = abs(abs(S_RL) ./ S_LL);
+
+%% 11. Plots
 
 % time series
 figure('Name','Time Series - Four Beam Lidar')
@@ -277,7 +280,15 @@ legend('Location','best')
 title(sprintf('Coherence - Four-Beam LiDAR (SDES = %.2f)',SDES))
 grid on
 
-%% 11. Display Results
+% Transfer function, for low pass filter
+figure('Name','Transfer Function G_RL = S_RL / S_LL')
+semilogx(k,Gain_RL);
+xlabel('wave number [rad/m]')
+ylabel('Transfer Function [|G_RL|]')
+hold all; grid on; box on
+
+
+%% 12. Display Results
 
 fprintf('\n=== FOUR-BEAM LIDAR ANALYSIS RESULTS ===\n')
 fprintf('Mean wind speed (URef): %.2f m/s\n', URef)
