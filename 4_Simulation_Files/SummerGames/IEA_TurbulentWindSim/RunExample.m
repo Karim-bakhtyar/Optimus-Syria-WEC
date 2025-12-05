@@ -87,6 +87,13 @@ Cost_FB = (max(abs(FB.RotSpeed(FB.Time>=t_Start)-RotSpeed_0))) / RotSpeed_0 ...
 
 fprintf('Cost for feedback only ("30 s sprint"):  %f \n',Cost_FB);
 
+%% TwrBsMyt DEL
+WoehlerExponentSteel    = 4;
+FB_DEL = CalculateDEL(FB.TwrBsMyt, FB.Time, WoehlerExponentSteel);
+FBFF_DEL = CalculateDEL(FBFF.TwrBsMyt, FBFF.Time, WoehlerExponentSteel);
+fprintf("DEL for FB only: %.2f\n", FB_DEL);
+fprintf("DEL for FBFF: %.2f\n", FBFF_DEL);
+
 %% Rotor speed Power Spectral Density
 % feedback only 
 dt = 0.0125;     % [s]
