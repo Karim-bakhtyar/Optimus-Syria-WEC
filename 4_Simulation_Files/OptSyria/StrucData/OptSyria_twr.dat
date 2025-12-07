@@ -1,7 +1,7 @@
 ============= ELASTODYN V1.00.* INDIVIDUAL TOWER INPUT FILE ====================
 HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
 ---------------------- TOWER PARAMETERS ----------------------------------------
-         11   NTwInpSt        - Number of input stations to specify tower geometry
+          6   NTwInpSt        - Number of input stations to specify tower geometry
           1   TwrFADmp(1)     - Tower 1st fore-aft mode structural damping ratio (%)
           1   TwrFADmp(2)     - Tower 2nd fore-aft mode structural damping ratio (%)
           1   TwrSSDmp(1)     - Tower 1st side-to-side mode structural damping ratio (%)
@@ -17,17 +17,12 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
 ---------------------- DISTRIBUTED TOWER PROPERTIES ----------------------------
   HtFract       TMassDen         TwFAStif       TwSSStif
    (-)           (kg/m)           (Nm^2)         (Nm^2)
-0.0000000E+00  5.5908700E+03  6.1434300E+11  6.1434300E+11  
-1.0000000E-01  5.2324300E+03  5.3482100E+11  5.3482100E+11  
-2.0000000E-01  4.8857600E+03  4.6326700E+11  4.6326700E+11  
-3.0000000E-01  4.5508700E+03  3.9913100E+11  3.9913100E+11  
-4.0000000E-01  4.2277500E+03  3.4188300E+11  3.4188300E+11  
-5.0000000E-01  3.9164100E+03  2.9101100E+11  2.9101100E+11  
-6.0000000E-01  3.6168300E+03  2.4602700E+11  2.4602700E+11  
-7.0000000E-01  3.3290300E+03  2.0645700E+11  2.0645700E+11  
-8.0000000E-01  3.0530100E+03  1.7185100E+11  1.7185100E+11  
-9.0000000E-01  2.7887500E+03  1.4177600E+11  1.4177600E+11  
-1.0000000E+00  2.5362700E+03  1.1582000E+11  1.1582000E+11  
+0.000000000	  6436.03557075	    4.85E+11	      4.85E+11
+0.204081633	  4695.55004376	    3.56E+11	      3.56E+11
+0.408163265	  3940.29153488	    2.75E+11	      2.75E+11
+0.612244898	  2697.35181742	    1.73E+11	      1.73E+11
+0.816326531	  2266.78664823	    1.32E+11	      1.32E+11
+1.000000000	  2049.76542772	    9.78E+10	      9.78E+10
 ---------------------- TOWER FORE-AFT MODE SHAPES ------------------------------
      0.7004   TwFAM1Sh(2)     - Mode 1, coefficient of x^2 term
      2.1963   TwFAM1Sh(3)     -       , coefficient of x^3 term

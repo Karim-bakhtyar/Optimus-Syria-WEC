@@ -18,30 +18,25 @@ figure('Name','Simulation results')
 subplot(4,1,1);
 hold on; grid on; box on
 plot(FB.Time,       FB.Wind1VelX);
-% plot(FBFF.Time,     FBFF.VLOS01LI);
-legend('Hub height wind speed','Vlos')
 ylabel('[m/s]');
-legend('Wind1VelX','VLOS01LI')
+
 
 subplot(4,1,2);
 hold on; grid on; box on
-plot(FB.Time,       FB.BldPitch1);
-% plot(FBFF.Time,     FBFF.BldPitch1);
-ylabel({'BldPitch1'; '[deg]'});
-legend('feedback only','feedback-feedforward')
+plot(FB.Time,       FB.RotSpeed);
+ylabel({'RotSpeed';'[rpm]'});
+
 
 subplot(4,1,3);
 hold on; grid on; box on
-plot(FB.Time,       FB.RotSpeed);
-% plot(FBFF.Time,     FBFF.RotSpeed);
-ylabel({'RotSpeed';'[rpm]'});
+plot(FB.Time,       FB.GenTq);
+ylabel({'Generator Torque';'[kNm]'});
 
 subplot(4,1,4);
 hold on; grid on; box on
-plot(FB.Time,       FB.TwrBsMyt/1e3);
-% plot(FBFF.Time,     FBFF.TwrBsMyt/1e3);
-ylabel({'TwrBsMyt';'[MNm]'});
+plot(FB.Time,       (FB.RotSpeed*80*(2*pi/60))./(FB.Wind1VelX));
+ylabel({'Tip Speed Ratio';'[-]'});
 
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
-xlim([0 600])
+xlim([0 240])
