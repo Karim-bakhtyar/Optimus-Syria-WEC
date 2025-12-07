@@ -1,4 +1,4 @@
-============= OpenFAST v3.53 INPUT FILE ========================================
+============= OpenFAST_64_v3-0-lidarSim INPUT FILE ========================================
 HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
 ---------------------- SIMULATION CONTROL --------------------------------------
       False   Echo            - Echo input data to <RootName>.ech (flag)
@@ -18,17 +18,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
           0   CompSub         - Compute sub-structural dynamics (switch) {0=None; 1=SubDyn; 2=External Platform MCKF}
           0   CompMooring     - Compute mooring system (switch) {0=None; 1=MAP++; 2=FEAMooring; 3=MoorDyn; 4=OrcaFlex}
           0   CompIce         - Compute ice loads (switch) {0=None; 1=IceFloe; 2=IceDyn}
-          0   MHK             - MHK turbine type (switch) {0=Not an MHK turbine; 1=Fixed MHK turbine; 2=Floating MHK turbine}
---------------------------- Environmental Conditions --------------------------
-      9.810   Gravity         - Gravitational acceleration (m/s^2)
-      1.225   AirDens         - Air density (kg/m^3)
-     1025.0   WtrDens         - Water density (kg/m^3)
-  1.464e-05   KinVisc         - Kinematic viscosity of working fluid (m^2/s)
-      335.0   SpdSound        - Speed of sound in working fluid (m/s)
-   103500.0   Patm            - Atmospheric pressure (Pa) [used only for an MHK turbine cavitation check]
-     1700.0   Pvap            - Vapour pressure of working fluid (Pa) [used only for an MHK turbine cavitation check]
-        0.0   WtrDpth         - Water depth (m)
-        0.0   MSL2SWL         - Offset between still-water level and mean sea level (m) [positive upward]
+          1   CompLidar       - Compute Lidar Module (switch) {0 = Off, 1 = On}
 ---------------------- INPUT FILES ---------------------------------------------
 "OPTSyria5MW_ElastoDyn.dat" EDFile - Name of file containing ElastoDyn input parameters (quoted string)
    "unused"   BDBldFile(1)    - Name of file containing BeamDyn input parameters for blade 1 (quoted string)
@@ -41,6 +31,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
    "unused"   SubFile         - Name of file containing sub-structural input parameters (quoted string)
    "unused"   MooringFile     - Name of file containing mooring system input parameters (quoted string)
    "unused"   IceFile         - Name of file containing ice input parameters (quoted string)
+"SinglePoint_LidarFile.dat"	SWELidarFile	- Name of file containing SWE Lidar input parameters (quoted string)
 ---------------------- OUTPUT --------------------------------------------------
       False   SumPrint        - Print summary data to "<RootName>.sum" (flag)
          10   SttsTime        - Amount of time between screen status messages (s)

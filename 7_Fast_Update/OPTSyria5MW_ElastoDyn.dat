@@ -4,6 +4,8 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
       False   Echo            - Echo input data to "<RootName>.ech" (flag)
           3   Method          - Integration method: {1: RK4, 2: AB4, or 3: ABM4} (-)
     Default   DT              - Integration time step (s)
+---------------------- ENVIRONMENTAL CONDITION ---------------------------------
+    9.80665   Gravity         - Gravitational acceleration (m/s^2)
 ---------------------- DEGREES OF FREEDOM --------------------------------------
        True   FlapDOF1        - First flapwise blade mode DOF (flag)
        True   FlapDOF2        - Second flapwise blade mode DOF (flag)
@@ -30,7 +32,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
         0.0   BlPitch(3)      - Blade 3 initial pitch (deg) [unused for 2 blades]
         0.0   TeetDefl        - Initial or fixed teeter angle (deg) [unused for 3 blades]
         0.0   Azimuth         - Initial azimuth angle for blade 1 (deg)
-         25   RotSpeed        - Initial or fixed rotor speed (rpm)
+     10.146   RotSpeed        - Initial or fixed rotor speed (rpm)
         0.0   NacYaw          - Initial or fixed nacelle-yaw angle (deg)
         0.0   TTDspFA         - Initial fore-aft tower-top displacement (m)
         0.0   TTDspSS         - Initial side-to-side tower-top displacement (m)
@@ -44,14 +46,14 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
           3   NumBl           - Number of blades (-)
        80.0   TipRad          - The distance from the rotor apex to the blade tip (m)
         1.5   HubRad          - The distance from the rotor apex to the blade root (m)
-       -6.0   PreCone(1)      - Blade 1 cone angle (deg)
-       -6.0   PreCone(2)      - Blade 2 cone angle (deg)
-       -6.0   PreCone(3)      - Blade 3 cone angle (deg) [unused for 2 blades]
+       -5.0   PreCone(1)      - Blade 1 cone angle (deg)
+       -5.0   PreCone(2)      - Blade 2 cone angle (deg)
+       -5.0   PreCone(3)      - Blade 3 cone angle (deg) [unused for 2 blades]
         0.0   HubCM           - Distance from rotor apex to hub mass [positive downwind] (m)
         0.0   UndSling        - Undersling length [distance from teeter pin to the rotor apex] (m) [unused for 3 blades]
         0.0   Delta3          - Delta-3 angle for teetering rotors (deg) [unused for 3 blades]
         0.0   AzimB1Up        - Azimuth value to use for I/O when blade 1 points up (deg)
-       -4.6   OverHang        - Distance from yaw axis to rotor apex [3 blades] or teeter pin [2 blades] (m)
+      -4.05   OverHang        - Distance from yaw axis to rotor apex [3 blades] or teeter pin [2 blades] (m)
       1.912   ShftGagL        - Distance from rotor apex [3 blades] or teeter pin [2 blades] to shaft strain gages [positive for upwind rotors] (m)
        -6.0   ShftTilt        - Rotor shaft tilt angle (deg)
         1.9   NacCMxn         - Downwind distance from the tower-top to the nacelle CM (m)
@@ -96,16 +98,16 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
         0.0   TeetSSSp        - Rotor-teeter soft-stop linear-spring constant (N-m/rad) [used only for 2 blades and when TeetMod=1]
         0.0   TeetHSSp        - Rotor-teeter hard-stop linear-spring constant (N-m/rad) [used only for 2 blades and when TeetMod=1]
 ---------------------- DRIVETRAIN ----------------------------------------------
-      100.0   GBoxEff         - Gearbox efficiency (%)
-       97.0   GBRatio         - Gearbox ratio (-)
+       97.5   GBoxEff         - Gearbox efficiency (%)
+        120   GBRatio         - Gearbox ratio (-)
 8.67637E+08   DTTorSpr        - Drivetrain torsional spring (N-m/rad)
   6.215E+06   DTTorDmp        - Drivetrain torsional damper (N-m/(rad/s))
 ---------------------- FURLING -------------------------------------------------
       False   Furling         - Read in additional model properties for furling turbine (flag) [must currently be FALSE)
 "unused"      FurlFile        - Name of file containing furling properties (quoted string) [unused when Furling=False]
 ---------------------- TOWER ---------------------------------------------------
-         11   TwrNodes        - Number of tower nodes used for analysis (-)
-"StrucData\NREL5MW_Tower.dat"    TwrFile         - Name of file containing tower properties (quoted string)
+          5   TwrNodes        - Number of tower nodes used for analysis (-)
+"StrucData\OptSyria_twr.dat"    TwrFile         - Name of file containing tower properties (quoted string)
 ---------------------- OUTPUT --------------------------------------------------
       False   SumPrint        - Print summary data to "<RootName>.sum" (flag)
           1   OutFile         - Switch to determine where output will be placed: {1: in module output file only; 2: in glue code output file only; 3: both} (currently unused)
