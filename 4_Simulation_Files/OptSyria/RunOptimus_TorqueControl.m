@@ -15,27 +15,32 @@ FB              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
 
 figure('Name','Simulation results')
 
-subplot(4,1,1);
+subplot(5,1,1);
 hold on; grid on; box on
 plot(FB.Time,       FB.Wind1VelX);
 ylabel('[m/s]');
 
 
-subplot(4,1,2);
+subplot(5,1,2);
 hold on; grid on; box on
 plot(FB.Time,       FB.RotSpeed);
 ylabel({'RotSpeed';'[rpm]'});
 
 
-subplot(4,1,3);
+subplot(5,1,3);
 hold on; grid on; box on
 plot(FB.Time,       FB.GenTq);
 ylabel({'Generator Torque';'[kNm]'});
 
-subplot(4,1,4);
+subplot(5,1,4);
 hold on; grid on; box on
-plot(FB.Time,       (FB.RotSpeed*80*(2*pi/60))./(FB.Wind1VelX));
+plot(FB.Time,       (FB.RotSpeed .* (2*pi/60) .* 80) ./ FB.Wind1VelX); %
 ylabel({'Tip Speed Ratio';'[-]'});
+
+subplot(5,1,5);
+hold on; grid on; box on
+plot(FB.Time,       FB.BldPitch1); %
+ylabel({'Pitch Angle';'[°]'});
 
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
