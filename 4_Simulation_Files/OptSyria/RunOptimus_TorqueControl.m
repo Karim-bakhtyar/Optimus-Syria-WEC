@@ -39,9 +39,9 @@ ylabel({'Tip Speed Ratio';'[-]'});
 
 subplot(5,1,5);
 hold on; grid on; box on
-plot(FB.Time,       FB.BldPitch1); %
-ylabel({'Pitch Angle';'[°]'});
+plot(FB.Time,       FB.GenPwr); %
+ylabel({'Generator Power';'[W]'});
 
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
-xlim([0 240])
+xlim([0 200])

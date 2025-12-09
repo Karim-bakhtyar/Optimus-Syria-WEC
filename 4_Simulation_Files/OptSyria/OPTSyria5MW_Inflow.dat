@@ -2,7 +2,7 @@
 HS Flensburg WS2025 - Optimus Syria 5.0 MW  Wind Turbine (Onshore)
 --------------------------------------------------------------------------------   
       False   Echo            - Echo input data to <RootName>.ech (flag) 
-          2   WindType        - switch for wind file type (1=steady; 2=uniform; 3=binary TurbSim FF; 4=binary Bladed-style FF; 5=HAWC format; 6=User defined; 7=native Bladed FF)
+          1   WindType        - switch for wind file type (1=steady; 2=uniform; 3=binary TurbSim FF; 4=binary Bladed-style FF; 5=HAWC format; 6=User defined; 7=native Bladed FF)
         0.0   PropagationDir  - Direction of wind propagation (meteorological rotation from aligned with X (positive rotates towards -Y) -- degrees) (not used for native Bladed format WindType=7)
         0.0   VFlowAng        - Upflow angle (degrees) (not used for native Bladed format WindType=7)
           1   NWindVel        - Number of points to output the wind velocity (0 to 9) 
@@ -10,12 +10,12 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW  Wind Turbine (Onshore)
         0.0   WindVyiList     - List of coordinates in the inertial Y direction (m) 
        90.0   WindVziList     - List of coordinates in the inertial Z direction (m) 
 ---------------------- PARAMETERS FOR STEADY WIND CONDITIONS ------------------- [used only for WindType = 1]
-         6   HWindSpeed      - Horizontal windspeed                            (m/s)
-      100.0   RefHt           - Reference height for horizontal wind speed      (m)
+         1 HWindSpeed      - Horizontal windspeed                            (m/s)
+      100.00   RefHt           - Reference height for horizontal wind speed      (m)
        0.2   PLexp           - Power law exponent                              (-)
 ---------------------- PARAMETERS FOR UNIFORM WIND FILE ------------------------ [used only for WindType = 2]
 "Wind\WindStep.dat" Filename_Uni - Filename of time series data for uniform wind field (-)
-       100.0   RefHt_Uni       - Reference height for horizontal wind speed      (m)
+       100.00   RefHt_Uni       - Reference height for horizontal wind speed      (m)
        1.0   RefLength       - Reference length for linear horizontal and vertical sheer (-)
 ---------------------- PARAMETERS FOR BINARY TURBSIM FULL-FIELD FILES --------- [used only for WindType = 3]
 "Wind\25ms_2A.bts" Filename_BTS - Name of the Full field wind file to use (.bts) 

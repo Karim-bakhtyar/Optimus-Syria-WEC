@@ -18,16 +18,16 @@ copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 
 %Initialize a table to store the results
 SteadyStates = table( ...
-    'Size', [0, 4], ...
-    'VariableTypes', {'double', 'double', 'double','double'}, ...
-    'VariableNames', {'WindSpeed_ms', 'AvgBladePitch_deg', 'AvgRotorSpeed_rpm', 'TTDspFA'} ...
+    'Size', [0, 6], ...
+    'VariableTypes', {'double', 'double', 'double','double','double','double'}, ...
+    'VariableNames', {'WindSpeed_ms', 'AvgBladePitch_deg', 'AvgRotorSpeed_rpm', 'TTDspFA','avg_M_G','avg_P'} ...
 );
 
 
 %% Run FB
 
 previousWS = '1 HWindSpeed'; % initial string to start
-for WindSpeed = 1:1:9 % values between CIN and COUT WS
+for WindSpeed = 1:1:25 % values between CIN and COUT WS
     currentWS = previousWS; % string that is currently in inflow.dat 
     replacementWS = [num2str(WindSpeed), ' HWindSpeed']; % WS string that is going to run in this iteration
 
@@ -39,18 +39,20 @@ for WindSpeed = 1:1:9 % values between CIN and COUT WS
     Results              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']); % read the results
     
     %In order to only get settled values we should get the mean of last 3 rotations
-    rotPs = 60/Results.RotSpeed(end); % rotation per seconds
+    sProtation = 60/Results.RotSpeed(end); % seconds per rotation
     dt = Results.Time(2) - Results.Time(1);
-    start_index = round((600 - 3*rotPs)/dt); % [(600 seconds) - (3*one rotation in seconds)]/dT
+    start_index = round((600 - 3*sProtation)/dt); % [(600 seconds) - (3*one rotation in seconds)]/dT
 
     % Calculate steady-state averages
     avg_pitch = mean(Results.BldPitch1(start_index:end)); % get the mean value of blade pitch in last 60 seconds
     avg_rotspeed = mean(Results.RotSpeed(start_index:end)); % get the mean value of RotSpeed in last 60 seconds
+    avg_M_G = mean(Results.GenTq(start_index:end));
+    avg_P = mean(Results.GenPwr(start_index:end));
     avg_TTDspFA = mean(Results.TTDspFA(start_index:end));
 
     % Create a new row of data (ws, pitch, rotspeed)
-    new_row = table(Results.Wind1VelX(end), avg_pitch, avg_rotspeed, avg_TTDspFA, ...
-        'VariableNames', {'WindSpeed_ms', 'AvgBladePitch_deg', 'AvgRotorSpeed_rpm', 'TTDspFA'}); % created a row for corresponding WS in iteration
+    new_row = table(Results.Wind1VelX(end), avg_pitch, avg_rotspeed, avg_TTDspFA, avg_M_G, avg_P, ...
+        'VariableNames', {'WindSpeed_ms', 'AvgBladePitch_deg', 'AvgRotorSpeed_rpm', 'TTDspFA','avg_M_G','avg_P'}); % created a row for corresponding WS in iteration
 
     % Append the new row to the main results table
     SteadyStates = [SteadyStates; new_row]; % adding the created row at the end of the result table
