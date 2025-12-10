@@ -5,7 +5,7 @@ clearvars; close all; clc;
 addpath(genpath('..\WetiMatlabFunctions'))
 
 %% load parameters
-Parameter = OptSyria_Parameters();
+Parameter = OptSyria_Parameters;
 
 %% k equation
 k = (Parameter.General.rho * pi * Parameter.Turbine.R^5 * Parameter.Turbine.cP_opt)...

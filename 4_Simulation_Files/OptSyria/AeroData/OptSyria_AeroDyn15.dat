@@ -13,7 +13,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW  Wind Turbine (Onshore)
       False   CompAA          - Flag to compute AeroAcoustics calculation [used only when WakeMod = 1 or 2]
    "unused"   AA_InputFile    - AeroAcoustics input file [used only when CompAA=true]
 ======  Environmental Conditions  ===================================================================
-1.225                  AirDens     - Air density (kg/m^3)
+1.017                  AirDens     - Air density (kg/m^3)
 1.4775510204081632e-05 KinVisc     - Kinematic viscosity of working fluid (m^2/s)
 340.0                  SpdSound    - Speed of sound in working fluid (m/s)
 103500.0               Patm        - Atmospheric pressure (Pa) [used only when CavitCheck=True]

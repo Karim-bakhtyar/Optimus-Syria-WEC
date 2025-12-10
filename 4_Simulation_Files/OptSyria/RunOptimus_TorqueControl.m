@@ -1,6 +1,8 @@
 %% Setup
 clearvars;close all;clc;
 addpath(genpath('..\WetiMatlabFunctions'))
+addpath('..\ControlTools\')
+Parameter = OptSyria_Parameters;
 
 FASTexeFile     = 'openfast_x64.exe';
 SimulationName  = 'OPTSyria5MW';
@@ -11,37 +13,42 @@ dos(['openfast_x64.exe ',SimulationName,'.fst']);
 
 %% Clean up
 delete(FASTexeFile)
+
+%% plot
 FB              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
 
 figure('Name','Simulation results')
 
-subplot(5,1,1);
+subplot(6,1,1);
 hold on; grid on; box on
 plot(FB.Time,       FB.Wind1VelX);
 ylabel('[m/s]');
 
-
-subplot(5,1,2);
+subplot(6,1,2);
 hold on; grid on; box on
 plot(FB.Time,       FB.RotSpeed);
 ylabel({'RotSpeed';'[rpm]'});
 
+subplot(6,1,3);
+hold on; grid on; box on
+plot(FB.Time,       (rpm2radPs(FB.RotSpeed) .* Parameter.Turbine.R) ./ FB.Wind1VelX); %
+ylabel({'Tip Speed Ratio';'[-]'});
 
-subplot(5,1,3);
+subplot(6,1,4);
 hold on; grid on; box on
 plot(FB.Time,       FB.GenTq);
 ylabel({'Generator Torque';'[kNm]'});
 
-subplot(5,1,4);
-hold on; grid on; box on
-plot(FB.Time,       (FB.RotSpeed .* (2*pi/60) .* 80) ./ FB.Wind1VelX); %
-ylabel({'Tip Speed Ratio';'[-]'});
-
-subplot(5,1,5);
+subplot(6,1,5);
 hold on; grid on; box on
 plot(FB.Time,       FB.GenPwr); %
 ylabel({'Generator Power';'[W]'});
 
+subplot(6,1,6);
+hold on; grid on; box on
+plot(FB.Time,       FB.BldPitch1); %
+ylabel({'Pitch';'[deg]'});
+
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
-xlim([0 200])
+xlim([0 600])
