@@ -38,7 +38,7 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW Wind Turbine (Onshore)
      9999.9   ChkptTime       - Amount of time between creating checkpoint files for potential restart (s)
        0.05   DT_Out          - Time step for tabular output (s) (or "Default") 
         0.0   TStart          - Time to begin tabular output (s)
-          0   OutFileFmt      - Format for tabular (time-marching) output file (switch) {0: uncompressed binary [<RootName>.outb], 1: text file [<RootName>.out], 2: binary file [<RootName>.outb], 3: both 1 and 2}
+          2   OutFileFmt      - Format for tabular (time-marching) output file (switch) {0: uncompressed binary [<RootName>.outb], 1: text file [<RootName>.out], 2: binary file [<RootName>.outb], 3: both 1 and 2}
        True   TabDelim        - Use tab delimiters in text tabular output file? (flag) {uses spaces if false}
  "ES10.3E2"   OutFmt          - Format used for text tabular output, excluding the time channel.  Resulting field should be 10 characters. (quoted string)
 ----------------------- LINEARIZATION ------------------------------------------ 
