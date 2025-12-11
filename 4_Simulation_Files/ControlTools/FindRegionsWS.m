@@ -7,13 +7,11 @@ clearvars;clc;close all;
 addpath(genpath('../WetiMatlabFunctions/'))
 Parameter = OptSyria_Parameters;
 
-% Parameter                               = NREL5MWDefaultParameter_SLOW2DOF;
-% Parameter                               = NREL5MWDefaultParameter_FBSWE(Parameter);   
-rpm_min = rpm2radPs(6.67);
-rpm_max = rpm2radPs(10.15);
+rpm_min = rpm2radPs(Parameter.Generator.omega_g_min);
+rpm_max = rpm2radPs(Parameter.Generator.omega_g_rated);
 theta_min = 0;
-k = 2.8145; % [Nm/(rad/s)^2]
-r_GB = 120;
+k = 2.4921; % [Nm/(rad/s)^2]
+r_GB = Parameter.Turbine.r_GB;
 
 %% v_1to1d5      
 v_0_min                                 = 1.0;
@@ -112,10 +110,10 @@ function [RotorAcceleration, lambda] = CalculateRotorAcceleration(Omega, theta, 
     % c_P                                     = Parameter.Turbine.cP_opt; 
 
     % get M_g if M_g is a function
-    if isa(M_g, 'function_handle')
-        Omega_g         = Omega*Parameter.Turbine.r_GB;
-        M_g             = M_g(Omega_g,theta,Parameter);
-    end
+    % if isa(M_g, 'function_handle')
+    %     Omega_g         = Omega*Parameter.Turbine.r_GB;
+    %     M_g             = M_g(Omega_g,theta,Parameter);
+    % end
 
     lambda = Omega * R / v_0;
     
