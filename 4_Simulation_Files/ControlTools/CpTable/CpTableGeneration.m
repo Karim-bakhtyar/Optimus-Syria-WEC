@@ -4,7 +4,7 @@ clear all; close all; clc;
 % based on OptimusShakti script.
 
 %% Open File
-InputFile  = 'OptSyriaBlade_1012.txt';
+InputFile  = 'OptSyria_1112.txt';
 
 %% PostProcessing QBlade Output
 fid         = fopen(InputFile);
