@@ -5,16 +5,23 @@ addpath(genpath('..\WetiMatlabFunctions'))
 Parameter = OptSyria_Parameters;
 
 %% plot
-ThetaMinus2deg(:,1) = Parameter.Turbine.SS.c_P(:,1);
-ThetaMinus2deg(:,2) = Parameter.Turbine.SS.lambda;
+targetTheta = deg2rad([-2 -1 0]);  % degrees you want to plot
 
-ThetaZerodeg(:,1) = Parameter.Turbine.SS.c_P(:,2);
-ThetaZerodeg(:,2) = Parameter.Turbine.SS.lambda;
+lambda  = Parameter.Turbine.SS.lambda;
+theta   = Parameter.Turbine.SS.theta;
+c_P     = Parameter.Turbine.SS.c_P;
 
 figure('Name','C_p')
-hold on;grid on;box on;
-plot(ThetaMinus2deg(:,2),ThetaMinus2deg(:,1));
-plot(ThetaZerodeg(:,2),ThetaZerodeg(:,1));
+hold on; grid on; box on;
+
+[~, idx] = intersect(theta, targetTheta, 'stable');
+
+for k = 1:numel(idx)
+    i = idx(k);  % column index in c_P that matches this theta
+    plot(lambda, c_P(:,i), ...
+        'DisplayName', sprintf('\\theta = %.0f^\\circ', rad2deg(theta(i)) ));
+end
+
 xlabel('TSR [-]')
 ylabel('C_p [-]')
-legend('theta=-2°','theta=0°',Location='northwest')
+legend('Location','northwest', 'Interpreter','tex')

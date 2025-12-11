@@ -66,6 +66,11 @@ for v_i = 1:length(WindSpeed)% loop around each wind speed
     sProtation = 60/Results.RotSpeed(end); % seconds per rotation
     dt = Results.Time(2) - Results.Time(1);
     start_index = round((600 - 3*sProtation)/dt); % [(600 seconds) - (3*one rotation in seconds)]/dT
+    
+    if start_index < 0
+        start_index = length(Results.Time)-1 ;
+    end
+    
 
     % Calculate steady-state average
     WS = Results.Wind1VelX(end);

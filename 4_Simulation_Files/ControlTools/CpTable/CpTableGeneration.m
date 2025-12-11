@@ -4,7 +4,7 @@ clear all; close all; clc;
 % based on OptimusShakti script.
 
 %% Open File
-InputFile  = 'OptSyria_1112.txt';
+InputFile  = 'OptSyriaBlade_1012.txt';
 
 %% PostProcessing QBlade Output
 fid         = fopen(InputFile);
@@ -43,7 +43,7 @@ Cq_table = reshape(CM,[length(PITCH),length(TSR)]);
 
 
 %% Creating .mat file 
-name = 'PowerAndThrustCoefficients_OptSyria_v1';
+name = 'PowerAndThrustCoefficients_OptSyria_1012';
 
 info    = ['Created from Qblade for the Optimus Syria with script CpTableGeneration.'];
 c_P     = Cp_table';

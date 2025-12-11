@@ -14,41 +14,48 @@ dos(['openfast_x64.exe ',SimulationName,'.fst']);
 %% Clean up
 delete(FASTexeFile)
 
-%% plot
-FB              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
+%% Read Results
+Results              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
 
+%% Plot Results
 figure('Name','Simulation results')
 
-subplot(6,1,1);
+subplot(7,1,1);
 hold on; grid on; box on
-plot(FB.Time,       FB.Wind1VelX);
+plot(Results.Time,       Results.Wind1VelX);
 ylabel('[m/s]');
 
-subplot(6,1,2);
+subplot(7,1,2);
 hold on; grid on; box on
-plot(FB.Time,       FB.RotSpeed);
+plot(Results.Time,       Results.RotSpeed);
 ylabel({'RotSpeed';'[rpm]'});
 
-subplot(6,1,3);
+subplot(7,1,3);
 hold on; grid on; box on
-plot(FB.Time,       (rpm2radPs(FB.RotSpeed) .* Parameter.Turbine.R) ./ FB.Wind1VelX); %
+plot(Results.Time,       (rpm2radPs(Results.RotSpeed) .* Parameter.Turbine.R) ./ Results.Wind1VelX); %
 ylabel({'Tip Speed Ratio';'[-]'});
 
-subplot(6,1,4);
+subplot(7,1,4);
 hold on; grid on; box on
-plot(FB.Time,       FB.GenTq);
+plot(Results.Time,       Results.GenTq);
 ylabel({'Generator Torque';'[kNm]'});
 
-subplot(6,1,5);
+subplot(7,1,5);
 hold on; grid on; box on
-plot(FB.Time,       FB.GenPwr); %
+plot(Results.Time,       Results.GenPwr);
 ylabel({'Generator Power';'[W]'});
 
-subplot(6,1,6);
+subplot(7,1,6);
 hold on; grid on; box on
-plot(FB.Time,       FB.BldPitch1); %
+plot(Results.Time,       Results.BldPitch1);
 ylabel({'Pitch';'[deg]'});
+
+subplot(7,1,7);
+hold on; grid on; box on
+plot(Results.Time,       Results.TTDspFA);
+ylabel({'TTDspFA';'[m]'});
 
 xlabel('time [s]')
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x');
 xlim([0 600])
+
