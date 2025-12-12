@@ -1,0 +1,11 @@
+! Collective pitch feedforward parameters for perfect wind preview. Please do not change the number of lines.  
+! Task: Brute-force optimize Buffer Time (T_buffer) to achieve minimum total cost (either manually or using ManipulateTXT.m)
+!------- FILTERS AND TIMING ----------------------------------------------------------
+1    	! FlagLPF             	- Enable low-pass filter (flag) [0/1]
+0.2304	! f_cutoff	   			- Corner frequency (-3dB) of the low-pass filter [rad/s]
+2   	! T_buffer        		- Buffer time for filtered REWS signal [s]  <--- Tune this value to minimize cost (e.g., 1.0–5.0 s)
+
+!------- STATIC PITCH CURVE ---------------------
+33     	    ! n_StaticPitchCurve  	- Number of points in static pitch curve [-]
+ 0      01.0000      02.00000      3.00000      4.0000      05.0000      06.0000      07.0000      08.0000      09.0000      10.0000      11.0000      12.0000      13.0000      14.0000      15.0000      16.0000      17.0000      18.0000      19.0000      20.0000      21.0000     22.0000      23.0000      24.0000      25.0000      26.0000      27.0000      28.0000      29.0000      30.0000      31.0000      32.0000  ! StaticWind  	- Wind speed  values in static pitch curve [m/s]
+ 0            0             0            0           0            0            0            0            0    0.0042118     0.056992      0.12236      0.16441      0.19886       0.2291      0.25674      0.28254      0.30607      0.33026      0.35227      0.37368      0.39437     0.41434      0.43364       0.4525      0.47091      0.48892      0.50655      0.52381      0.54074      0.55735      0.57363      0.58956  ! StaticPitch 	- Pitch angle values in static pitch curve [rad]
