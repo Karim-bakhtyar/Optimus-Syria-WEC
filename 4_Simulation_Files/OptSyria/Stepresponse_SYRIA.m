@@ -1,11 +1,11 @@
 %% Setup
 clearvars; close all; clc
-addpath(genpath('..'))
+addpath(genpath('..\WetiMatlabFunctions'))
 
 %% Copy the adequate OpenFAST version to the example folder
 FASTexeFile = 'openfast_x64.exe';
 SimulationName = 'OPTSyria5MW';  % CHANGE: was 'IEA-3.4-130-RWT'
-%copyfile(['../',FASTexeFile],FASTexeFile);
+% copyfile(['../',FASTexeFile],FASTexeFile);
 
 %% Adjust initial condition
 % load steady states
@@ -46,30 +46,19 @@ ylabel('BldPitch1 [deg]')
 subplot(5,1,3)  % CHANGE: was 4,1,3
 hold on; grid on; box on
 plot(FB.Time, FB.RotSpeed)
-yline(12.1, '--r', 'Rated Speed');  % ADD: reference line for 5MW rated speed
 ylabel('RotSpeed [rpm]')
 
 subplot(5,1,4)  % CHANGE: was 4,1,4
 hold on; grid on; box on
-plot(FB.Time, FB.RtTSR)
-yline(8.5, '--r', 'Optimal TSR');  % ADD: reference line for optimal TSR
+plot(FB.Time, rpm2radPs(FB.RotSpeed).*80 ./ FB.Wind1VelX)
 ylabel('TSR [-]')
 
 subplot(5,1,5)  % CHANGE: was 4,1,5
 hold on; grid on; box on
-plot(FB.Time, FB.TwrBsMyt/1e3)
-ylabel('TwrBsMyt [MNm]')
+plot(FB.Time, FB.GenTq)
+ylabel('GenTq [kNm]')
 xlabel('time [s]')
 
 linkaxes(findobj(gcf, 'Type', 'Axes'),'x')
 xlim([0 120])
 
-%% display results
-RotSpeed0 = 12.1;       % CHANGE: was 11.37 rpm (5MW rated speed)
-TwrBsMyt0 = 96.2e3;     % CHANGE: was 56.2e3 kNm (estimate for 5MW)
-tStart = 0;             % s
-
-Cost = max(abs(FB.RotSpeed(FB.Time>tStart)-RotSpeed0))/RotSpeed0 + ...
-       max(abs(FB.TwrBsMyt(FB.Time>tStart)-TwrBsMyt0))/TwrBsMyt0;
-   
-fprintf('Cost for step response >30 s: %s\n',sprintf('%f',Cost))
