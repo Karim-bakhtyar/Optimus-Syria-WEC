@@ -11,9 +11,6 @@ copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 %% Run FB
 dos(['openfast_x64.exe ',SimulationName,'.fst']);
 
-%% Clean up
-delete(FASTexeFile)
-
 %% Read Results
 Results              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
 
