@@ -40,7 +40,7 @@ ylabel({'Generator Torque';'[kNm]'});
 subplot(7,1,5);
 hold on; grid on; box on
 plot(Results.Time,       Results.GenPwr);
-ylabel({'Generator Power';'[W]'});
+ylabel({'Generator Power';'[kW]'});
 
 subplot(7,1,6);
 hold on; grid on; box on
