@@ -4,8 +4,8 @@ Parameter.General.rho = 1.017; % [kg/m^3] Results.xlsx, site conditions.
 
 % Turbine parameters
 Parameter.Turbine.SS             	= load('PowerAndThrustCoefficients_OptSyria_1012','c_P','c_T','theta','lambda'); % from aero team, qblade 
-Parameter.Turbine.cP_opt          = 0.4837; % [-] From Cp table 
-Parameter.Turbine.lambda_opt      = 8.3776;  % [-] From Cp table
+Parameter.Turbine.cP_opt          = 0.43; % [-] From week 12 presentation Cp table
+Parameter.Turbine.lambda_opt      = 9.7;  % [-] From week 12 presentation Cp table
 Parameter.Turbine.R               = 80; % [m]    Results.xlsx, main paramaters sheet, line 10 from rotor diameter.
 Parameter.Turbine.r_GB            = 120; % [-]   Results.xlsx, gb brake coupling sheet, line 13
 Parameter.Turbine.rated_P         = 5000000; % [W] 

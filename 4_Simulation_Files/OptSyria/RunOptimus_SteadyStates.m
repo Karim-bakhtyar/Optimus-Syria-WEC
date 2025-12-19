@@ -25,7 +25,7 @@ SteadyStates = zeros(length(WindSpeed), 6); % row for each speed, [WS, pitch, ro
 previousWS = '1 HWindSpeed'; % initial string to start
 for v_i = 1:length(WindSpeed)% loop around each wind speed
     currentWS = previousWS; % string that is currently in inflow.dat 
-    replacementWS = [num2str(v_i), ' HWindSpeed']; % WS string that is going to run in this iteration
+    replacementWS = [num2str(WindSpeed(v_i)), ' HWindSpeed']; % WS string that is going to run in this iteration
 
     % ManipulateTXTFile('text file you want to edit','string you want to change','new string that you want to add')
     ManipulateTXTFile('OPTSyria5MW_Inflow.dat',currentWS,replacementWS); % edit the wind speed in inflow.dat file
@@ -87,11 +87,11 @@ end
 
 %% Finalize and Clean up
 SteadyStatesTable = array2table(SteadyStates, ...
-'VariableNames', {'WS','rotspeed','pitch','TTDspFA','M_G','P'});
+'VariableNames', {'mean_Wind1VelX','mean_RotSpeed','mean_BldPitch1','TTDspFA','M_G','P'});
 
 ManipulateTXTFile('OPTSyria5MW_Inflow.dat',replacementWS,'1 HWindSpeed');
 
-delete(FASTexeFile)
+% delete(FASTexeFile)
 
 %% save steadystates.mat file
 % save("SteadyStatesTable.mat","SteadyStatesTable");

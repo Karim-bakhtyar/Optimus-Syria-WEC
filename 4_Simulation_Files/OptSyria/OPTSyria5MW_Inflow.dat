@@ -20,8 +20,8 @@ HS Flensburg WS2025 - Optimus Syria 5.0 MW  Wind Turbine (Onshore)
 ---------------------- PARAMETERS FOR BINARY TURBSIM FULL-FIELD FILES --------- [used only for WindType = 3]
 "Wind\25ms_2A.bts" Filename_BTS - Name of the Full field wind file to use (.bts) 
 ---------------------- PARAMETERS FOR BINARY BLADED-STYLE FULL-FIELD FILES ----- [used only for WindType = 4 or WindType = 7]
-"Wind\25ms_2A"   FileNameRoot    - WindType=4: Rootname of the full-field wind file to use (.wnd, .sum); WindType=7: name of the intermediate file with wind scaling values
-       True   TowerFile       - Have tower file (.twr) (flag) ignored when WindType = 7
+"Wind\25ms_2A"   FilenameRoot    - WindType=4: Rootname of the full-field wind file to use (.wnd, .sum); WindType=7: name of the intermediate file with wind scaling values
+       False   TowerFile       - Have tower file (.twr) (flag) ignored when WindType = 7
 ---------------------- PARAMETERS FOR HAWC-FORMAT BINARY FILES ----------------- [Only used with WindType = 5]
    "unused"   FileName_u      - name of the file containing the u-component fluctuating wind (.bin)
    "unused"   FileName_v      - name of the file containing the v-component fluctuating wind (.bin)
