@@ -61,22 +61,22 @@ function [RotorAcceleration, lambda] = CalculateRotorAcceleration(Omega, theta, 
     rho                                     = Parameter.General.rho;
     r_GB                                    = Parameter.Turbine.r_GB;
     J                                       = Parameter.Turbine.J;
-    % c_P                                     = Parameter.Turbine.cP_opt; 
-
+    c_P                                     = Parameter.Turbine.cP_opt; 
+    
     % get M_g if M_g is a function
     if isa(M_g, 'function_handle')
         Omega_g         = Omega*Parameter.Turbine.r_GB;
         M_g             = M_g(Omega_g,theta,Parameter);
     end
-
-    lambda = Omega * R / v_0;
+    lambda = 9.7;
+    % lambda = Omega * R / v_0;
     
-    if theta==0 
-        c_P_0   = Parameter.Turbine.SS.c_P(:,find(Parameter.Turbine.SS.theta==0));
-        c_P     = interp1(Parameter.Turbine.SS.lambda,c_P_0,lambda,'linear','extrap');
-    else
-        c_P     = interp2(Parameter.Turbine.SS.theta,Parameter.Turbine.SS.lambda,Parameter.Turbine.SS.c_P,theta,lambda);
-    end
+    % if theta==0 
+    %     c_P_0   = Parameter.Turbine.SS.c_P(:,find(Parameter.Turbine.SS.theta==0));
+    %     c_P     = interp1(Parameter.Turbine.SS.lambda,c_P_0,lambda,'linear','extrap');
+    % else
+    %     c_P     = interp2(Parameter.Turbine.SS.theta,Parameter.Turbine.SS.lambda,Parameter.Turbine.SS.c_P,theta,lambda);
+    % end
 
     M_a    = 0.5 * rho * pi * R^3 * c_P / lambda * v_0^2;
     RotorAcceleration = (1/J) * (M_a -  M_g * r_GB);

@@ -9,13 +9,10 @@ SimulationName  = 'OPTSyria5MW';
 copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 
 %% Run FB
-dos(['openfast_x64.exe ',SimulationName,'.fst']);
-
-%% Clean up
-delete(FASTexeFile)
+% dos(['openfast_x64.exe ',SimulationName,'_FB.fst']);
 
 %% Read Results
-Results              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
+Results              = ReadFASTbinaryIntoStruct([SimulationName,'_FB.outb']);
 
 %% Plot Results
 figure('Name','Simulation results')
@@ -43,7 +40,7 @@ ylabel({'Generator Torque';'[kNm]'});
 subplot(7,1,5);
 hold on; grid on; box on
 plot(Results.Time,       Results.GenPwr);
-ylabel({'Generator Power';'[W]'});
+ylabel({'Generator Power';'[kW]'});
 
 subplot(7,1,6);
 hold on; grid on; box on
