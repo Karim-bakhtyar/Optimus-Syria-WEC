@@ -47,7 +47,7 @@ plot(t,u)
 
 
 % Some variables required in the Type 4 wind: Bladed style
-HubHeight   = 110;
+HubHeight   = 100;
 dy          = HubHeight;
 dz          = HubHeight;
 Ny          = 3;

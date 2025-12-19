@@ -3,9 +3,9 @@
 !------- FILTERS AND TIMING ----------------------------------------------------------
 0    	! FlagLPF             	- Enable low-pass filter (flag) [0/1]
 1	    ! f_cutoff	   			- Corner frequency (-3dB) of the low-pass filter [rad/s]
-3   	! T_buffer        		- Buffer time for filtered REWS signal [s]  <--- Tune this value to minimize cost (e.g., 1.0–5.0 s)
+4.25   	! T_buffer        		- Buffer time for filtered REWS signal [s]  <--- Tune this value to minimize cost (e.g., 1.0–5.0 s)
 
 !------- STATIC PITCH CURVE ---------------------
 33     	    ! n_StaticPitchCurve  	- Number of points in static pitch curve [-]
  0      01.0000      02.00000      3.00000      4.0000      05.0000      06.0000      07.0000      08.0000      09.0000      10.0000      11.0000      12.0000      13.0000      14.0000      15.0000      16.0000      17.0000      18.0000      19.0000      20.0000      21.0000     22.0000      23.0000      24.0000      25.0000      26.0000      27.0000      28.0000      29.0000      30.0000      31.0000      32.0000  ! StaticWind  	- Wind speed  values in static pitch curve [m/s]
- 0            0             0            0           0            0            0            0            0            0            0      0.03580      0.09610      0.13710      0.17120      0.20150      0.22920      0.25510      0.27860      0.30170      0.32390      0.34530     0.36590      0.38590      0.40540      0.42430      0.44260      0.46050      0.47800      0.49500      0.51160      0.57363      0.58956  ! StaticPitch 	- Pitch angle values in static pitch curve [rad]
+ 0            0             0            0           0            0            0            0            0            0            0      0.03580      0.09610      0.13710      0.17120      0.20150      0.22920      0.25510      0.27860      0.30170      0.32390      0.34530     0.36590      0.38590      0.40540      0.42430      0.44260      0.46050      0.47800      0.49500      0.51160      0.52650      0.54230  ! StaticPitch 	- Pitch angle values in static pitch curve [rad]
