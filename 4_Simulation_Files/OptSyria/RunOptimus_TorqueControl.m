@@ -9,10 +9,10 @@ SimulationName  = 'OPTSyria5MW';
 copyfile(['..\OpenFAST\',FASTexeFile],FASTexeFile)
 
 %% Run FB
-dos(['openfast_x64.exe ',SimulationName,'.fst']);
+% dos(['openfast_x64.exe ',SimulationName,'_FB.fst']);
 
 %% Read Results
-Results              = ReadFASTbinaryIntoStruct([SimulationName,'.outb']);
+Results              = ReadFASTbinaryIntoStruct([SimulationName,'_FB.outb']);
 
 %% Plot Results
 figure('Name','Simulation results')
