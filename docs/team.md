@@ -21,13 +21,19 @@ title:Teams of Optimus Syria
 The Optimus Syria project is guided by a team of distinguished professors and researchers from Hochschule Kiel & Flensburg, and the University of Damascus. Their technical expertise and mentoring play a critical role in supporting student teams through design, modeling, simulation, and system integration of the wind energy converter. Each professor provides domain-specific supervision to ensure scientific rigor, engineering quality, and real-world applicability of the results.
 </p>
 
-<h3>Prof. Dr.-Ing. Torsten Faber</h3>
-<p>
-Supervisor for:<br>
-– Tower<br>
-– Foundation<br>
-Prof. Faber, Director of the Wind Energy Technology Institute (WETI) at Hochschule Flensburg, supervised the Tower &amp; Foundation team. He guided them through structural concept development, design, and dimensioning, ensuring stability, reliability, and alignment with project requirements. His leadership in wind energy engineering has been instrumental in the team’s success.
-</p>
+<div style="text-align: center; margin: 40px 0; padding: 20px; background: rgba(255,255,255,0.8); border-radius: 12px;">
+  
+  <img src="assets/tutor1.jpg" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #28a745; object-fit: cover; margin-bottom: 15px;" alt="Prof. Dr.-Ing. Torsten Faber">
+
+  <h3>Prof. Dr.-Ing. Torsten Faber</h3>
+  
+  <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+    <strong>Supervisor for:</strong><br>
+    – Tower<br>
+    – Foundation<br><br>
+    Prof. Faber, Director of the Wind Energy Technology Institute (WETI) at Hochschule Flensburg, supervised the Tower &amp; Foundation team. He guided them through structural concept development, design, and dimensioning, ensuring stability, reliability, and alignment with project requirements. His leadership in wind energy engineering has been instrumental in the team’s success.
+  </p>
+</div>
 
 <h3>Prof. Dr.-Ing. David Schlipf</h3>
 <p>
