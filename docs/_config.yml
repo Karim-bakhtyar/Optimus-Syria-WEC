@@ -1,4 +1,11 @@
-title: Optimus Syria
-theme: jekyll-theme-slate
-description: Wind Energy Convertor 
-show_downloads: false
+---
+---
+@import "{{ site.theme }}";
+
+body {
+  background-image: url("{{ '/assets/background.png' | relative_url }}");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
