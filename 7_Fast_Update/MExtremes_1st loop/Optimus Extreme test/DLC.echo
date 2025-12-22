@@ -1,0 +1,368 @@
+Echoing contents of "DLC.mext".
+DLC #01 (-Names, +Chans, +CC, +WrEEvtsTxt, -WrEEvtsXLS, +Multi).
+-----  Job Options  ------------------------------------------------------------
+true              EchoInp           Echo input to <rootname>.echo as this file is being read.
+false                 StrNames         Use quoted strings of actual channel names instead of numbers?
+"%11.3e"              RealFmt          Format for outputting floating-point values in the plain-text files.
+-----  Input-Data Layout  ------------------------------------------------------
+5                     TitleLine        The row with the file title on it.
+0                     NamesLine        The row with the channel names on it.
+0                     UnitsLine        The row with the channel units on it.
+9                     FirstDataLine    The first row of data.
+57                NumChans:         The number of channels in each input file.
+ChanTitle    ChanUnits    Scale  Offset	 PSFtype     NumCols rows of Data follow.  Title and units strings must be 10 characters or less.
+"Time"       "(sec)"       1.0    0.0	    0
+"Wind1VelX"  "(m/sec)"     1.0    0.0       0
+"Wind1VelY"  "(m/sec)"     1.0    0.0       0
+"WindVelZ"   "(m/sec)"     1.0    0.0       0
+"BldPitch1"  "(deg)"       1.0    0.0       0
+"BldPitch2"  "(deg)"       1.0    0.0       0
+"BldPitch3"  "(deg)"       1.0    0.0       0
+"Azimuth"    "(deg)"       1.0    0.0       0
+"RotSpeed"   "(rpm)"       1.0    0.0       0
+"RotTorq"    "(kN-m)"      1.0    0.0       0
+"RotPwr"     "(kW)"        1.0    0.0       0
+"HSSBrTq"    "(kN-m)"      1.0    0.0       0
+"TipClrnc1"  "(m)"         1.0    0.0       0
+"TipClrnc2"  "(m)"         1.0    0.0       0
+"TipClrnc3"  "(m)"         1.0    0.0       0
+"TTDspFA"    "(m)"         1.0    0.0       0
+"TTDspSS"    "(m)"         1.0    0.0       0
+"RootFxb1"   "(kN)"        1.0    0.0       2
+"RootFyb1"   "(kN)"        1.0    0.0       2
+"RootFzb1"   "(kN)"        1.0    0.0       2
+"RootMxb1"   "(kN m)"      1.0    0.0       2
+"RootMyb1"   "(kN m)"      1.0    0.0       2
+"RootMzb1"   "(kN m)"      1.0    0.0       2
+"RootFxc1"   "(kN)"        1.0    0.0       0
+"RootFyc1"   "(kN)"        1.0    0.0       0
+"RootMxc1"   "(kN m)"      1.0    0.0       0
+"RootMyc1"   "(kN m)"      1.0    0.0       0
+"LSShftFxa"  "(kN)"        1.0    0.0       2
+"LSShftFya"  "(kN)"        1.0    0.0       2
+"LSShftFza"  "(kN)"        1.0    0.0       2
+"LSSTipMxa"  "(kN-m)"      1.0    0.0       2
+"LSSTipMya"  "(kN-m)"      1.0    0.0       2
+"LSSTipMza"  "(kN-m)"      1.0    0.0       2
+"LSShftFys"  "(kN)"        1.0    0.0       0
+"LSShftFzs"  "(kN)"        1.0    0.0       0
+"LSSTipMys"  "(kN-m)"      1.0    0.0       0
+"LSSTipMzs"  "(kN-m)"      1.0    0.0       0
+"YawBrFxp"   "(kN)"        1.0    0.0       2
+"YawBrFyp"   "(kN)"        1.0    0.0       2
+"YawBrFzp"   "(kN)"        1.0    0.0       2
+"YawBrMxp"   "(kN m)"      1.0    0.0       2
+"YawBrMyp"   "(kN m)"      1.0    0.0       2
+"YawBrMzp"   "(kN m)"      1.0    0.0       2
+"TwrBsFxt"   "(kN)"        1.0    0.0       2
+"TwrBsFyt"   "(kN)"        1.0    0.0       2
+"TwrBsFzt"   "(kN)"        1.0    0.0       2
+"TwrBsMxt"   "(kN m)"      1.0    0.0       2
+"TwrBsMyt"   "(kN m)"      1.0    0.0       2
+"TwrBsMzt"   "(kN m)"      1.0    0.0       2
+"GenPwr"     "(kW)"        1.0    0.0       0
+"GenTq"      "(kN-m)"      1.0    0.0       0
+"XLI"        "(m)"         1.0    0.0       0
+"XDTLI"      "(m/s)"       1.0    0.0       0
+"VLOS01LI"   "(m/s)"       1.0    0.0       0
+"BLDBLOC"    "(-)"         1.0    0.0       0
+"BEAMIDLI"   "(-)"         1.0    0.0       0
+"NEWDATALI"  "(-)"         1.0    0.0       0
+-----  Calculated Channels  ----------------------------------------------------
+8                 NumCChan          The number calculated channels to generate.
+1234567890            Seed             The integer seed for the random number generator.
+Col_Title   Units    Equation       Put each field in quotes.  Titles and units are limited to 10 characters.  NumCChan rows of Data follow.
+"RootFxyb1" "(kN)" "sqrt( FileInfo.Time(:,18).^2 + FileInfo.Time(:,19).^2 )" 
+"RootMxyb1" "(kN-m)" "sqrt( FileInfo.Time(:,21).^2 + FileInfo.Time(:,22).^2 )" 
+"LSShftFxy1" "(kN)" "sqrt( FileInfo.Time(:,28).^2 + FileInfo.Time(:,29).^2 )" 
+"LSShftMxy1" "(kN-m)" "sqrt( FileInfo.Time(:,31).^2 + FileInfo.Time(:,32).^2 )" 
+"RootFxyc1" "(kN)" "sqrt( FileInfo.Time(:,24).^2 + FileInfo.Time(:,25).^2 )" 
+"RootMxyc1" "(kN-m)" "sqrt( FileInfo.Time(:,26).^2 + FileInfo.Time(:,27).^2 )" 
+"YawBrFxy1" "(kN)" "sqrt( FileInfo.Time(:,38).^2 + FileInfo.Time(:,39).^2 )" 
+"YawBrMxy1" "(kN-m)" "sqrt( FileInfo.Time(:,41).^2 + FileInfo.Time(:,42).^2 )" 
+-----  Extreme Events  ---------------------------------------------------------
+8                     NumEETables      Number of tables of extreme events.
+0                     NumEECharts      Number of charts of extreme events.
+false                 FindPeaks        Should we use the peak finder?
+1                     TimeChan         The time step channel (used for computing average extreme values, 0 for none)
+2                     WSChan           The primary wind-speed channel (used for mean wind speed and turbulence intensity, 0 for none)
+0                     WSmin            Minimum wind speed to use when binning extreme events.  Input time series with mean wind speeds less than WSmin will be discarded
+31                    WSmax            Maximum wind speed to use when binning extreme events.  Input time series with mean wind speeds greater than WSmax will be discarded
+2                     WSMaxBinSize     Maximum wind speed bin width.
+false                 ScatterPlots     Generate Scatter Plots of Extreme Events?
+1                     PlotFormat       Format for saving any of the requested ScatterPlots or Charts. [ 1 = PNG, 2 = MatLab figure ]
+true                  WrEEvtsTxt       Write the extreme-event tables to a plain-text file?
+true                  WrEEvtsXLS       Write the extreme-event tables to an Excel file?
+"xlsx"                XLStype          Type of Excel file (xls=2003, xlsx=2007).
+7                     ThemeColor       Excel color theme to use.  In Excel 2007, it is the column of the color chart (1-8).
+0                     HeadTnS          Tint and shade of the header area (-1.0 to 1.0), with -1 being darkest and 1 lightest.
+0.5                   DiagTnS          Tint and shade of the diagonal (-1.0 to 1.0), with -1 being darkest and 1 lightest.
+TableName               #Chans    ChanList                         #InfoChans     InfoChanList    (NumEETables rows of Data follow)
+"Rotor Torque"             1      10                                  2         1 2
+"Tip Deflection"           5      13  14  15  16  17                  2         1 2
+"Rotor Shaft"              8      28  29  30  31  32  33   60  61     2         1 2 
+"Blade Root"               8      18  19  20  21  22  23   58  59     2         1 2 
+"Yaw Bearing or Twr Top"   6      38  39  40  41  42  43              2         1 2
+"Tower Bottom"             8      44  45  46  47  48  49   62  63     2         1 2
+"Machine Bed"              6      34  35  36  37  28  31              2         1 2
+"Pitch Bearing"            8      24  25  26  27  38  41   60  61     2         1 2
+ChartName         YLabel                                  Type       #Chans        ChanList
+-----  Input Files  ------------------------------------------------------------
+1                     FileFormat       Flag determining input file format.  1 = ascii, 2 = binary
+5                     NumDLCs          The number of Design Load Cases.
+71  1.1   1.35   1.5   1.7  0  "DLC_1.2"         (NumDLCfiles, PSF1, PSF2, PSF3, PSF4, BinModel, DLC_Name)
+".\Data\DLC1.2\DLC1.2_3_1.out"
+".\Data\DLC1.2\DLC1.2_3_2.out"
+".\Data\DLC1.2\DLC1.2_3_3.out"
+".\Data\DLC1.2\DLC1.2_3_4.out"
+".\Data\DLC1.2\DLC1.2_3_5.out"
+".\Data\DLC1.2\DLC1.2_3_6.out"
+".\Data\DLC1.2\DLC1.2_5_1.out" 
+".\Data\DLC1.2\DLC1.2_5_2.out" 
+".\Data\DLC1.2\DLC1.2_5_3.out" 
+".\Data\DLC1.2\DLC1.2_5_4.out" 
+".\Data\DLC1.2\DLC1.2_5_5.out" 
+".\Data\DLC1.2\DLC1.2_5_6.out"
+".\Data\DLC1.2\DLC1.2_7_1.out" 
+".\Data\DLC1.2\DLC1.2_7_2.out" 
+".\Data\DLC1.2\DLC1.2_7_3.out" 
+".\Data\DLC1.2\DLC1.2_7_4.out" 
+".\Data\DLC1.2\DLC1.2_7_5.out" 
+".\Data\DLC1.2\DLC1.2_7_6.out"
+".\Data\DLC1.2\DLC1.2_9_1.out" 
+".\Data\DLC1.2\DLC1.2_9_2.out" 
+".\Data\DLC1.2\DLC1.2_9_3.out" 
+".\Data\DLC1.2\DLC1.2_9_5.out" 
+".\Data\DLC1.2\DLC1.2_9_6.out"
+".\Data\DLC1.2\DLC1.2_11_1.out" 
+".\Data\DLC1.2\DLC1.2_11_2.out" 
+".\Data\DLC1.2\DLC1.2_11_3.out" 
+".\Data\DLC1.2\DLC1.2_11_4.out" 
+".\Data\DLC1.2\DLC1.2_11_5.out" 
+".\Data\DLC1.2\DLC1.2_11_6.out"
+".\Data\DLC1.2\DLC1.2_13_1.out" 
+".\Data\DLC1.2\DLC1.2_13_2.out" 
+".\Data\DLC1.2\DLC1.2_13_3.out" 
+".\Data\DLC1.2\DLC1.2_13_4.out" 
+".\Data\DLC1.2\DLC1.2_13_5.out" 
+".\Data\DLC1.2\DLC1.2_13_6.out"
+".\Data\DLC1.2\DLC1.2_15_1.out" 
+".\Data\DLC1.2\DLC1.2_15_2.out" 
+".\Data\DLC1.2\DLC1.2_15_3.out" 
+".\Data\DLC1.2\DLC1.2_15_4.out" 
+".\Data\DLC1.2\DLC1.2_15_5.out" 
+".\Data\DLC1.2\DLC1.2_15_6.out"
+".\Data\DLC1.2\DLC1.2_17_1.out" 
+".\Data\DLC1.2\DLC1.2_17_2.out" 
+".\Data\DLC1.2\DLC1.2_17_3.out" 
+".\Data\DLC1.2\DLC1.2_17_4.out" 
+".\Data\DLC1.2\DLC1.2_17_5.out" 
+".\Data\DLC1.2\DLC1.2_17_6.out"
+".\Data\DLC1.2\DLC1.2_19_1.out" 
+".\Data\DLC1.2\DLC1.2_19_2.out" 
+".\Data\DLC1.2\DLC1.2_19_3.out" 
+".\Data\DLC1.2\DLC1.2_19_4.out" 
+".\Data\DLC1.2\DLC1.2_19_5.out" 
+".\Data\DLC1.2\DLC1.2_19_6.out"
+".\Data\DLC1.2\DLC1.2_21_1.out" 
+".\Data\DLC1.2\DLC1.2_21_2.out" 
+".\Data\DLC1.2\DLC1.2_21_3.out" 
+".\Data\DLC1.2\DLC1.2_21_4.out" 
+".\Data\DLC1.2\DLC1.2_21_5.out" 
+".\Data\DLC1.2\DLC1.2_21_6.out"
+".\Data\DLC1.2\DLC1.2_23_1.out" 
+".\Data\DLC1.2\DLC1.2_23_2.out" 
+".\Data\DLC1.2\DLC1.2_23_3.out" 
+".\Data\DLC1.2\DLC1.2_23_4.out"
+".\Data\DLC1.2\DLC1.2_23_5.out"
+".\Data\DLC1.2\DLC1.2_23_6.out"
+".\Data\DLC1.2\DLC1.2_25_1.out"
+".\Data\DLC1.2\DLC1.2_25_2.out"
+".\Data\DLC1.2\DLC1.2_25_3.out"
+".\Data\DLC1.2\DLC1.2_25_4.out"
+".\Data\DLC1.2\DLC1.2_25_5.out"
+".\Data\DLC1.2\DLC1.2_25_6.out"
+78  1.1   1.35   1.5   1.7  0  "DLC_4.2"         (NumDLCfiles, PSF1, PSF2, PSF3, PSF4, BinModel, DLC_Name)
+".\Data\DLC4.2\DLC4.2_3_1.out"
+".\Data\DLC4.2\DLC4.2_3_2.out"
+".\Data\DLC4.2\DLC4.2_3_3.out"
+".\Data\DLC4.2\DLC4.2_3_4.out"
+".\Data\DLC4.2\DLC4.2_3_5.out"
+".\Data\DLC4.2\DLC4.2_3_6.out"
+".\Data\DLC4.2\DLC4.2_5_1.out"
+".\Data\DLC4.2\DLC4.2_5_2.out"
+".\Data\DLC4.2\DLC4.2_5_3.out"
+".\Data\DLC4.2\DLC4.2_5_4.out"
+".\Data\DLC4.2\DLC4.2_5_5.out"
+".\Data\DLC4.2\DLC4.2_5_6.out"
+".\Data\DLC4.2\DLC4.2_8_1.out"
+".\Data\DLC4.2\DLC4.2_8_2.out"
+".\Data\DLC4.2\DLC4.2_8_3.out"
+".\Data\DLC4.2\DLC4.2_8_4.out"
+".\Data\DLC4.2\DLC4.2_8_5.out"
+".\Data\DLC4.2\DLC4.2_8_6.out"
+".\Data\DLC4.2\DLC4.2_10_1.out"
+".\Data\DLC4.2\DLC4.2_10_2.out"
+".\Data\DLC4.2\DLC4.2_10_3.out"
+".\Data\DLC4.2\DLC4.2_10_4.out"
+".\Data\DLC4.2\DLC4.2_10_5.out"
+".\Data\DLC4.2\DLC4.2_10_6.out"
+".\Data\DLC4.2\DLC4.2_11_1.out"
+".\Data\DLC4.2\DLC4.2_11_2.out"
+".\Data\DLC4.2\DLC4.2_11_3.out"
+".\Data\DLC4.2\DLC4.2_11_4.out"
+".\Data\DLC4.2\DLC4.2_11_5.out"
+".\Data\DLC4.2\DLC4.2_11_6.out"
+".\Data\DLC4.2\DLC4.2_12_1.out"
+".\Data\DLC4.2\DLC4.2_12_2.out"
+".\Data\DLC4.2\DLC4.2_12_3.out"
+".\Data\DLC4.2\DLC4.2_12_4.out"
+".\Data\DLC4.2\DLC4.2_12_5.out"
+".\Data\DLC4.2\DLC4.2_12_6.out"
+".\Data\DLC4.2\DLC4.2_13_1.out"
+".\Data\DLC4.2\DLC4.2_13_2.out"
+".\Data\DLC4.2\DLC4.2_13_3.out"
+".\Data\DLC4.2\DLC4.2_13_4.out"
+".\Data\DLC4.2\DLC4.2_13_5.out"
+".\Data\DLC4.2\DLC4.2_13_6.out"
+".\Data\DLC4.2\DLC4.2_15_1.out"
+".\Data\DLC4.2\DLC4.2_15_2.out"
+".\Data\DLC4.2\DLC4.2_15_3.out"
+".\Data\DLC4.2\DLC4.2_15_4.out"
+".\Data\DLC4.2\DLC4.2_15_5.out"
+".\Data\DLC4.2\DLC4.2_15_6.out"
+".\Data\DLC4.2\DLC4.2_17_1.out"
+".\Data\DLC4.2\DLC4.2_17_2.out"
+".\Data\DLC4.2\DLC4.2_17_3.out"
+".\Data\DLC4.2\DLC4.2_17_4.out"
+".\Data\DLC4.2\DLC4.2_17_5.out"
+".\Data\DLC4.2\DLC4.2_17_6.out"
+".\Data\DLC4.2\DLC4.2_19_1.out"
+".\Data\DLC4.2\DLC4.2_19_2.out"
+".\Data\DLC4.2\DLC4.2_19_3.out"
+".\Data\DLC4.2\DLC4.2_19_4.out"
+".\Data\DLC4.2\DLC4.2_19_5.out"
+".\Data\DLC4.2\DLC4.2_19_6.out"
+".\Data\DLC4.2\DLC4.2_21_1.out"
+".\Data\DLC4.2\DLC4.2_21_2.out"
+".\Data\DLC4.2\DLC4.2_21_3.out"
+".\Data\DLC4.2\DLC4.2_21_4.out"
+".\Data\DLC4.2\DLC4.2_21_5.out"
+".\Data\DLC4.2\DLC4.2_21_6.out"
+".\Data\DLC4.2\DLC4.2_23_1.out"
+".\Data\DLC4.2\DLC4.2_23_2.out"
+".\Data\DLC4.2\DLC4.2_23_3.out"
+".\Data\DLC4.2\DLC4.2_23_4.out"
+".\Data\DLC4.2\DLC4.2_23_5.out"
+".\Data\DLC4.2\DLC4.2_23_6.out"
+".\Data\DLC4.2\DLC4.2_25_1.out"
+".\Data\DLC4.2\DLC4.2_25_2.out"
+".\Data\DLC4.2\DLC4.2_25_3.out"
+".\Data\DLC4.2\DLC4.2_25_4.out"
+".\Data\DLC4.2\DLC4.2_25_5.out"
+".\Data\DLC4.2\DLC4.2_25_6.out"
+18  1.1   1.35   1.5   1.7  0  "DLC_5.1"         (NumDLCfiles, PSF1, PSF2, PSF3, PSF4, BinModel, DLC_Name)
+".\Data\DLC5.1\DLC5.1_8_1.out"
+".\Data\DLC5.1\DLC5.1_8_2.out"
+".\Data\DLC5.1\DLC5.1_8_3.out"
+".\Data\DLC5.1\DLC5.1_8_4.out"
+".\Data\DLC5.1\DLC5.1_8_5.out"
+".\Data\DLC5.1\DLC5.1_8_6.out
+".\Data\DLC5.1\DLC5.1_12_1.out"
+".\Data\DLC5.1\DLC5.1_12_2.out"
+".\Data\DLC5.1\DLC5.1_12_3.out"
+".\Data\DLC5.1\DLC5.1_12_4.out"
+".\Data\DLC5.1\DLC5.1_12_5.out"
+".\Data\DLC5.1\DLC5.1_12_6.out"
+".\Data\DLC5.1\DLC5.1_25_1.out"
+".\Data\DLC5.1\DLC5.1_25_2.out"
+".\Data\DLC5.1\DLC5.1_25_3.out"
+".\Data\DLC5.1\DLC5.1_25_4.out"
+".\Data\DLC5.1\DLC5.1_25_5.out"
+".\Data\DLC5.1\DLC5.1_25_6.out"
+6  1.1   1.35   1.5   1.7  0  "DLC_6.1"         (NumDLCfiles, PSF1, PSF2, PSF3, PSF4, BinModel, DLC_Name)
+".\Data\DLC6.1\DLC6.1_1.out"
+".\Data\DLC6.1\DLC6.1_2.out"
+".\Data\DLC6.1\DLC6.1_3.out"
+".\Data\DLC6.1\DLC6.1_4.out"
+".\Data\DLC6.1\DLC6.1_5.out"
+".\Data\DLC6.1\DLC6.1_6.out"
+77  1.1   1.35   1.5   1.7  0  "DLC_7.1"         (NumDLCfiles, PSF1, PSF2, PSF3, PSF4, BinModel, DLC_Name)
+".\Data\DLC7.1\DLC7.1_0_1.out"
+".\Data\DLC7.1\DLC7.1_0_2.out"
+".\Data\DLC7.1\DLC7.1_0_3.out"
+".\Data\DLC7.1\DLC7.1_0_4.out" 
+".\Data\DLC7.1\DLC7.1_0_5.out" 
+".\Data\DLC7.1\DLC7.1_0_6.out" 
+".\Data\DLC7.1\DLC7.1_15_1.out" 
+".\Data\DLC7.1\DLC7.1_15_2.out" 
+".\Data\DLC7.1\DLC7.1_15_3.out" 
+".\Data\DLC7.1\DLC7.1_15_4.out" 
+".\Data\DLC7.1\DLC7.1_15_5.out" 
+".\Data\DLC7.1\DLC7.1_15_6.out" 
+".\Data\DLC7.1\DLC7.1_30_1.out" 
+".\Data\DLC7.1\DLC7.1_30_2.out" 
+".\Data\DLC7.1\DLC7.1_30_3.out" 
+".\Data\DLC7.1\DLC7.1_30_4.out" 
+".\Data\DLC7.1\DLC7.1_30_5.out" 
+".\Data\DLC7.1\DLC7.1_30_6.out" 
+".\Data\DLC7.1\DLC7.1_45_1.out" 
+".\Data\DLC7.1\DLC7.1_45_2.out" 
+".\Data\DLC7.1\DLC7.1_45_3.out" 
+".\Data\DLC7.1\DLC7.1_45_4.out" 
+".\Data\DLC7.1\DLC7.1_45_5.out" 
+".\Data\DLC7.1\DLC7.1_45_6.out" 
+".\Data\DLC7.1\DLC7.1_60_1.out" 
+".\Data\DLC7.1\DLC7.1_60_2.out" 
+".\Data\DLC7.1\DLC7.1_60_3.out" 
+".\Data\DLC7.1\DLC7.1_60_4.out" 
+".\Data\DLC7.1\DLC7.1_60_5.out" 
+".\Data\DLC7.1\DLC7.1_60_6.out" 
+".\Data\DLC7.1\DLC7.1_75_1.out" 
+".\Data\DLC7.1\DLC7.1_75_2.out" 
+".\Data\DLC7.1\DLC7.1_75_3.out" 
+".\Data\DLC7.1\DLC7.1_75_4.out" 
+".\Data\DLC7.1\DLC7.1_75_5.out" 
+".\Data\DLC7.1\DLC7.1_75_6.out" 
+".\Data\DLC7.1\DLC7.1_90_1.out" 
+".\Data\DLC7.1\DLC7.1_90_2.out" 
+".\Data\DLC7.1\DLC7.1_90_3.out" 
+".\Data\DLC7.1\DLC7.1_90_4.out" 
+".\Data\DLC7.1\DLC7.1_90_5.out" 
+".\Data\DLC7.1\DLC7.1_90_6.out" 
+".\Data\DLC7.1\DLC7.1_105_1.out" 
+".\Data\DLC7.1\DLC7.1_105_2.out" 
+".\Data\DLC7.1\DLC7.1_105_3.out" 
+".\Data\DLC7.1\DLC7.1_105_4.out" 
+".\Data\DLC7.1\DLC7.1_105_5.out" 
+".\Data\DLC7.1\DLC7.1_105_6.out" 
+".\Data\DLC7.1\DLC7.1_120_1.out" 
+".\Data\DLC7.1\DLC7.1_120_2.out" 
+".\Data\DLC7.1\DLC7.1_120_3.out" 
+".\Data\DLC7.1\DLC7.1_120_4.out" 
+".\Data\DLC7.1\DLC7.1_120_5.out" 
+".\Data\DLC7.1\DLC7.1_120_6.out" 
+".\Data\DLC7.1\DLC7.1_135_1.out" 
+".\Data\DLC7.1\DLC7.1_135_2.out" 
+".\Data\DLC7.1\DLC7.1_135_3.out" 
+".\Data\DLC7.1\DLC7.1_135_4.out" 
+".\Data\DLC7.1\DLC7.1_135_5.out" 
+".\Data\DLC7.1\DLC7.1_135_6.out" 
+".\Data\DLC7.1\DLC7.1_150_1.out" 
+".\Data\DLC7.1\DLC7.1_150_2.out" 
+".\Data\DLC7.1\DLC7.1_150_3.out" 
+".\Data\DLC7.1\DLC7.1_150_4.out" 
+".\Data\DLC7.1\DLC7.1_150_5.out" 
+".\Data\DLC7.1\DLC7.1_150_6.out" 
+".\Data\DLC7.1\DLC7.1_165_1.out" 
+".\Data\DLC7.1\DLC7.1_165_2.out" 
+".\Data\DLC7.1\DLC7.1_165_3.out" 
+".\Data\DLC7.1\DLC7.1_165_4.out" 
+".\Data\DLC7.1\DLC7.1_165_5.out" 
+".\Data\DLC7.1\DLC7.1_165_6.out" 
+".\Data\DLC7.1\DLC7.1_180_1.out" 
+".\Data\DLC7.1\DLC7.1_180_3.out" 
+".\Data\DLC7.1\DLC7.1_180_4.out" 
+".\Data\DLC7.1\DLC7.1_180_5.out" 
+".\Data\DLC7.1\DLC7.1_180_6.out"
+
