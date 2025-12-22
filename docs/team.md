@@ -104,7 +104,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
 <div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
   
   <div style="text-align: center; margin-bottom: 20px;">
-    <img src="assets/Saiju.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr. Saiju">
+    <img src="assets/Saiju.jpeg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr. Saiju">
     <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr. Saiju</h2>
   </div>
 
@@ -125,7 +125,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
 <div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
   
   <div style="text-align: center; margin-bottom: 20px;">
-    <img src="assets/Laurence.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Laurence Alhrshy">
+    <img src="assets/Laurence.jpeg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Laurence Alhrshy">
     <h2 style="color: #28a745; margin-top: 15px;">Dr. Laurence Alhrshy</h2>
   </div>
 
