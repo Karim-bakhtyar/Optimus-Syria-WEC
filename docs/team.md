@@ -48,60 +48,148 @@ The Optimus Syria project is guided by a team of distinguished professors and re
     <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. David Schlipf</h2>
   </div>
   
-<h3>Prof. Dr.-Ing. David Schlipf</h3>
-<p>
-Supervisor for:<br>
-– Feedback Controller<br>
-– Lidar Assisted Control<br>
-Prof. Schlipf is a leading expert in wind turbine control systems, including both feedback and feedforward control strategies. He mentors students in ROSCO integration, controller design, and Lidar-assisted predictive systems.
-</p>
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/David Schlipf.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr.-Ing. David Schlipf">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. David Schlipf</h2>
+  </div>
 
-<h3>Prof. Dr.-Ing. A.P. Schaffarczyk</h3>
-<p>
-Supervisor for:<br>
-– Rotor Blade Aerodynamics<br>
-Prof. Schaffarczyk specializes in aerodynamic optimization, blade design, and performance analysis using QBlade. He supports the team in developing efficient rotor blade profiles tailored to Syrian wind conditions.
-</p>
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Feedback Controller<br>
+      – Lidar Assisted Control
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Schlipf is a leading expert in wind turbine control systems, including both feedback and feedforward control strategies. He mentors students in ROSCO integration, controller design, and Lidar-assisted predictive systems.
+    </p>
+  </div>
+</div>
 
-<h3>Prof. Dr. Manfred Manjock</h3>
-<p>
-Supervisor for:<br>
-– Load and Dynamics<br>
-Prof. Manjock guides the team in dynamic simulation, load case definition, and OpenFAST modeling to ensure reliable load certification and structural integration across all turbine components.
-</p>
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Alois.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr.-Ing. A.P. Schaffarczyk">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. A.P. Schaffarczyk</h2>
+  </div>
 
-<h3>Prof. Dr. Saiju</h3>
-<p>
-Supervisor for:<br>
-– Electrical Drivetrain<br>
-– Grid Code Development<br>
-Prof. Saiju provides expertise in electrical system modeling, generator and converter design, and grid compliance. His guidance ensures the electrical architecture meets performance and regulatory requirements.
-</p>
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Rotor Blade Aerodynamics
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Schaffarczyk specializes in aerodynamic optimization, blade design, and performance analysis using QBlade. He supports the team in developing efficient rotor blade profiles tailored to Syrian wind conditions.
+    </p>
+  </div>
+</div>
 
-<h3>Dr. Laurence Alhrshy</h3>
-<p>
-Supervisor for:<br>
-– Storage System 
-– Rotor Blade Structures<br>
-Dr. Alhrshy supports the structural design of composite rotor blades using NuMAD and finite element principles, ensuring strength, safety, and manufacturing feasibility.
-</p>
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Manjock.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr. Manfred Manjock">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr. Manfred Manjock</h2>
+  </div>
 
-<h3>Prof. Peter Quell</h3>
-<p>
-Supervisor for:<br>
-– Rotor Hub and Pitch System<br>
-– Rotor Bearing System<br>
-– Gearbox, Brake, Coupling<br>
-– Machine Bed & Yaw System<br>
-Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
-</p>
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Load and Dynamics
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Manjock guides the team in dynamic simulation, load case definition, and OpenFAST modeling to ensure reliable load certification and structural integration across all turbine components.
+    </p>
+  </div>
+</div>
 
-<h3>Dr. Marina Blohm</h3>
-<p>
-Supervisor for:<br>
-– Wind Project Development<br>
-Dr. Blohm, Research Associate at Europa-Universität Flensburg, supervised the Wind Farm Development team. With her background in wind project development and renewable energy research, she provided valuable guidance on planning and sustainability aspects of the project.
-</p>
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Saiju.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Dr. Saiju">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr. Saiju</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Electrical Drivetrain<br>
+      – Grid Code Development
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Saiju provides expertise in electrical system modeling, generator and converter design, and grid compliance. His guidance ensures the electrical architecture meets performance and regulatory requirements.
+    </p>
+  </div>
+</div>
+
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Laurence.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Laurence Alhrshy">
+    <h2 style="color: #28a745; margin-top: 15px;">Dr. Laurence Alhrshy</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Storage System<br>
+      – Rotor Blade Structures
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Dr. Alhrshy supports the structural design of composite rotor blades using NuMAD and finite element principles, ensuring strength, safety, and manufacturing feasibility.
+    </p>
+  </div>
+</div>
+
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Peter.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Peter Quell">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Peter Quell</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Rotor Hub and Pitch System<br>
+      – Rotor Bearing System<br>
+      – Gearbox, Brake, Coupling<br>
+      – Machine Bed & Yaw System
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
+    </p>
+  </div>
+</div>
+
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Marina.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Marina Blohm">
+    <h2 style="color: #28a745; margin-top: 15px;">Dr. Marina Blohm</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Wind Project Development
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Dr. Blohm, Research Associate at Europa-Universität Flensburg, supervised the Wind Farm Development team. With her background in wind project development and renewable energy research, she provided valuable guidance on planning and sustainability aspects of the project.
+    </p>
+  </div>
+</div>
 
 <h2>Project Teams</h2>
 
