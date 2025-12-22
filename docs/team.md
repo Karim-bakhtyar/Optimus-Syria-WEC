@@ -23,7 +23,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
 
 <div style="text-align: center; margin: 40px 0; padding: 20px; background: rgba(255,255,255,0.8); border-radius: 12px;">
   
-  <img src="assets/tutor1.jpg" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #28a745; object-fit: cover; margin-bottom: 15px;" alt="Prof. Dr.-Ing. Torsten Faber">
+  <img src="assets/faber_torsten.jpg.jpeg" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #28a745; object-fit: cover; margin-bottom: 15px;" alt="Prof. Dr.-Ing. Torsten Faber">
 
   <h3>Prof. Dr.-Ing. Torsten Faber</h3>
   
