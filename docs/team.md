@@ -147,7 +147,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
   
   <div style="text-align: center; margin-bottom: 20px;">
     <img src="assets/Peter.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Peter Quell">
-    <h2 style="color: #28a745; margin-top: 15px;">Prof. Peter Quell</h2>
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. Peter Quell</h2>
   </div>
 
   <div style="text-align: left; color: #333;">
