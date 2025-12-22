@@ -16,38 +16,64 @@ title: Optimus Syria
   </script>
 
   
-  <style>
-    .mermaid {
-      margin: 40px auto;
-      max-width: 1000px;
-      background-color: #f8f9fa;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-      overflow-x: auto;
-    }
+ <style>
+  /* 1. Background Setup */
+  body {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
 
-    .mermaid svg .titleText {
-      fill: #28a745 !important;
-      font-size: 18px;
-      font-weight: bold;
-    }
+  /* 2. Content Container (Makes text readable over the photo) */
+  /* This wraps your text in a semi-transparent white box */
+  .main-content, #content-wrapper {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 40px;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
 
-    a {
-      color: #c62828;
-      text-decoration: none;
-    }
+  /* 3. Your Original Mermaid Styling */
+  .mermaid {
+    margin: 40px auto;
+    max-width: 1000px;
+    background-color: #ffffff; /* Brighter white for contrast */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
 
-    a:hover {
-      text-decoration: underline;
-    }
+  .mermaid svg .titleText {
+    fill: #28a745 !important;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-    footer {
-      display: none;
-    }
-  </style>
-</head>
+  /* 4. Link and Navigation Styling */
+  a {
+    color: #c62828;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
+  a:hover {
+    text-decoration: underline;
+    color: #e53935;
+  }
+
+  /* 5. Hide Footer */
+  footer {
+    display: none;
+  }
+</style>
 <body>
 
 
