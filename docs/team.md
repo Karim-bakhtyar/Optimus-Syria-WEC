@@ -41,6 +41,47 @@ The Optimus Syria project is guided by a team of distinguished professors and re
   </div>
 </div>
 
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Peter.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Peter Quell">
+    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. Peter Quell</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Rotor Hub and Pitch System<br>
+      – Rotor Bearing System<br>
+      – Gearbox, Brake, Coupling<br>
+      – Machine Bed & Yaw System
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
+    </p>
+  </div>
+</div>
+
+<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="assets/Marina.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Marina Blohm">
+    <h2 style="color: #28a745; margin-top: 15px;">Dr. Marina Blohm</h2>
+  </div>
+
+  <div style="text-align: left; color: #333;">
+    <p style="font-size: 1.1em; margin-bottom: 10px;">
+      <strong>Supervisor for:</strong><br>
+      – Wind Project Development
+    </p>
+    
+    <p style="line-height: 1.8; font-size: 1em;">
+      Dr. Blohm, Research Associate at Europa-Universität Flensburg, supervised the Wind Farm Development team. With her background in wind project development and renewable energy research, she provided valuable guidance on planning and sustainability aspects of the project.
+    </p>
+  </div>
+</div>
   
 <div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
   
@@ -142,48 +183,6 @@ The Optimus Syria project is guided by a team of distinguished professors and re
   </div>
 </div>
 
-
-<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
-  
-  <div style="text-align: center; margin-bottom: 20px;">
-    <img src="assets/Peter.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Prof. Peter Quell">
-    <h2 style="color: #28a745; margin-top: 15px;">Prof. Dr.-Ing. Peter Quell</h2>
-  </div>
-
-  <div style="text-align: left; color: #333;">
-    <p style="font-size: 1.1em; margin-bottom: 10px;">
-      <strong>Supervisor for:</strong><br>
-      – Rotor Hub and Pitch System<br>
-      – Rotor Bearing System<br>
-      – Gearbox, Brake, Coupling<br>
-      – Machine Bed & Yaw System
-    </p>
-    
-    <p style="line-height: 1.8; font-size: 1em;">
-      Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
-    </p>
-  </div>
-</div>
-
-
-<div style="margin: 40px auto; padding: 30px; max-width: 900px; background: rgba(255,255,255,0.9); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
-  
-  <div style="text-align: center; margin-bottom: 20px;">
-    <img src="assets/Marina.jpg" style="width: 180px; height: 180px; border-radius: 50%; border: 4px solid #28a745; object-fit: cover;" alt="Dr. Marina Blohm">
-    <h2 style="color: #28a745; margin-top: 15px;">Dr. Marina Blohm</h2>
-  </div>
-
-  <div style="text-align: left; color: #333;">
-    <p style="font-size: 1.1em; margin-bottom: 10px;">
-      <strong>Supervisor for:</strong><br>
-      – Wind Project Development
-    </p>
-    
-    <p style="line-height: 1.8; font-size: 1em;">
-      Dr. Blohm, Research Associate at Europa-Universität Flensburg, supervised the Wind Farm Development team. With her background in wind project development and renewable energy research, she provided valuable guidance on planning and sustainability aspects of the project.
-    </p>
-  </div>
-</div>
 
 <h2>Project Teams</h2>
 
