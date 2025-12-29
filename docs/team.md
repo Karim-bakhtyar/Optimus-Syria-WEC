@@ -192,16 +192,13 @@ The Optimus Syria project is organized into 15 engineering teams. Each team is r
 </p>
 
 <p><b>Loads and Dynamics</b><br>
-Team leader: Mohamed Reda Fawzy Ahmed Alywa<br>
+Team leader: Mohamed Aman<br>
 Responsibility: Creates the OpenFAST simulation model, performs load case definition and calculation, and provides fatigue and extreme load data to all design teams.</p>
 
-<p><b>Feedback Controller</b><br>
+<p><b>Feedback Controller and Lidar Assisted Control</b><br>
 Team leader: Mirza Dincer<br>
-Responsibility: Designs and tunes the dynamic feedback control system using ROSCO to regulate turbine behavior and mitigate structural loads.</p>
-
-<p><b>Lidar Assisted Control</b><br>
-Team leader: Hesham Mahmoud<br>
-Responsibility: Implements LIDAR-based feedforward control strategies to anticipate wind changes and enhance pitch control responsiveness.</p>
+Responsibility regarding Feedback controller: Designs and tunes the dynamic feedback control system using ROSCO to regulate turbine behavior and mitigate structural loads.</p>
+Responsibility regarding Lidar Assisted Control: Implements LIDAR-based feedforward control strategies to anticipate wind changes and enhance pitch control responsiveness.</p>
 
 <p><b>Rotor Blade Aerodynamics</b><br>
 Team leader: Jay Atulbhai Pandya<br>
@@ -216,7 +213,7 @@ Team leader: Aiswarya Vijayan<br>
 Responsibility: Develops the generator, converter, and transformer system, ensuring electrical compatibility, efficiency, and simulation under grid conditions.</p>
 
 <p><b>Grid Code Development</b><br>
-Team leader: Marcus Attalla<br>
+Team leader: Josef Remberger<br>
 Responsibility: Ensures the wind turbine complies with Syrian and international grid codes, including voltage, frequency, and fault handling behaviors.</p>
 
 <p><b>Rotor Hub and Pitch System</b><br>
@@ -232,7 +229,7 @@ Team leader: Nehang Jitendra Joshi<br>
 Responsibility: Develops the mechanical drivetrain including gearbox layout, mechanical brake system, and coupling to ensure efficient power transmission.</p>
 
 <p><b>Machine Bed & Yaw System</b><br>
-Team leader: Sathishkumar Venkatachalam<br>
+Team leader: Shoukat Abbas<br>
 Responsibility: Designs the machine bed to house the nacelle components and the yaw system that aligns the turbine with wind direction.</p>
 
 <p><b>Tower</b><br>
@@ -244,7 +241,7 @@ Team leader: Jehad Albaali<br>
 Responsibility: Designs the wind turbine foundation based on local soil and climate data, ensuring structural safety and feasibility of construction.</p>
 
 <p><b>Storage System</b><br>
-Team leader: Farshid Montakhab<br>
+Team leader: Mohamed Shaaban Mohamed<br>
 Responsibility: Designs and integrates an energy storage system (e.g., battery) to improve grid compatibility and enable energy smoothing and support.</p>
 
 <p><b>Wind Farm Development</b><br>
