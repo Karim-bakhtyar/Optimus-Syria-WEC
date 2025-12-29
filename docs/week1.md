@@ -24,80 +24,87 @@ title: Specifications of Optimus Syria
 
 <link rel="stylesheet" href="assets/style.css">
 
-# Optimus Syria 5MW - Engineering Data Repository
 
-## 1. Aerodynamic Blade Profile
-The rotor system is designed with a series of high-performance airfoils, transitioning from circular roots to aerodynamic profiles optimized for the 160m rotor diameter.
+# Optimus Syria 5MW - Technical Data Sheet
 
-| Radial Position [m] | Chord Length [m] | Twist [deg] | Airfoil Type |
-|:---|:---:|:---:|:---|
-| **0.00 (Root)** | $3.47$ | $18.0$ | Circular Foil |
-| **6.28** | $4.00$ | $17.5$ | Interpolated t52.8 |
-| **8.31 (Max Chord)**| $4.20$ | $17.0$ | Interpolated t45.0 |
-| **12.36** | $4.15$ | $16.0$ | DU40B Flatback |
-| **20.72** | $3.80$ | $12.0$ | DU40B Flatback |
-| **77.75 (Tip)** | $\approx 1.1$ | $0.0$ | Optimized Tip Profile |
+## 1. Primary Component Weights
+Mass distribution for structural and logistical planning.
 
----
-
-## 2. Yaw & Control System
-The yaw system ensures precise alignment with the wind direction using a multi-drive active system.
-
-- **Drives:** 6x Bonfiglioli 716 T4 planetary drives.
-- **Motors:** BE160 series (11-15 kW) controlled by DGM Inverters.
-- **Bearing Type:** Double-row 4-point contact bearing with external gearing.
-- **Structural Limits:**
-  - **Max Yaw Moment:** $19,851.6 \text{ kNm}$
-  - **Operational Yaw Moment:** $7,164 \text{ kNm}$
-  - **Max Tilting Moment:** $21,578.4 \text{ kNm}$
-- **Brake System:** Svendborg hydraulic calipers acting on a 3.8m diameter disk.
+* **Tower Total (Steel Structure):** 394,100 kg
+* **Rotor Hub:** 40,000 kg
+* **Main Shaft:** 30,785.9 kg
+* **Blade Bearings (Set of 3):** 19,800 kg
+* **Main Gearbox:** 11,600.5 kg
+* **Main Bearing:** 7,160.8 kg
+* **Nacelle Cover (GFRP/PET):** 5,133 kg
+* **Yaw Bearing:** 4,293.1 kg
+* **Generator:** approx. 12,000 kg
 
 ---
 
-## 3. Civil Engineering & Quantities
-Foundation calculations based on the site-specific soil analysis in Syria.
+## 2. Drivetrain Engineering (Gearbox & Generator)
+The drivetrain is optimized for high-torque transmission and 50Hz grid stability.
 
-- **Foundation Area:** $491 \text{ m}^2$
-- **Total Concrete Volume:** $1121 \text{ m}^3$
-- **Reinforcement Steel:** $49.4 \text{ tons}$ (High-tensile Grade)
-- **Anchor Bolt Cage:** $4.0 \text{ tons}$ (M36 Bolt configuration)
-- **Total Foundation Cost Estimate:** $\approx 128,240 \text{ EUR}$
+### Gearbox Details (3-Stage)
+* **Configuration:** 2 Planetary Stages + 1 Spur Stage
+* **Overall Ratio:** 1:120
+* **Efficiency:** 97.5%
+* **1st Stage Ratio:** 4.8
+* **2nd Stage Ratio:** 4.92
+* **Spur Stage Ratio:** 5.1
 
----
-
-## 4. Site-Specific Environmental Design
-The Optimus Syria is engineered for the specific wind regime of the project site.
-
-| Parameter | Value | Details |
-|:---|:---|:---|
-| **Avg. Wind Speed** | $8.49 \text{ m/s}$ | Measured at 100m hub height |
-| **Prevailing Wind** | $270^\circ \text{ (West)}$ | Primary energy direction |
-| **Turbulence Int.** | $0.16$ | Category A (High Turbulence) |
-| **Roughness Length**| $0.002 \text{ m}$ | Low terrain roughness |
-| **Grid Voltage** | $66 \text{ kV}$ | Regional transmission level |
-| **Substation Dist.** | $2500 \text{ m}$ | Underground cable connection |
+### Electrical Generator (DFIG)
+* **Rated Power (Active):** 5.16 MW
+* **Apparent Power:** 5.73 MVA
+* **Stator Voltage (Line-to-Line):** 960 V
+* **Rated Speed:** 1200 rpm
+* **Synchronous Speed:** 1000 rpm
+* **Frequency:** 50 Hz
 
 ---
 
-## 5. Major Component Weight Breakdown
-Total nacelle and tower mass distribution for structural loading analysis.
 
-- **Rotor Hub:** $40,000 \text{ kg}$
-- **Rotor Shaft:** $30,785 \text{ kg}$
-- **Main Gearbox:** $11,600 \text{ kg}$
-- **Tower Total:** $394,100 \text{ kg}$ (Steel Structure)
-- **Main Bearing:** $7,160 \text{ kg}$
-- **Blade Bearings (x3):** $\approx 19,800 \text{ kg}$
-- **Nacelle Cover:** $\approx 5.1 \text{ tons}$
+
+## 3. Nacelle & Yaw System
+The nacelle houses the primary mechanical systems and provides active alignment to wind direction.
+
+* **Nacelle Dimensions:** 13.7m (L) x 5.5m (W) x 4.3m (H)
+* **Yaw Drives:** 6x Bonfiglioli 716 T4 units
+* **Max Yaw Moment:** 19,851.6 kNm
+* **Max Tilting Moment:** 21,578.4 kNm
+* **Rotor Tilt Angle:** 6 degrees
+* **Hub Cone Angle:** 4 degrees
 
 ---
 
-## 6. Noise Emissions
-The turbine is designed to comply with local noise regulations for nearby settlements.
+## 4. Tower & Foundation Structural Data
+Designed to withstand Syrian site conditions (IEC Class II A).
 
-- **Villages (Day):** $\le 60 \text{ dB (A)}$
-- **Villages (Night):** $\le 45 \text{ dB (A)}$
-- **Industrial Zones:** $\le 60 \text{ dB (A)}$
+### Tower Sections (Steel Conical)
+* **Base Section:** 20m height | 4800mm diameter | 55mm thickness
+* **Mid Section 1:** 20m height | 4800mm diameter | 40mm thickness
+* **Mid Section 2:** 20m height | 4600mm diameter | 35mm thickness
+* **Top Section:** 20m height | 4400mm diameter | 25mm thickness
+
+### Foundation Material Quantities
+* **Concrete Volume:** 1121 cubic meters
+* **Reinforcement Steel:** 49.4 tons
+* **Foundation Area:** 491 square meters
+* **Pedestal Diameter:** 7.0 meters
+
+---
+
+## 5. Environmental & Grid Parameters
+* **Average Wind Speed:** 8.49 m/s
+* **Cut-in / Cut-out Wind Speed:** 3 m/s / 25 m/s
+* **Rated Wind Speed:** 10.37 m/s
+* **Grid Connection:** 66 kV (Underground)
+* **Distance to Substation:** 2500 m
+* **Temperature Range:** -2 to +38 degrees Celsius
+
+---
+
+**Project Management Team:** Bakhtyar Karimzade (Project Manager), Federico De Mita (System Integrator), Josef Remberger (Project Coordinator).
 
 <style>
 footer { display: none; }
