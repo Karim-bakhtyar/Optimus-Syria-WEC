@@ -147,28 +147,15 @@ The drivetrain is optimized for high-torque transmission and 50Hz grid stability
 
 ---
 
-
-
-## 3. Nacelle & Yaw System
-The nacelle houses the primary mechanical systems and provides active alignment to wind direction.
-
-* **Nacelle Dimensions:** 13.7m (L) x 5.5m (W) x 4.3m (H)
-* **Yaw Drives:** 6x Bonfiglioli 716 T4 units
-* **Max Yaw Moment:** 19,851.6 kNm
-* **Max Tilting Moment:** 21,578.4 kNm
-* **Rotor Tilt Angle:** 6 degrees
-* **Hub Cone Angle:** 4 degrees
-
----
-
-## 4. Tower & Foundation Structural Data
+## 3. Tower & Foundation Structural Data
 Designed to withstand Syrian site conditions (IEC Class II A).
 
 ### Tower Sections (Steel Conical)
-* **Base Section:** 20m height | 4800mm diameter | 55mm thickness
-* **Mid Section 1:** 20m height | 4800mm diameter | 40mm thickness
-* **Mid Section 2:** 20m height | 4600mm diameter | 35mm thickness
-* **Top Section:** 20m height | 4400mm diameter | 25mm thickness
+* **Base Section:** 20m height | 4800mm diameter | 
+* **Mid Section 1:** 20m height | 4600mm diameter |
+* **Mid Section 2:** 20m height | 4400mm diameter | 
+* **Mid Section 3:** 20m height | 4200mm diameter | 
+* **Top Section:** 18m height | 3800mm diameter | 
 
 ### Foundation Material Quantities
 * **Concrete Volume:** 1121 cubic meters
@@ -178,10 +165,10 @@ Designed to withstand Syrian site conditions (IEC Class II A).
 
 ---
 
-## 5. Environmental & Grid Parameters
+## 4. Environmental & Grid Parameters
 * **Average Wind Speed:** 8.49 m/s
 * **Cut-in / Cut-out Wind Speed:** 3 m/s / 25 m/s
-* **Rated Wind Speed:** 10.37 m/s
+* **Rated Wind Speed:** 9.8 m/s
 * **Grid Connection:** 66 kV (Underground)
 * **Distance to Substation:** 2500 m
 * **Temperature Range:** -2 to +38 degrees Celsius
