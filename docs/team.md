@@ -243,7 +243,7 @@ Responsibility: Designs the wind turbine foundation based on local soil and clim
 Team leader: Mohamed Shaaban Mohamed<br>
 Responsibility: Designs and integrates an energy storage system (e.g., battery) to improve grid compatibility and enable energy smoothing and support.</p>
 
-<p><b>Wind Farm Development</b><br>
+<p><b>Project Development</b><br>
 Team leader: Luis Urhahn<br>
 Responsibility: Identifies the prototype site in Syria, evaluates site-specific constraints, and develops a full wind farm layout and infrastructure plan for installation.</p>
 
