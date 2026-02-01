@@ -30,15 +30,99 @@ title: Specifications of Optimus Syria
 ## 1. Primary Component Weights
 Mass distribution for structural and logistical planning.
 
-* **Tower Total (Steel Structure):** 394,100 kg
-* **Rotor Hub:** 40,000 kg
-* **Main Shaft:** 30,785.9 kg
-* **Blade Bearings (Set of 3):** 19,800 kg
-* **Main Gearbox:** 11,600.5 kg
-* **Main Bearing:** 7,160.8 kg
-* **Nacelle Cover (GFRP/PET):** 5,133 kg
-* **Yaw Bearing:** 4,293.1 kg
-* **Generator:** approx. 12,000 kg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Wind Turbine Tables</title>
+    <style>
+        /* دیزاینێکی زۆر سادە تەنها بۆ ئەوەی هێڵەکان دیار بن */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black; /* هێڵی ڕەش */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2; /* ڕەنگێکی خۆڵەمێشی زۆر کاڵ بۆ سەردێڕەکە */
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Nacelle Components</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Total Weight (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Shaft</td><td>31,000.00</td></tr>
+            <tr><td>Rotor bearing (total)</td><td>18,000.00</td></tr>
+            <tr><td>Gearbox (total)</td><td>40,000.00</td></tr>
+            <tr><td>Machine bed (total)</td><td>53,000.00</td></tr>
+            <tr><td>Yaw system (total)</td><td>15,000.00</td></tr>
+            <tr><td>Transformer</td><td>10,000.00</td></tr>
+            <tr><td>Converter</td><td>1,000.00</td></tr>
+            <tr><td>Generator</td><td>20,000.00</td></tr>
+            <tr><td>Cables and switchgear</td><td>2,600.00</td></tr>
+            <tr><td>Nacelle cover</td><td>4,000.00</td></tr>
+            <tr><td>Frame structure</td><td>6,000.00</td></tr>
+            <tr>
+                <th>Total Nacelle</th>
+                <th>204,000.00</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Rotor Components</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Total Weight (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Hub (total)</td><td>44,000.00</td></tr>
+            <tr><td>Pitch system (total)</td><td>25,000.00</td></tr>
+            <tr><td>Blades</td><td>66,000.00</td></tr>
+            <tr>
+                <th>Total Rotor</th>
+                <th>136,000.00</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tower & Foundation</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Total Weight (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Tower</td><td>433,000.00</td></tr>
+            <tr><td>Foundation</td><td>3,351,000.00</td></tr>
+            <tr>
+                <th>Total</th>
+                <th>3,784,000.00</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Total Weight: 4,149,000.00 kg</h2>
+
+</body>
+</html>
 
 ---
 
