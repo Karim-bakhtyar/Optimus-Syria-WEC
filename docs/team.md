@@ -59,7 +59,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
     </p>
     
     <p style="line-height: 1.8; font-size: 1em;">
-      Prof. Quell oversees all mechanical and structural integration aspects, including nacelle design, drivetrain configuration, tower construction, civil foundation, and full wind farm planning. His support ensures mechanical compatibility, transport feasibility, and local infrastructure integration.
+      Prof. Quell oversees all mechanical integration aspects, including nacelle design, drivetrain configuration. His support ensures mechanical compatibility.
     </p>
   </div>
 </div>
@@ -136,7 +136,7 @@ The Optimus Syria project is guided by a team of distinguished professors and re
     </p>
     
     <p style="line-height: 1.8; font-size: 1em;">
-      Prof. Manjock guides the team in dynamic simulation, load case definition, and OpenFAST modeling to ensure reliable load certification and structural integration across all turbine components.
+      Prof. Manjock guides the team in dynamic simulation, load case definition, and OpenFAST modeling to ensure reliable load certification and structural integration for the wind turbine.
     </p>
   </div>
 </div>
