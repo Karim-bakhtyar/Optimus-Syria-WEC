@@ -91,7 +91,7 @@ title: Optimus Syria
   <h1 style="text-align:center;">Optimus Syria – Wind Energy Converter Project</h1>
 
   <p>
-    Welcome to the official Webpage for the Optimus Syria project. This project is a collaboration between Hochschule Kiel & Flensburg, and Damascus University.
+    Welcome to the official Webpage for the Optimus Syria project. This project is a collaboration between Hochschule Flensburg, HAW Kiel and Syrian Virtual University.
   </p>
 
   <p>
@@ -103,15 +103,24 @@ title: Optimus Syria
     This initiative was launched not just as an academic challenge, but as a real-world mission: to contribute meaningfully to the development of sustainable energy infrastructure in a region facing both opportunities and limitations in its energy landscape.
   </p>
 
-  <p>Over 15 specialized student teams are working in parallel, covering areas such as:</p>
+  <p>Over 14 specialized student teams are working in parallel, covering areas such as:</p>
   <ul>
-    <li>Aerodynamics and blade design</li>
-    <li>Structural analysis</li>
+    <li>Project Development</li>
+    <li>Load and Dynamic</li>
+    <li>Feedback an dLidar Assited Control</li>
     <li>Mechanical Drivetrain</li>
-    <li>Electrical drivetrain systems</li>
-    <li>Control systems and simulation</li>
-    <li>Grid integration</li>
-    <li>Wind farm layout, storage, and foundation</li>
+    <li>Rotor Blade Aerodynamics</li>
+    <li>Rotor Blade Structur</li>
+    <li>Electrical Drivetrain Systems</li>
+    <li>Grid Code Development</li>
+    <li>Rotor Hub Pitch System</li>
+    <li>Rotor Bearing System</li>
+    <li>Gearbox, Brake, Coupling</li>
+    <li>Machine, Bed, Yaw, System</li>
+    <li>Tower</li>
+    <li>Foundation</li>
+    <li>Storage</li>
+  
   </ul>
 
   <p>
